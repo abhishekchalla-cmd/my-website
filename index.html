@@ -8,22 +8,24 @@
   </head>
   <body>
     <div
-      class="w-screen h-screen flex flex-col items-center justify-center bg-gray-800 gap-y-10"
+      class="w-screen h-screen flex flex-col items-center justify-start pt-20 bg-gray-800 gap-y-5 md:gap-y-10"
     >
       <h1 class="text-4xl md:text-6xl font-bold italic text-white">
         Abhishek Challa
       </h1>
 
-      <p class="text-gray-400">
-        Firefighter at Atlantis, Bhutan. &#x1F4AA; &#x1F525;
-      </p>
+      <p class="text-gray-400">Firefighter at Atlantis &#x1F4AA; &#x1F525;</p>
 
       <img
         src="./assets/literally-the-hero.gif"
-        class="md:h-96 shadow-2xl rounded-xl"
+        class="h-72 md:h-96 shadow-2xl rounded-xl"
       />
 
-      <button onclick="bah()" class="text-orange-500 text-xl underline my-10">
+      <button
+        id="bah-btn"
+        onclick="bah()"
+        class="text-orange-500 text-xl underline my-2 md:my-10"
+      >
         A peak into my soul
       </button>
 
@@ -49,20 +51,21 @@
     >
       <img src="./assets/bah.jpg" style="width: 200vw; height: 100vh" />
     </div>
-    <!-- <div class="hidden">
-      <audio id="scream-audio">
-        <source src="./assets/girl_scream-6465.mp3" type="audio/mp3" />
-      </audio>
-    </div> -->
-    <script>
-      function bah() {
-        const bahDiv = document.getElementById("bah");
-        bahDiv.style.display = "flex";
 
-        const screamAudio = new Audio("./assets/girl_scream-6465.mp3");
+    <audio id="scream-audio">
+      <source src="./assets/girl_scream-6465.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+      const screamAudio = document.getElementById("scream-audio");
+
+      function bah() {
         screamAudio.volume = 1;
         screamAudio.currentTime = 1.2;
         screamAudio.play();
+
+        const bahDiv = document.getElementById("bah");
+        bahDiv.style.display = "flex";
 
         function endBah() {
           bahDiv.style.display = "none";
