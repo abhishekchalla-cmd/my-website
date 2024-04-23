@@ -5,43 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhishek Challa</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      a:link,
+      a:visited {
+        color: #fff;
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["cousine"],
+            serif: ["cousine"],
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <div
       class="w-screen h-screen flex flex-col items-center justify-start pt-20 bg-gray-800 gap-y-5 md:gap-y-10"
     >
-      <h1 class="text-4xl md:text-6xl font-bold italic text-white">
-        Abhishek Challa
-      </h1>
+      <h1 class="text-3xl md:text-4xl font-bold text-white">Abhishek Challa</h1>
 
-      <p class="text-gray-400">Firefighter at Atlantis &#x1F4AA; &#x1F525;</p>
+      <p class="text-gray-400">
+        Firefighter at
+        <a href="https://en.wikipedia.org/wiki/Atlantis" target="_blank"
+          >Atlantis</a
+        >
+        &#x1F4AA; &#x1F525;
+      </p>
 
       <img
         src="./assets/literally-the-hero.gif"
         class="h-72 md:h-96 shadow-2xl rounded-xl"
+        alt=""
       />
 
       <button
         id="bah-btn"
         onclick="bah()"
-        class="text-orange-500 text-xl underline my-2 md:my-10"
+        class="text-orange-500 underline my-2 md:my-10"
       >
         A peak into my soul
       </button>
 
       <div class="flex gap-x-10">
-        <a href="https://www.linkedin.com/in/abhishek-challa-434a14190/"
+        <a
+          href="https://www.linkedin.com/in/abhishek-challa-434a14190/"
+          target="_blank"
           ><img
             src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-um6pcf27.png"
             class="h-10"
+            alt=""
         /></a>
-        <a href="https://www.instagram.com/dreamingcyborg/"
+        <a href="https://www.instagram.com/dreamingcyborg/" target="_blank"
           ><img
             src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
             class="h-10"
+            alt=""
         /></a>
-        <a href="https://github.com/abhishekchalla-cmd"
-          ><img src="./assets/github-icon.svg" class="text-white h-10"
+        <a href="https://github.com/abhishekchalla-cmd" target="_blank"
+          ><img src="./assets/github-icon.svg" class="text-white h-10" alt=""
         /></a>
       </div>
     </div>
@@ -49,7 +78,7 @@
       id="bah"
       class="absolute h-screen w-screen top-0 left-0 bg-black hidden"
     >
-      <img src="./assets/bah.jpg" style="width: 200vw; height: 100vh" />
+      <img src="./assets/bah.jpg" style="width: 200vw; height: 100vh" alt="" />
     </div>
 
     <audio id="scream-audio">
