@@ -1,8 +1,12 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import hero from "@/assets/hero.svg";
+import {
+  ScrollSectionComponent,
+  createScrollSection,
+} from "@/utils/scroll-section";
 
-export default function Intro() {
+const Intro: ScrollSectionComponent = () => {
   return (
     <motion.div
       className="h-[100dvh] w-full flex flex-col justify-center items-center relative"
@@ -72,4 +76,16 @@ export default function Intro() {
       </div>
     </motion.div>
   );
-}
+};
+
+export default Intro;
+
+createScrollSection(
+  Intro,
+  [],
+  {
+    value: 100,
+    unit: "dvh",
+  },
+  "intro"
+);

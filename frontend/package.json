@@ -11,11 +11,14 @@
   "dependencies": {
     "@types/lodash": "^4.17.20",
     "@types/uuid": "^11.0.0",
+    "browser-monads": "^1.0.0",
     "lodash": "^4.17.21",
     "motion": "^12.23.22",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "use-context-selector": "^2.0.0",
+    "usehooks-ts": "^3.1.1",
     "uuid": "^13.0.0"
   },
   "devDependencies": {

@@ -1,33 +1,27 @@
-import Intro from "@/components/intro";
+import Home from "@/components/home";
 import Navbar from "@/components/navbar";
-import Offerings from "@/components/offerings";
 import { config } from "@/config";
-import { initialiseScrollSectionsHandler } from "@/utils/scroll-section";
+import { ScrollSectionHandlerContextProvider } from "@/contexts/scroll-section-handler";
 import Head from "next/head";
-import { useMemo } from "react";
 
-const { sections, registerSection, getSectionById } =
-  initialiseScrollSectionsHandler();
-
-export default function Home() {
-  const rootSection = useMemo(() => getSectionById(), []);
-
+export default function App() {
   return (
-    <div
-      className={`w-full mx-auto h-[2000px]`}
-      style={{
-        maxWidth: `${config.pageMaxWidth}px`,
-      }}
-    >
-      <Head>
-        <title>Abhishek Challa - Software Developer</title>
-      </Head>
-      <Navbar />
-      {Object.values(rootSection.children).map((section) => (
-        <section.component section={section} key={section.sectionId} />
-      ))}
-      <Intro />
-      <Offerings />
-    </div>
+    <ScrollSectionHandlerContextProvider indexSectionComponent={Home}>
+      {({ body, maxScrollY }) => (
+        <div
+          className={`w-full mx-auto`}
+          style={{
+            maxWidth: `${config.pageMaxWidth}px`,
+            height: `${maxScrollY}px`,
+          }}
+        >
+          <Head>
+            <title>Abhishek Challa - Software Developer</title>
+          </Head>
+          <Navbar />
+          {body}
+        </div>
+      )}
+    </ScrollSectionHandlerContextProvider>
   );
 }

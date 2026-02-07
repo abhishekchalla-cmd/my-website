@@ -1,4 +1,16 @@
-export default function Offerings() {
+import {
+  ScrollSectionComponent,
+  createScrollSection,
+} from "@/utils/scroll-section";
+import { useEffect, useState } from "react";
+import OfferingsMVP from "./sections/mvp";
+
+const Offerings: ScrollSectionComponent = ({ section }) => {
+  const [sectionScrollLength, setSectionScrollLength] = useState(0);
+  useEffect(() => {
+    setSectionScrollLength(section.totalScrollLength);
+  }, []);
+
   return (
     <div className="w-full flex flex-col justify-center items-center h-[100dvh]">
       <div className="text-4xl font-bold mb-5">I can...</div>
@@ -14,4 +26,8 @@ export default function Offerings() {
       </div>
     </div>
   );
-}
+};
+
+export default Offerings;
+
+createScrollSection(Offerings, [OfferingsMVP], undefined, "offerings");
