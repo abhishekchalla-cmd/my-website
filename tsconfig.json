@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@abhishekchalla/services/*": ["services/src/*"],
+      "@abhishekchalla/schema/*": ["schema/src/*"],
+      "@abhishekchalla/config/*": ["config/src/*"],
+      "@abhishekchalla/frontend/*": ["frontend/src/*"]
+    }
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    { "path": "./config" },
+    { "path": "./schema" },
+    { "path": "./services" },
+    { "path": "./frontend" }
+  ]
+}

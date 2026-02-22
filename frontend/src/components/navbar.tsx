@@ -1,8 +1,7 @@
-import { PAGE_PATHS } from "@/consts";
+import { PAGE_PATHS } from "@abhishekchalla/frontend/consts";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { GiCrossMark } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {

@@ -1,3 +1,3 @@
 export const config = {
-  pageMaxWidth: 500,
+  notionApiSecret: process.env.NOTION_API_SECRET,
 };

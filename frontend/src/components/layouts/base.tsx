@@ -1,4 +1,4 @@
-import Navbar from "../navbar";
+import Navbar from "@abhishekchalla/frontend/components/navbar";
 
 export default function BaseLayout({
   children,

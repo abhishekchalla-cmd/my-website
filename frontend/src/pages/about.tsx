@@ -1,5 +1,5 @@
-import BaseLayout from "@/components/layouts/base";
-import { PAGE_PATHS } from "@/consts";
+import BaseLayout from "@abhishekchalla/frontend/components/layouts/base";
+import { PAGE_PATHS } from "@abhishekchalla/frontend/consts";
 import Link from "next/link";
 import { CgChevronRight } from "react-icons/cg";
 

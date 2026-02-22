@@ -6,6 +6,9 @@
   "dependencies": {},
   "workspaces": [
     "frontend",
-    "cms"
+    "config",
+    "services",
+    "schema",
+    "utils/*"
   ]
 }
