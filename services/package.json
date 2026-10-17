@@ -1,5 +1,6 @@
 {
   "name": "@abhishekchalla/services",
+  "description": "[Currently,] An environment agnostic package of services to fetch and organise data from third party services (Notion)",
   "version": "0.1.0",
   "private": true,
   "scripts": {

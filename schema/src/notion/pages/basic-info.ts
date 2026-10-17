@@ -1,7 +1,10 @@
 import { z } from "zod";
 import { NotionPageBaseSchema } from "@abhishekchalla/schema/notion/page-base";
 import {
-  NotionRelationPropertySchema,
+  NotionDatePropertySchema,
+  NotionEmailPropertySchema,
+  NotionFilesPropertySchema,
+  NotionRichTextPropertySchema,
   NotionTitlePropertySchema,
   NotionUrlPropertySchema,
 } from "@abhishekchalla/schema/notion/properties";
@@ -9,9 +12,13 @@ import {
 export const NotionBasicInfoSchema = NotionPageBaseSchema.extend({
   properties: z.object({
     Name: NotionTitlePropertySchema,
+    Avatar: NotionFilesPropertySchema,
+    Cover: NotionFilesPropertySchema,
+    Email: NotionEmailPropertySchema,
+    "Github link": NotionUrlPropertySchema,
+    "Date of birth": NotionDatePropertySchema,
     "LinkedIn link": NotionUrlPropertySchema,
-    "Project People Relation": NotionRelationPropertySchema,
-    Testimonies: NotionRelationPropertySchema,
+    "Based in": NotionRichTextPropertySchema,
   }),
 });
 

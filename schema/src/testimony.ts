@@ -1,12 +1,19 @@
 import z from "zod";
-import { PersonSchema } from "@abhishekchalla/schema/person";
+import { SchemaDef } from "./utils/schema";
+import { DB_TYPES, DBTypes } from "./db-types";
 
-export const TestimonySchema = z.object({
-  title: z.string(),
-  by: PersonSchema,
-  testimony: z.string(),
-  rating: z.number(),
-  order: z.number(),
-});
-
-export type Testimony = z.infer<typeof TestimonySchema>;
+export const TestimonySchema: SchemaDef<DBTypes> = {
+  base: z.object({
+    id: z.string(),
+    title: z.string(),
+    testimony: z.string(),
+    rating: z.number(),
+    order: z.number(),
+  }),
+  relations: {
+    person: {
+      dbType: DB_TYPES.person,
+      isMulti: false,
+    },
+  },
+};

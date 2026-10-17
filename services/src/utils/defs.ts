@@ -1,4 +1,4 @@
-import { generateOrm } from ".";
+import { generateOrm } from "./orm";
 
 import { NotionBasicInfoSchema } from "@abhishekchalla/schema/notion/pages/basic-info";
 import { NotionProjectClientRelationSchema } from "@abhishekchalla/schema/notion/pages/project-client-relation";
@@ -49,18 +49,20 @@ import {
   getTestimonies,
   getTestimony,
 } from "@abhishekchalla/services/db/testimonies";
+import { DB_TYPES, DBTypes } from "@abhishekchalla/schema/db-types";
+import { RelationsResolverOpts } from "./orm/types";
 
-export const DB_TYPES = {
-  basicInfo: "basicInfo",
-  experience: "experience",
-  organisation: "organisation",
-  person: "person",
-  projectClientRelation: "projectClientRelation",
-  projectPeopleRelation: "projectPeopleRelation",
-  project: "project",
-  skill: "skill",
-  testimony: "testimony",
-} as const;
+const finalSchema = {
+  [DB_TYPES.basicInfo]: BasicInfoSchema,
+  [DB_TYPES.experience]: ExperienceSchema,
+  [DB_TYPES.organisation]: OrganisationSchema,
+  [DB_TYPES.person]: PersonSchema,
+  [DB_TYPES.projectClientRelation]: ProjectClientRelationSchema,
+  [DB_TYPES.projectPeopleRelation]: ProjectPeopleRelationSchema,
+  [DB_TYPES.project]: ProjectSchema,
+  [DB_TYPES.skill]: SkillSchema,
+  [DB_TYPES.testimony]: TestimonySchema,
+};
 
 export const orm = generateOrm(
   DB_TYPES,
@@ -78,54 +80,8 @@ export const orm = generateOrm(
     testimony: NotionTestimonySchema,
   },
 
-  // Raw schema relations mapping
-  {
-    basicInfo: {},
-    experience: {
-      Organisation: DB_TYPES.organisation,
-      Person: DB_TYPES.person,
-    },
-    organisation: {
-      "Project Client Relation": DB_TYPES.projectClientRelation,
-      "Project People Relation": DB_TYPES.projectPeopleRelation,
-      Experience: DB_TYPES.experience,
-    },
-    person: {
-      Experience: DB_TYPES.experience,
-      "Project Client Relation": DB_TYPES.projectClientRelation,
-      Testimonies: DB_TYPES.testimony,
-    },
-    projectClientRelation: {
-      Project: DB_TYPES.project,
-      Organisation: DB_TYPES.organisation,
-      People: DB_TYPES.person,
-    },
-    projectPeopleRelation: {
-      Project: DB_TYPES.project,
-      Person: DB_TYPES.person,
-    },
-    project: {
-      "Project Client Relation": DB_TYPES.projectClientRelation,
-      "Project People Relation": DB_TYPES.projectPeopleRelation,
-    },
-    skill: {},
-    testimony: {
-      By: DB_TYPES.person,
-    },
-  },
-
   // Final schema
-  {
-    basicInfo: BasicInfoSchema,
-    experience: ExperienceSchema,
-    organisation: OrganisationSchema,
-    person: PersonSchema,
-    projectClientRelation: ProjectClientRelationSchema,
-    projectPeopleRelation: ProjectPeopleRelationSchema,
-    project: ProjectSchema,
-    skill: SkillSchema,
-    testimony: TestimonySchema,
-  },
+  finalSchema,
 
   // Final schema relations to Raw schema relations mapping
   {
@@ -191,3 +147,5 @@ export const orm = generateOrm(
     testimony: getTestimonies,
   },
 );
+
+const o: RelationsResolverOpts<DBTypes, "experience", typeof finalSchema> = {};

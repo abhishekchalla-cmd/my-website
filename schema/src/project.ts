@@ -1,7 +1,7 @@
 import z from "zod";
-import { OrganisationSchema } from "@abhishekchalla/schema/organisation";
-import { PersonSchema } from "@abhishekchalla/schema/person";
 import { NotionRichTextPropertySchema } from "./notion/properties";
+import { SchemaDef } from "./utils/schema";
+import { DB_TYPES, DBTypes } from "./db-types";
 
 export const PROJECT_ROLE = {
   owner: "owner",
@@ -49,44 +49,58 @@ export const NOTION_PROJECT_CLIENT_TYPE_TO_PROJECT_CLIENT_TYPE = {
   Organisation: PROJECT_CLIENT_TYPE.organisation,
 };
 
-export const ProjectClientRelationSchema = z.discriminatedUnion("type", [
-  z.object({
+export const ProjectClientRelationSchema: SchemaDef<DBTypes> = {
+  base: z.object({
     id: z.string(),
-    type: z.literal(PROJECT_CLIENT_TYPE.individual),
-    organisation: OrganisationSchema,
+    type: z.literal(Object.values(PROJECT_CLIENT_TYPE)),
     title: z.string(),
   }),
-  z.object({
+  relations: {
+    organisation: {
+      dbType: DB_TYPES.organisation,
+      isMulti: false,
+    },
+    person: {
+      dbType: DB_TYPES.person,
+      isMulti: false,
+    },
+  },
+};
+
+export const ProjectPeopleRelationSchema: SchemaDef<DBTypes> = {
+  base: z.object({
     id: z.string(),
-    type: z.literal(PROJECT_CLIENT_TYPE.organisation),
-    person: PersonSchema,
-    title: z.string(),
+    role: z.string(),
   }),
-]);
+  relations: {
+    person: {
+      dbType: DB_TYPES.person,
+      isMulti: false,
+    },
+  },
+};
 
-export type ProjectClientRelation = z.infer<typeof ProjectClientRelationSchema>;
-
-export const ProjectPeopleRelationSchema = z.object({
-  id: z.string(),
-  person: PersonSchema,
-  role: z.string(),
-});
-
-export type ProjectPeopleRelation = z.infer<typeof ProjectPeopleRelationSchema>;
-
-export const ProjectSchema = z.object({
-  id: z.string(),
-  name: z.string(),
-  description: NotionRichTextPropertySchema,
-  startDate: z.iso.datetime().optional(),
-  endDate: z.iso.datetime().optional(),
-  role: z.enum(Object.values(PROJECT_ROLE)).array(),
-  type: z.enum(Object.values(PROJECT_TYPE)),
-  visibility: z.enum(Object.values(PROJECT_VISIBILITY)),
-  thumbnailUrl: z.url().optional(),
-  cover: z.url().optional(),
-  projectClients: ProjectClientRelationSchema.array().optional(),
-  projectPeople: ProjectPeopleRelationSchema.array().optional(),
-});
-
-export type Project = z.infer<typeof ProjectSchema>;
+export const ProjectSchema: SchemaDef<DBTypes> = {
+  base: z.object({
+    id: z.string(),
+    name: z.string(),
+    description: NotionRichTextPropertySchema,
+    startDate: z.iso.datetime().optional(),
+    endDate: z.iso.datetime().optional(),
+    role: z.enum(Object.values(PROJECT_ROLE)).array(),
+    type: z.enum(Object.values(PROJECT_TYPE)),
+    visibility: z.enum(Object.values(PROJECT_VISIBILITY)),
+    thumbnailUrl: z.url().optional(),
+    cover: z.url().optional(),
+  }),
+  relations: {
+    projectClients: {
+      dbType: DB_TYPES.projectClientRelation,
+      isMulti: true,
+    },
+    projectPeople: {
+      dbType: DB_TYPES.projectPeopleRelation,
+      isMulti: true,
+    },
+  },
+};

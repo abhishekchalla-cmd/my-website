@@ -1,11 +1,14 @@
 import z from "zod";
-import { ExperienceSchema } from "@abhishekchalla/schema/experience";
+import { SchemaDef } from "./utils/schema";
+import { DB_TYPES, DBTypes } from "./db-types";
 
-export const PersonSchema = z.object({
-  id: z.string(),
-  name: z.string(),
-  linkedinUrl: z.url().optional(),
-  experience: z.array(ExperienceSchema).optional(),
-});
-
-export type Person = z.infer<typeof PersonSchema>;
+export const PersonSchema: SchemaDef<DBTypes> = {
+  base: z.object({
+    id: z.string(),
+    name: z.string(),
+    linkedinUrl: z.url().optional(),
+  }),
+  relations: {
+    experience: { dbType: DB_TYPES.experience, isMulti: true },
+  },
+};

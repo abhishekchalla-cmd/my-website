@@ -1,46 +1,37 @@
+import { SchemaDef, Schema } from "@abhishekchalla/schema/utils/schema";
 import z from "zod";
 
-type DBTypeVSchemaMap<DBTypes> = {
-  [DBType in keyof DBTypes]: z.ZodObject | z.ZodDiscriminatedUnion;
+type DBTypeVRawSchemaMap<DBTypes> = {
+  [DBType in keyof DBTypes]: z.ZodObject;
 };
 
-type DBTypeVRawSchemaRelationsMap<
-  DBTypes,
-  TypeToRawSchemaMap extends DBTypeVSchemaMap<DBTypes>,
-> = {
-  [DBType in keyof DBTypes]: {
-    [RawSchemaRelationName in keyof (TypeToRawSchemaMap[DBType] extends z.ZodObject
-      ? TypeToRawSchemaMap[DBType]["shape"]["properties"]["shape"]
-      : {})]?: keyof DBTypes;
-  };
+export type DBTypeVFinalSchemaMap<DBTypes> = {
+  [DBType in keyof DBTypes]: SchemaDef<DBTypes>;
 };
 
-type DBTypeVFinalSchemaVRawSchemaRelationsMapping<
+type DBTypeVRawSchemaVFinalSchemaRelationsMap<
   DBTypes,
-  TvFSMap extends DBTypeVSchemaMap<DBTypes>,
-  TvRSMap extends DBTypeVSchemaMap<DBTypes>,
-  TvRSRMap extends DBTypeVRawSchemaRelationsMap<DBTypes, TvRSMap>,
+  TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
+  TypeToFinalSchemaMap extends DBTypeVFinalSchemaMap<DBTypes>,
 > = {
   [DBType in keyof DBTypes]: {
-    [RawSchemaRelationName in KeysOfUnion<
-      z.infer<TvFSMap[DBType]>
-    >]?: keyof TvRSRMap[DBType];
+    [FinalSchemaRelationName in keyof TypeToFinalSchemaMap[DBType]["relations"]]: keyof TypeToRawSchemaMap[DBType]["shape"]["properties"]["shape"] /* notion specific logic */;
   };
 };
 
 type DBTypeVTransformerMap<
   DBTypes,
-  TypeToRawSchemaMap extends DBTypeVSchemaMap<DBTypes>,
-  TypeToFinalSchemaMap extends DBTypeVSchemaMap<DBTypes>,
+  TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
+  TypeToFinalSchemaMap extends DBTypeVFinalSchemaMap<DBTypes>,
 > = {
   [DBType in keyof DBTypes]: (
     rawData: z.infer<TypeToRawSchemaMap[DBType]>,
-  ) => z.infer<TypeToFinalSchemaMap[DBType]>;
+  ) => z.infer<TypeToFinalSchemaMap[DBType]["base"]>;
 };
 
 type DBTypeVGetRawByIdFnMap<
   DBTypes,
-  TypeToRawSchemaMap extends DBTypeVSchemaMap<DBTypes>,
+  TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
 > = {
   [DBType in keyof DBTypes]: (
     itemId: string,
@@ -49,23 +40,46 @@ type DBTypeVGetRawByIdFnMap<
 
 type DBTypeVGetRawAllFnMap<
   DBTypes,
-  TypeToRawSchemaMap extends DBTypeVSchemaMap<DBTypes>,
+  TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
 > = {
   [DBType in keyof DBTypes]: () => Promise<
     z.infer<TypeToRawSchemaMap[DBType]>[]
   >;
 };
 
+export type RelationsResolverOpts<
+  DBTypes,
+  BaseDBType extends keyof DBTypes,
+  TvFSMap extends DBTypeVFinalSchemaMap<DBTypes>,
+> = {
+  [RelationName in keyof TvFSMap[BaseDBType]["relations"]]: boolean;
+  // RelationsResolverOpts<
+  //   DBTypes,
+  //   TvFSMap[BaseDBType]["relations"][RelationName]["dbType"],
+  //   TvFSMap
+  // >;
+};
+
+export type ORM<DBTypes, TvFSMap extends DBTypeVFinalSchemaMap<DBTypes>> = {
+  [DBType in keyof DBTypes]: {
+    getById: (
+      id: string,
+      relResOpts: RelationsResolverOpts<DBTypes, DBType, TvFSMap>,
+    ) => Promise<Schema<DBTypes, TvFSMap, DBType>>;
+    getAll: (
+      relResOpts: RelationsResolverOpts<DBTypes, DBType, TvFSMap>,
+    ) => Promise<Schema<DBTypes, TvFSMap, DBType>[]>;
+  };
+};
+
 export type ORMGenerator = <
   DBTypes,
-  TvRSMap extends DBTypeVSchemaMap<DBTypes>,
-  TvRSRMap extends DBTypeVRawSchemaRelationsMap<DBTypes, TvRSMap>,
-  TvFSMap extends DBTypeVSchemaMap<DBTypes>,
-  TvFSRMap extends DBTypeVFinalSchemaVRawSchemaRelationsMapping<
+  TvRSMap extends DBTypeVRawSchemaMap<DBTypes>,
+  TvFSMap extends DBTypeVFinalSchemaMap<DBTypes>,
+  TvFSRMap extends DBTypeVRawSchemaVFinalSchemaRelationsMap<
     DBTypes,
-    TvFSMap,
     TvRSMap,
-    TvRSRMap
+    TvFSMap
   >,
   TvTMap extends DBTypeVTransformerMap<DBTypes, TvRSMap, TvFSMap>,
   TvGRBIFnMap extends DBTypeVGetRawByIdFnMap<DBTypes, TvRSMap>,
@@ -73,17 +87,11 @@ export type ORMGenerator = <
 >(
   dbTypes: DBTypes,
   dbTypeVRawSchemaMap: TvRSMap,
-  dbTypeVRawSchemaRelationsMap: TvRSRMap,
   dbTypeVFinalSchemaMap: TvFSMap,
   dbTypeVFinalSchemaVRawSchemaRelationsMapping: TvFSRMap,
   dbTypeVTransformerMap: TvTMap,
   dbTypeVGetRawByIdFnMap: TvGRBIFnMap,
   dbTypeVGetRawAllFnMap: TvGRAllFnMap,
-) => {
-  [DBType in keyof DBTypes]: {
-    getById: (id: string) => Promise<z.infer<TvFSMap[DBType]>>;
-    getAll: () => Promise<z.infer<TvFSMap[DBType]>[]>;
-  };
-};
+) => ORM<DBTypes, TvFSMap>;
 
 type KeysOfUnion<T> = T extends T ? keyof T : never;

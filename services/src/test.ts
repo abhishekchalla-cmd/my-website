@@ -1,13 +1,12 @@
 import { notionClient } from "@abhishekchalla/services/utils/notion-client";
 
 if (require.main.filename === __filename) {
-  // NotionProjectPageSchema.array().parse(
-  //   JSON.parse(
-  //     readFileSync(resolve(__dirname, "../out/projects.json"), "utf-8"),
-  //   ),
-  // );
-
   Promise.all([
+    // Basic Info
+    notionClient.databases.retrieve({
+      database_id: "2766346faeb0805cb9a4f96262d5de60",
+    }),
+
     // Organisations
     notionClient.databases.retrieve({
       database_id: "2766346faeb08002b57ec82e304e49a1",

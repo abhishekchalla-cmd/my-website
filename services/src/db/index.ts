@@ -1,13 +1,13 @@
 import { resolve } from "path";
 import { writeFileSync } from "fs";
 import { getProjects } from "@abhishekchalla/services/db/projects";
-import { getBasicInfo } from "@abhishekchalla/services/db/basic-info";
+import { getBasicInfos } from "@abhishekchalla/services/db/basic-info";
 import { getOrganisations } from "@abhishekchalla/services/db/organisations";
 import { getPeople } from "@abhishekchalla/services/db/people";
 import { getProjectClientRelations } from "@abhishekchalla/services/db/project-client-relations";
 import { getProjectPeopleRelations } from "@abhishekchalla/services/db/project-people-relations";
 import { getSkills } from "@abhishekchalla/services/db/skills";
-import { getExperience } from "@abhishekchalla/services/db/experience";
+import { getExperiences } from "@abhishekchalla/services/db/experience";
 import { getTestimonies } from "@abhishekchalla/services/db/testimonies";
 
 if (require.main.filename === __filename) {
@@ -18,7 +18,7 @@ if (require.main.filename === __filename) {
         JSON.stringify(res, null, 2),
       ),
     ),
-    getBasicInfo().then((res) =>
+    getBasicInfos().then((res) =>
       writeFileSync(
         resolve(__dirname, "../../out/basic-info.json"),
         JSON.stringify(res, null, 2),
@@ -30,7 +30,7 @@ if (require.main.filename === __filename) {
         JSON.stringify(res, null, 2),
       ),
     ),
-    getExperience().then((res) =>
+    getExperiences().then((res) =>
       writeFileSync(
         resolve(__dirname, "../../out/experience.json"),
         JSON.stringify(res, null, 2),
