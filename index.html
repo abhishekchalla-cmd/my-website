@@ -1,108 +1,540 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abhishek Challa</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Abhishek Challa - Senior Software Developer</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    </style>
-    <style>
-      a:link,
-      a:visited {
-        color: #fff;
-        text-decoration: underline;
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #34495e;
+        --accent-color: #3498db;
+        --text-color: #333;
+        --bg-color: #f8f9fa;
+        --border-color: #e2e8f0;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        text-align: left;
+        padding-bottom: 20px;
+        border-bottom: 2px solid var(--border-color);
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        column-gap: 25px;
+      }
+      header .dp {
+        height: 150px;
+        margin-left: 10px;
+      }
+      h1 {
+        color: var(--primary-color);
+        margin-bottom: 5px;
+      }
+      h2 {
+        color: var(--secondary-color);
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 5px;
+        margin-top: 30px;
+      }
+      h3 {
+        color: var(--primary-color);
+        margin-bottom: 10px;
+      }
+      .contact-info a {
+        color: var(--accent-color);
+        text-decoration: none;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+      th,
+      td {
+        border: 1px solid var(--border-color);
+        padding: 12px;
+        text-align: left;
+      }
+      th {
+        background-color: #f1f5f9;
+        color: var(--primary-color);
+      }
+      .project-card {
+        display: flex;
+        gap: 20px;
+        border: 1px solid var(--border-color);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background: #fff;
+      }
+      .project-thumbnail {
+        flex: 0 0 200px;
+        background-color: #e2e8f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .project-thumbnail img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .project-details {
+        flex: 1;
+      }
+      .project-details p {
+        margin: 8px 0;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .links a {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: bold;
+      }
+      @media (max-width: 768px) {
+        .project-card {
+          flex-direction: column;
+        }
+        .project-thumbnail {
+          flex: none;
+          height: 200px;
+        }
       }
     </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            sans: ["cousine"],
-            serif: ["cousine"],
-          },
-        },
-      };
-    </script>
   </head>
   <body>
-    <div
-      class="w-screen h-screen flex flex-col items-center justify-start pt-20 bg-gray-800 gap-y-5 md:gap-y-10"
-    >
-      <h1 class="text-3xl md:text-4xl font-bold text-white">Abhishek Challa</h1>
+    <div class="container">
+      <header>
+        <img src="/assets/dp.jpg" alt="DP" class="dp" />
+        <div>
+          <h1>Abhishek Challa <span style="color: #888">29 Yrs</span></h1>
+          <p><strong>Senior Software Developer</strong></p>
+          <div class="contact-info">
+            <span>Email: challa.abhishek.97@gmail.com</span> |
+            <span>Phone: +919873560464</span><br />
+            <a
+              href="https://in.linkedin.com/in/abhishek-challa-434a14190"
+              target="_blank"
+              >LinkedIn</a
+            >
+            |
+            <a href="https://github.com/abhishekchalla-cmd" target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </header>
 
-      <p class="text-gray-400">
-        Firefighter at
-        <a href="https://en.wikipedia.org/wiki/Atlantis" target="_blank"
-          >Atlantis</a
-        >
-        &#x1F4AA; &#x1F525;
-      </p>
+      <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+          Results-driven Senior Software Developer with over 4 years of
+          experience specializing in full-stack web development, AI integration,
+          and scalable cloud architectures. Demonstrated success in
+          orchestrating complex third-party services, developing high-impact
+          generative AI pipelines, and leading cross-functional teams to deliver
+          enterprise-grade applications and Learning Management Systems.[cite:
+          4]
+        </p>
+      </section>
 
-      <img
-        src="./assets/literally-the-hero.gif"
-        class="h-72 md:h-96 shadow-2xl rounded-xl"
-        alt=""
-      />
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Programming Languages</strong></td>
+              <td>
+                JavaScript / TypeScript, Python, HTML, CSS, Shell, Java, Kotlin
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Frameworks & Libraries</strong></td>
+              <td>
+                React, React Native, TailwindCSS, Android, GatsbyJS, ExpressJS,
+                NestJS, Hasura GraphQL Engine, Prisma, Serverless / SLS,
+                Temporal, Flask, WSO2, Node.js
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Databases</strong></td>
+              <td>PostgreSQL, SQLite, MongoDB, Redis</td>
+            </tr>
+            <tr>
+              <td><strong>DevOps & Infrastructure</strong></td>
+              <td>
+                Docker, Jenkins, Firebase, AWS (Codepipeline, EC2, Amplify,
+                Elastic Beanstalk, ECS, ECR, Lambda, SQS, API Gateway,
+                EventBridge, Route 53, Certificate Manager)
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Tools & Integrations</strong></td>
+              <td>
+                n8n, WhatsApp Integrations, Generative AI Models, Shopify
+                Liquid, WordPress
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-      <button
-        id="bah-btn"
-        onclick="bah()"
-        class="text-orange-500 underline my-2 md:my-10"
-      >
-        A peak into my soul
-      </button>
+      <section id="projects">
+        <h2>Professional Projects</h2>
 
-      <div class="flex gap-x-10">
-        <a
-          href="https://www.linkedin.com/in/abhishek-challa-434a14190/"
-          target="_blank"
-          ><img
-            src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-um6pcf27.png"
-            class="h-10"
-            alt=""
-        /></a>
-        <a href="https://www.instagram.com/dreamingcyborg/" target="_blank"
-          ><img
-            src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
-            class="h-10"
-            alt=""
-        /></a>
-        <a href="https://github.com/abhishekchalla-cmd" target="_blank"
-          ><img src="./assets/github-icon.svg" class="text-white h-10" alt=""
-        /></a>
-      </div>
+        <div class="project-card">
+          <div
+            class="project-thumbnail"
+            style="padding: 0 20px; box-sizing: border-box"
+          >
+            <!-- Replace src with actual thumbnail URL -->
+            <img
+              src="/assets/project-skillstrainer.svg"
+              alt="SkillsTrainer Thumbnail"
+              style="background: white; padding: 20px"
+            />
+          </div>
+          <div class="project-details">
+            <h3>SkillsTrainer</h3>
+            <p>
+              <strong>Overview:</strong> Managed India's largest vocational
+              skilling and certification portal with over 2 million registered
+              users, pivoting from a B2C application to a robust B2B Learning
+              Management System (LMS).
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Headed the project as the sole
+              senior developer since 2022, leading a team of 2-3 developers.
+              Architected critical system modules including user enrollments,
+              batch scheduling, payment processing, analytics reporting, and
+              bulk administration capabilities.
+            </p>
+            <p class="links">
+              <strong>Links:</strong>
+              <a href="https://skillstrainer.in" target="_blank"
+                >https://skillstrainer.in</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumbnail">
+            <img
+              src="/assets/project-yla.png"
+              alt="YARA Leadership Academy Thumbnail"
+            />
+          </div>
+          <div class="project-details">
+            <h3>YARA Leadership Academy</h3>
+            <p>
+              <strong>Overview:</strong> Developed an international LMS for Yara
+              International ASA to upskill retailers and MSMEs, encompassing
+              enrollment, course tracking, and batch scheduling.
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Accelerated app development
+              significantly by migrating the learner web application to a mobile
+              application with minimal refactoring. Designed mechanisms for
+              offline course consumption and implemented a serverless framework
+              to speed up deployment.
+            </p>
+            <p class="links">
+              <strong>Links:</strong>
+              <a href="https://www.yara.in/ind-applications" target="_blank"
+                >URL</a
+              >
+              |
+              <a
+                href="https://play.google.com/store/apps/details?id=com.skillstrainer.yara.academy&hl=en_IN&pli=1"
+                target="_blank"
+                >Play Store</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumbnail">
+            <img
+              src="/assets/project-asdm.jpeg"
+              alt="Assam Skill Development Mission Thumbnail"
+            />
+          </div>
+          <div class="project-details">
+            <h3>Assam Skill Development Mission - Career Counselling</h3>
+            <p>
+              <strong>Overview:</strong> Built an LMS, assessment engine, and
+              offline application for capacity building among unemployed youth
+              in remote areas of Assam.
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Developed a specialized
+              offline field application for ground counselors to conduct
+              assessments without internet connectivity, incorporating automated
+              backend data synchronization protocols.
+            </p>
+            <p class="links">
+              <strong>Links:</strong>
+              <a href="https://asdm.skillstrainer.in" target="_blank">URL</a> |
+              <a
+                href="https://play.google.com/store/apps/details?id=com.skillstrainer.offline_application&hl=en_IN"
+                target="_blank"
+                >Play Store</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumbnail">
+            <img
+              src="/assets/project-ttcg.png"
+              alt="TATA Tea Chakra Gold Campaign Thumbnail"
+            />
+          </div>
+          <div class="project-details">
+            <h3>TATA Tea Chakra Gold Campaign</h3>
+            <p>
+              <strong>Overview:</strong> Developed an AI Video generation
+              pipeline integrating user data and success stories via WhatsApp to
+              produce dynamic talk-show videos featuring Rashmika Mandanna.
+            </p>
+            <p>
+              <strong>Tech Stack:</strong> Node.js, n8n, Third-party WhatsApp
+              Integration, Third-party Generative AI Integration.
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Orchestrated multiple
+              third-party services into a cohesive architecture, optimizing
+              Generative AI automation costs while successfully managing the
+              technical challenge of reproducing identical video outputs with
+              varying story narrations and user characters.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumbnail">
+            <img
+              src="/assets/project-ncui-lms.jpg"
+              alt="National Cooperative Union of India LMS Thumbnail"
+            />
+          </div>
+          <div class="project-details">
+            <h3>National Cooperative Union of India LMS</h3>
+            <p>
+              <strong>Overview:</strong> Delivered a dedicated LMS deployment
+              for the apex body of all cooperatives across India.
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Rapidly deployed the LMS
+              within two weeks. Transitioned infrastructure to a new
+              government-based cloud provider and engineered a CI/CD pipeline
+              from scratch using Docker and Shell scripts.
+            </p>
+            <p class="links">
+              <strong>Links:</strong>
+              <a href="https://ncuicoop.education" target="_blank"
+                >https://ncuicoop.education</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumbnail">
+            <img
+              src="/assets/project-emm.jpeg"
+              alt="Emirates Mars Mission Website Thumbnail"
+            />
+          </div>
+          <div class="project-details">
+            <h3>Emirates Mars Mission Website</h3>
+            <p>
+              <strong>Overview:</strong> Maintained the UAE Mars mission website
+              and interactive features.
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Developed the Hope probe
+              tracker, engineering a real-time 3D simulation of the EMM Hope
+              probe across its journey.
+            </p>
+            <p class="links">
+              <strong>Links:</strong>
+              <a href="https://www.emiratesmarsmission.ae" target="_blank"
+                >URL</a
+              >
+              |
+              <a
+                href="https://www.emiratesmarsmission.ae/track-the-hope-probe-live"
+                target="_blank"
+                >Hope Probe 3D Simulation</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumbnail">
+            <img
+              src="/assets/project-unicef.jpeg"
+              alt="UNICEF Passport to Earning Thumbnail"
+            />
+          </div>
+          <div class="project-details">
+            <h3>UNICEF Passport to Earning Programme, India</h3>
+            <p>
+              <strong>Overview:</strong> Contributed to a Public-Private-Youth
+              Partnership co-founded by Microsoft to connect youth to
+              entrepreneurial and employment opportunities.
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Implemented a mandatory
+              Aadhaar verification system to eliminate bogus learner
+              registrations and developed a comprehensive administrative
+              dashboard for accurate impact metric reporting.
+            </p>
+            <p class="links">
+              <strong>Links:</strong>
+              <a href="https://p2e.csccloud.in" target="_blank"
+                >https://p2e.csccloud.in</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumbnail">
+            <img
+              src="/assets/project-ttp.jpeg"
+              alt="TATA Tea Pongal Campaign Thumbnail"
+            />
+          </div>
+          <div class="project-details">
+            <h3>TATA Tea Pongal Campaign</h3>
+            <p>
+              <strong>Overview:</strong> Architected an AI Song generation
+              pipeline that leverages user details, photos, and success stories
+              submitted via WhatsApp to generate production-quality audio
+              tracks.
+            </p>
+            <p>
+              <strong>Tech Stack:</strong> Node.js, n8n, Third-party WhatsApp
+              Integration, Third-party AI Integration.
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Engineered end-to-end
+              automation, integrating messaging platforms with AI services while
+              actively optimizing operational costs and ensuring robust system
+              orchestration.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumbnail">
+            <img src="/assets/project-iwao.png" alt="IWAO Thumbnail" />
+          </div>
+          <div class="project-details">
+            <h3>IWAO</h3>
+            <p>
+              <strong>Overview:</strong> Implemented a custom UI design from
+              Figma into a functional Shopify storefront by manually coding
+              sections and widgets.
+            </p>
+            <p>
+              <strong>Tech Stack:</strong> Shopify Liquid, Front-end Web
+              Technologies.
+            </p>
+            <p>
+              <strong>Key Contributions:</strong> Streamlined the administration
+              experience by breaking down complex frontend sections and clearly
+              defining their controls for easier content management by store
+              administrators.
+            </p>
+            <p class="links">
+              <strong>URL:</strong>
+              <a href="https://iwao.dk/" target="_blank">https://iwao.dk/</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <strong>Frontend Developer</strong> at <strong>Calypsu</strong> (Nov
+            2020 - Nov 2021)
+          </li>
+          <li>
+            <strong>Full Stack Developer</strong> at
+            <strong>Calypsu</strong> (Nov 2021 - January 2022)
+          </li>
+          <li>
+            <strong>Technical Lead</strong> at
+            <strong>Unifiers Social Ventures Pvt Ltd</strong> (June 2022 -
+            February 2025)
+          </li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <strong>10th:</strong> Hillwoods Academy, Preet Vihar, New Delhi
+            (2014)
+          </li>
+          <li>
+            <strong>12th:</strong> Hillwoods Academy, Preet Vihar, New Delhi
+            (2016)
+          </li>
+          <li>
+            <strong
+              >Bachelors in Design (B.Des) in Fashion Communication:</strong
+            >
+            National Institute of Fashion Technology, New Delhi (2016-2020)
+          </li>
+        </ul>
+      </section>
+
+      <section id="soft-skills">
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Team Leadership & Mentoring</li>
+          <li>Client Communication & Stakeholder Management</li>
+          <li>Agile/Scrum Experience</li>
+        </ul>
+      </section>
     </div>
-    <div
-      id="bah"
-      class="absolute h-screen w-screen top-0 left-0 bg-black hidden"
-    >
-      <img src="./assets/bah.jpg" style="width: 200vw; height: 100vh" alt="" />
-    </div>
-
-    <audio id="scream-audio">
-      <source src="./assets/girl_scream-6465.mp3" type="audio/mp3" />
-    </audio>
-
-    <script>
-      const screamAudio = document.getElementById("scream-audio");
-
-      function bah() {
-        screamAudio.volume = 1;
-        screamAudio.currentTime = 1.2;
-        screamAudio.play();
-
-        const bahDiv = document.getElementById("bah");
-        bahDiv.style.display = "flex";
-
-        function endBah() {
-          bahDiv.style.display = "none";
-          screamAudio.pause();
-        }
-
-        setTimeout(endBah, 800);
-      }
-    </script>
   </body>
 </html>

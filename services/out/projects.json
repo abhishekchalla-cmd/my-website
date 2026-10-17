@@ -1,0 +1,4064 @@
+[
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8053-9ba7-f16e4bfc14ec",
+    "created_time": "2025-09-22T18:22:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Assam Government Unifiers Social Ventures Private Limited"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "b2270d86-de0b-46fa-bc50-6f16464616e3",
+          "name": "Public",
+          "color": "blue"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Assam Skill Development Mission was set up under the aegis of Skill Employment and Entrepreneurship Department. The vision of the mission is capacity building of the unemployed youth and to deliver quality skill training leading to meaningful employment.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Assam Skill Development Mission was set up under the aegis of Skill Employment and Entrepreneurship Department. The vision of the mission is capacity building of the unemployed youth and to deliver quality skill training leading to meaningful employment.",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2023-09-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "77cbe019-1a7d-4c57-aac7-24e6a80573e6",
+            "name": "Tech Lead",
+            "color": "blue"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2025-03-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "e35743ae316.jpeg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/eea2a093-e950-40fe-afc5-8a8030ff5030/e35743ae316.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466T75Z2XVF%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIFC6vKQav3Ob4y0JEJQ7OLsOXu7d8mEPM7UZqcm5W1OjAiAx92aoic1%2Fa9baeY3YvR0RXUrxohfbfj3TnVCdqtBfXSqIBAjF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM82e78aq0fqr%2BGSJoKtwD1AaSWBzfBFh9RXlXlXkge1ScFbVlGURelt4Li0CTIOE6GyhA1QlZAoAkTnOd4uMzqbffBbTfCSHXO9vn7wG6Qg9w2%2B0YOtQo8fxzh0D0tfv%2F0dNVua%2FcGNrQY7JyQCdqFU6tQm%2FUTKSiTYwGfLWK0nNEu6oUuI9oC9Wtq8BCrSj2uKnBTLAAyklRTB%2F64ZlgS6xLh7VFZE87KMAOx%2BdUP8Qu46c91qzZ8BQlrJaPQ5c0zqaEVlAwfGCn90xUPDaPa296BrqKAYBq1Tk0rK3IjoSY6Pi7zmGibowu3JkqdlSaJ2VjPbrsYsucNdI6%2FijlXH7mZ5uAer1%2BK5YqiR9yyyv2vbMIErIdCBaC%2BxwL%2FkcNVjTLd5rGN8oxBmMMkEvTeoqWBQXj7yMn6yITdf39UrOxWpvYbWIbrlxHCSfBxWRrgGgeOPYqFgLFSGdTrEZVjUzz6OmYK4cCePOUZ4muNpMsUdA5DjpqL6FNOYPYu%2BWJS4TgTtRykkyu0u1fnREJPHSSe%2BUG7hRB3PlA71R3KnuiGcqnzpgGTEH5mLDFTlewq%2FBHxNQqlLNNA%2FV3e0R0nb132EXZEzwpoqabbeOK0aZaIUXSCFdWQ5p0akdVVkA3E21FU8oApUJ7e4Ews8%2FrzAY6pgE4bTiuevzMTbm%2BP%2B4lBaZRpg3kMitAoLkIMVhGN4q3By08aT3bbKmnFbKY3c0qPmMF53Y29luDnsoue2bGYNnQ1L7HmtW80NT8Q9rN0oI09yE6piDq2n4rn2pP9x8abEiwT5pGNLHJ3OK69cZIkFe1CzGZje1lebXWQ0U%2BZ9dRSD96bNYPbNrqMouvNECHIImGpfjBvM7FLCh7M8j7SNgiSE1BkO8A&X-Amz-Signature=5deeaf76f289b6ceeeb954063aa4eebbf65d9aada2474ff40f9d41224e611173&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.098Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": 3
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80d2-8913-ee124d77e38e"
+          },
+          {
+            "id": "2766346f-aeb0-80b2-bd11-fd4e149b6546"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80c9-8c84-c7fb62c6fd2f"
+          },
+          {
+            "id": "2766346f-aeb0-8027-96bd-c81f54a5e6ce"
+          },
+          {
+            "id": "2766346f-aeb0-8000-b0f1-cbda5d257bee"
+          },
+          {
+            "id": "2766346f-aeb0-80a9-b5d4-dfda51ef0776"
+          },
+          {
+            "id": "2766346f-aeb0-80f3-b8ad-cb9f855588ba"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Assam Skill Development Mission - Career Counselling",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Assam Skill Development Mission - Career Counselling",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Assam-Skill-Development-Mission-Career-Counselling-2766346faeb080539ba7f16e4bfc14ec",
+    "public_url": null,
+    "request_id": "00119a72-7ebf-4247-9846-3eb1cf85c273"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8062-8ac4-ddbf395d5981",
+    "created_time": "2025-09-22T18:12:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Unifiers Social Ventures Private Limited"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "b2270d86-de0b-46fa-bc50-6f16464616e3",
+          "name": "Public",
+          "color": "blue"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "SkillsTrainer is India's largest vocational skilling and certification portal with over ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SkillsTrainer is India's largest vocational skilling and certification portal with over ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "2 Million",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2 Million",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " registered users. I had been managing this project for about 2 years. It is a comprehensive online learning management solution that offers both learners and businesses with learning and management tools.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " registered users. I had been managing this project for about 2 years. It is a comprehensive online learning management solution that offers both learners and businesses with learning and management tools.",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2022-01-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "77cbe019-1a7d-4c57-aac7-24e6a80573e6",
+            "name": "Tech Lead",
+            "color": "blue"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2025-02-16",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "favicon.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/3af2c4fc-921c-42ca-af71-39e1b4f7bc4f/favicon.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UA233FMV%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDAdhEgEV%2FF4zjjYqWTJom7m9uKDF60wz9%2FLDB2UmhlxwIhAOg040EFCXxrE4WkOVu4IUYkXKJ%2B2ibIZ2%2BoxSIEU7X4KogECMT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxqYjw7znK9zdV9%2Fcoq3AOGpRUgCqif9t9%2BZVVFh4781R%2FPNFj8B57461K9LY7UaDL58tGVoi9JVVKErokOq%2FuXhtVsCsfE4nd5Mg9MIaukG2SZnqHCZFJ5s2y77%2BuZULWjAgA2A%2BbEZc7J8c%2Fc7U5hcNlXQPA6uTpWt3OE63V5br1UqjOmwLfK4PxQzSojuSWCAOhffHoaJQnPrpXdoXiLEFHWG%2BIsdSr5aiFZBMfV4Q2sRDGVxkiJ1x03KWl5MP7nLTS0%2BqtN0kGYH%2BxCdV%2BYM46F16vROY5w1sPEEK6FLMUqLeZHBMY7p0CsFsviEISdMaTPST%2BLXQ%2BEacAPKtL4wHAV9a2cAKBpF7AODPckP2UqfF6Mn2Q%2BDLDqIDsRVbg%2Fy0ZevZF4uxqtS0dqXLXECs9vdEVTmiAh5AeF8Vo9Zt%2BS7W426LRzq4HlkjBxSIj5d%2F479LmwPJYpvTptPgIe8QbFkIgi453urpxaUB5YZbo2b22UivucqvqUZTquHQR5Qd44v%2BG2PIb%2BmMk%2F3Ll1eiGDirH%2BG0oOMQKO1jYE7WAD0WF6h85Qn63GuPa8apN1KPueckyu3az2Mqvcup1a2KonG6EGrpaNPQfCIqkOeeRyAk065aXy1hilBPUkaDDz%2BLNPqE7FE%2Bh8ojCkzuvMBjqkAXAUwonHtb2e05MiW4NkQ6O24wMeCDT%2B5OFZnjA9NESb%2FX88dYIXomL2VTBzh0agtaM8uFSML0GL5KfrRnp1irivbkK9ZBAjGD%2B%2ByrOIv9fdOPMo9CSfbiw8NjIrUVgPILg5Hq96%2BIVo3dtC0TczU3vaqtGfg0aWuIJztJYEo9%2BKMfTen%2FoT2eaa83RO9hxsiAbSIr2w5IQzu7LT9ahQ8J7XlyPQ&X-Amz-Signature=349d09b575ed43cc1d9ce3c36c3d1cac6c449177d77c3f3816af836158f25a39&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.132Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": 1
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8030-bd12-f7b5e0c084b3"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-801b-84c8-c37123f80436"
+          },
+          {
+            "id": "2766346f-aeb0-809b-a43e-e19c96004ccc"
+          },
+          {
+            "id": "2766346f-aeb0-8018-b360-ffe79b752a9c"
+          },
+          {
+            "id": "2766346f-aeb0-80dd-b764-c01ac16fd401"
+          },
+          {
+            "id": "2766346f-aeb0-8032-b569-d783ac3c9117"
+          },
+          {
+            "id": "2766346f-aeb0-80ca-8c1a-eb8001589225"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "SkillsTrainer",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SkillsTrainer",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/SkillsTrainer-2766346faeb080628ac4ddbf395d5981",
+    "public_url": null,
+    "request_id": "f89286b5-bde4-49e9-b6dd-82111b2bc5b3"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8064-a54a-cdff33ca7a9a",
+    "created_time": "2025-09-22T18:59:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "CSC Unifiers Social Ventures Private Limited"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "b2270d86-de0b-46fa-bc50-6f16464616e3",
+          "name": "Public",
+          "color": "blue"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "A debt recovery agent is a professional appointed by banks or debt collection agencies to contact individuals or businesses who owe money and recover the overdue amount. CSC provides a training programme for people aspiring to become a debt recovery agent with the necessary preparation and assistance through the registration and examination process for the official examination conducted by Indian Institute of Banking and Finance.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "A debt recovery agent is a professional appointed by banks or debt collection agencies to contact individuals or businesses who owe money and recover the overdue amount. CSC provides a training programme for people aspiring to become a debt recovery agent with the necessary preparation and assistance through the registration and examination process for the official examination conducted by Indian Institute of Banking and Finance.",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2025-01-22",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "77cbe019-1a7d-4c57-aac7-24e6a80573e6",
+            "name": "Tech Lead",
+            "color": "blue"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2025-02-16",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "Iibf.jpg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/0386e5ed-55cc-475d-b50f-bccb79c86c99/Iibf.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662K2EGE5S%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGl5%2BYiuLeULmJOzQ86uUhavK8sjxBH5K9dC1GprLtdrAiAkTQPen9QRol5BtoXmTcn%2B%2FdbmBBiXzx6Icj%2BS%2FGf8pyqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM4bpqZHLBsBrfFoV8KtwDfPi4np29M8PJ0LbyS%2F%2BiL9VuFfAqkTrGLCNzvHFje%2F7bV%2B8B1z35DAp8kJWciix2E%2FutGNdiQHpzNBQE4G%2Bu3RdOve8la4pI0HLWqMZ2bd8aiF02cWhQC%2Bbz5S%2FUG%2BTuUZ9sVA%2FvSQSnv7GtDM%2B0R4dsJ9CYCVonedRdfN%2BfuqdFR12g%2B4evgqvC3UvNrCGtP%2FjhHbeHXp4duoKC5qr1CLXwmGxi5fokCmfw3h5JAYsHQnI8aiGTHLT5w0Asm0tYgw0FCr07LBJt8Q%2F1rXDgiGqLlggbKU3G1MlHjqugxWBWzQtU1CktwrfZy3P3A%2BuBT0D6pWwjOCmgqA2uYOqcA6MYBsuCDBZh%2FJ29R1%2FoGXfOHtdcmcYDmttqIl2l1e1FvcuBi4iNU6a6jc4CEnT7sAeJtlocnZvRDDUbSUDa4XdGRagAGFz5P5U4fz01TiiBOLvGK6OLu3lP1EVe%2BTC2og3PaPFQsejHxYJJvI0cBt33qNsEF60y7%2FpPwsToMdsGUET4j4nu7MS2urV2c%2FJYOf%2FQv8vjGGLBgaMq0eFBixSFSPHmOfmAWsxZ8IaXeyjos9Tlgv%2FnIdeIC1jGoM2tF64chbL4tCF%2BeEwrpB50UYGs1HYwYItWSBZIsC8wnMnrzAY6pgFY6aARiOBSNDLdWZIUFOxR1OIGuDe0Z6XD9Og2k4PvhFsVm1A556no9XfRj%2Fud3C72sGDG%2FY%2BOUlGTtYfCa93p7Zty44neX3tZpJs9QMNueZMQrnQr0BBn%2BLDMAPlN29GhFCt7RyXblYIhP7f%2BOtgDg66egvL3KamEl6lOn1tlUeuZwadEBeuvckC7%2F%2BhlhhnzTvkHBTMKS%2BjM6OppzTtnKr2K1o32&X-Amz-Signature=a1058585dcdcd34da3dd419da4cd0126d7ff27d8ade711d50b3979b1f7b9ac19&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.127Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": 6
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8090-8204-f1bb230a795f"
+          },
+          {
+            "id": "2766346f-aeb0-80f9-a6e3-ded65d568a96"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-806d-be67-edf6be69e8b2"
+          },
+          {
+            "id": "2766346f-aeb0-80db-8ff4-c852d65ed517"
+          },
+          {
+            "id": "2766346f-aeb0-8055-8ca9-ea1cf1b8c705"
+          },
+          {
+            "id": "2766346f-aeb0-80d3-946d-e04408611098"
+          },
+          {
+            "id": "2766346f-aeb0-8029-90ce-f15d6b84d7ee"
+          },
+          {
+            "id": "2766346f-aeb0-804e-ab86-ffb202d9ac6c"
+          },
+          {
+            "id": "2766346f-aeb0-80fe-affb-e842845b1b1f"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Debt Recovery Agent Training LMS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Debt Recovery Agent Training LMS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Debt-Recovery-Agent-Training-LMS-2766346faeb08064a54acdff33ca7a9a",
+    "public_url": null,
+    "request_id": "d2c8228b-13b3-450c-88a3-5f49d35f2ebb"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8070-acd2-e5d5f0d8fe15",
+    "created_time": "2025-09-22T18:26:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "UNICEF Unifiers Social Ventures Private Limited CSC"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "b2270d86-de0b-46fa-bc50-6f16464616e3",
+          "name": "Public",
+          "color": "blue"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Passport to Earning Programme is a Public-Private-Youth Partnership hosted by UNICEF, through Generation Unlimited and co-founded by Microsoft, which aims to connect youth to opportunity by upskilling them towards entrepreneurship, employment and social impact.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Passport to Earning Programme is a Public-Private-Youth Partnership hosted by UNICEF, through Generation Unlimited and co-founded by Microsoft, which aims to connect youth to opportunity by upskilling them towards entrepreneurship, employment and social impact.",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2024-10-22",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "77cbe019-1a7d-4c57-aac7-24e6a80573e6",
+            "name": "Tech Lead",
+            "color": "blue"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2025-01-22",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "download (1).png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/bb75f837-1b19-4b20-8e9e-ac0194d48c8d/download_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Z7WB6TBR%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIGMMlzCgqh59zQr6RMy1ulM7jS7Ir%2BdhMJyrG3kwDW3CAiEA01x8uSToNqS8ut3nZ2aWmyfujwO6Or0L%2BlNP3xvDIHQqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPzkKd5N2Q%2FLnzRC9SrcA6%2BlPWiRK4zWzrH7KooP25f2KgQ6o9zDJUW7MOaz%2BcmUsKZ4NaV1z2GQ6XtEHGhCE7%2BKn5DHzHeKmdLhtw%2BK7frPK6RZmlVrNpafRUCrOLAtPZfQrnY%2F%2BCBAMMA4x6WLmGVb%2B%2FPodxJ6YLwoEHrRZyb5C5ehBxUvwoP2QNcNkBHQnubR7B3fJ2mVn04dox9T%2B8wjrU6EOLpQOKrBNWjyXYUAN%2Fu05Sx3vWi3B9bTAxxzZwII0nhOWzqgN%2F7QXd%2ByHxuLs8%2BIyKaOLrGDI04g9OvpjJvHS5DQwkpl%2BIt%2BQS61Qc6d6nuS6DDZ2xn42eydLB%2BeLGpAquRF0Ubt0MjBGf5RlpKayk6l5JxhexIAlEw9FHa8GWVK4pBsweReHgcYhNIZliU000zokayALwXGzWZGLEhAOU2nMPYV%2FRaSbbmDvoQtpKireEoP54b3ZsVswKr1aHVRn7dLHvcg9h5kNYqJHyyynTqLdD%2FN1rwjWAH2wUKI%2BglJdVIgtJXgZil7r8ahj0%2B8nJubcjL5V2SUnj3Op1K6jP%2BsbvGBTkAPeFKlvY0ArNAl38kAwvUUXTMxBQCE5h6vjVMxQJSeTG7ONzaXumhmNkwe7MQHdfvYZdUZ27hhU5ivcxaCw9%2BkMLPL68wGOqUB9usCcV8Eb5Zzk1by0B805yk49gfmabMTqBrcq%2BFHYvi1bMrxrPNn3ahuQVOpjMNPrDbOJsgG4xfF3brv1cKajsQJAvWOxPNPazMFPa9KDay1LhWnopuv2nfwXuAjr2EZNEjxArAGdoV3USxaA8HpU7%2BuDxoutgIGg9Mj1H1eM87qUx6Zk48eSnDVD3Y%2Ft8wyxKvDkrcV%2BzWZpX48uSxKZ7R5bkPo&X-Amz-Signature=432e6df28edcdf54aae4509cfc83856810f2de45e57d00aa8bc078ebe7a3957a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.311Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": 4
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80e7-9150-cd2cdb7d5710"
+          },
+          {
+            "id": "2766346f-aeb0-80b5-96b9-ead0f081aed8"
+          },
+          {
+            "id": "2766346f-aeb0-80da-b08c-e1574c288404"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-806b-8a6a-ecbd1dbb4340"
+          },
+          {
+            "id": "2766346f-aeb0-8016-be81-ec1917b72da8"
+          },
+          {
+            "id": "2766346f-aeb0-80c5-a0ee-daa8d06232de"
+          },
+          {
+            "id": "2766346f-aeb0-802a-9721-c6f1ba6dc513"
+          },
+          {
+            "id": "2766346f-aeb0-804b-a2f7-f1bd59deaa89"
+          },
+          {
+            "id": "2766346f-aeb0-801b-8aea-d2f522cfbc3c"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UNICEF P2E Programme Onboarding",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UNICEF P2E Programme Onboarding",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/UNICEF-P2E-Programme-Onboarding-2766346faeb08070acd2e5d5f0d8fe15",
+    "public_url": null,
+    "request_id": "a7d8fd65-36b7-4f36-9996-9818332c6b43"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-808f-9342-ea2e0e1f399b",
+    "created_time": "2025-09-22T14:29:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Emirates Mars Mission Calypsu Product Studio"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "b2270d86-de0b-46fa-bc50-6f16464616e3",
+          "name": "Public",
+          "color": "blue"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "One of my early projects that involved maintenance of the UAE Mars mission website. However, my most important contribution was the development of the Hope probe tracker that involved 3D simulation of the EMM Hope probe across its journey in real time.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "One of my early projects that involved maintenance of the UAE Mars mission website. However, my most important contribution was the development of the Hope probe tracker that involved 3D simulation of the EMM Hope probe across its journey in real time.",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2020-07-19",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "fdaca1a8-54eb-4d42-bd74-05d9bc66da19",
+            "name": "Full Stack Developer",
+            "color": "gray"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2020-11-19",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "emm-logo-c12943d5db28e21c6159e70cffb454ef.svg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/b3f85756-1a13-4a00-8cbb-261b72d4f3ee/emm-logo-c12943d5db28e21c6159e70cffb454ef.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46644KJW2FH%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCqve9ulGlntchtgNRh68gn%2BGO4j6HGyUBhs4iWM54b3gIgBJfyBQzHgUgF1ibAPZVFDGRgLtAkeXvmi1Y8rBCTDKIqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDF%2F6nT%2BQlYCGQcpFryrcA7MeIQKqezO2TOq85meBJjBsFwVOCKIc%2FD9qKOXzV%2FdAqo%2FXWH9uDTnklG%2BhnXV033%2FKG1vgVjoWQppCHO7nRz7qyDI81dn9YGH01oA8e2otxhQqoHaaQO9hj5i5cfzPK1dSO%2FNMjM1k9iEWVnpizU7WH44tZNt5N8Iwt7rKUrHRMThSuidxktR9GYPOg1ceftulXsfvXgSiawlVRLke2o6W8FAu6F%2B%2FY8rmz%2F90dPFY%2FZ4gxiLTu%2BElcKohAQlSbgFNzOf9xU7sKJ0lH0XPtw7KGGj623VpGTiOHN9DqoFC%2Bbt9xh1qBV3fWxp5EQNt3VerY7U7xCKzwUAcdclRxoOiYpxRfvseamYv8mov3%2BfnL5O2A9p2be3f8kX9ieWd8Q8yPm2JvbzKjUf4Mhr3x4RU%2B8N6WvJJ0MhqwYZSnWdJDBvYysKAIcpIQt%2FUkFsG6hieHaCSgsDYtDuePRkZ%2BMOWJ84yF1V497Lplsom%2B7laDSDzbN5HPUQP1iqJaLBer4uta4V9M64SSdWVfc3y3j8d4nzK92zJb1OpVvE5nTI1vAfiGar4PJG%2B3Zlw53ABwESOsR599RYIZw3pvthZpPjDls4a3KElwNzEHd4QRBG65UeuMeSIVJar4odbMLTL68wGOqUBshumjXRJe7%2F%2BzaXhQMEpRlW0r4tZdp6Lb6hIjzuFZynr%2By%2BJxsUC9bS3QcRlLtI%2Bd7MvaZSJcgTaKrBRGikoRKPMhpwLLYU4xZtCaJXrSvKJlRyr7lJnfPzXF%2FFQxoNjlqOHUbPTmkpqfwAVW3JvnH1WnVoV1yuX%2BNcev2OuYEiaReq7WIgtxC6w5ZFsMVXjPS0A8jnEbcM0%2Br0q%2BC3c2zfL1Wdx&X-Amz-Signature=d87d51908dcf0f7f0fd966cc545b497c738a33488de896a4d3b37196fd646748&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.111Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": 9
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8023-b424-cbc20a2a43a1"
+          },
+          {
+            "id": "2766346f-aeb0-80e7-ad5c-f1e02b953b9a"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-807f-ade2-ee3a67bd66d4"
+          },
+          {
+            "id": "2766346f-aeb0-808a-888a-d5be4014bdfb"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Emirates Mars Mission",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Emirates Mars Mission",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Emirates-Mars-Mission-2766346faeb0808f9342ea2e0e1f399b",
+    "public_url": null,
+    "request_id": "cf053349-53bf-48ee-98f0-9bd572726993"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80ab-b100-fe1a01876c9e",
+    "created_time": "2025-09-22T18:08:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Veriscript Calypsu Product Studio"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "b2270d86-de0b-46fa-bc50-6f16464616e3",
+          "name": "Public",
+          "color": "blue"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Veriscript was an online platform that provided a complete document life-cycle management platform aimed at ease of use, flexibility and security.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Veriscript was an online platform that provided a complete document life-cycle management platform aimed at ease of use, flexibility and security.",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2020-11-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "f769172e-4553-4b9a-b532-da6a65c2a7cd",
+            "name": "Frontend Developer",
+            "color": "pink"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2021-11-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "veri-logo.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/3bbb59a0-ea4b-4be3-8f0a-27a3dde48ccd/veri-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666JCN6ETG%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHoRMfIA7NxXfc94K62c4yRI8GZ1032l4aJmlpPRtNXXAiEA%2Bl1pqjqdCHlVLPFFH7alV%2BhX9OCYXYQS9Ev20Ip4AMcqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDE35rMj5s%2BpplDzAhSrcAztybohAw1gp6EAte28xEW19xb6dIuHqvZqbME%2FKpkJAVZkE5b8YqeoXkxkCeA8srrluI6v2MAo7Qw5NELMYR%2B2Doj6UDAdUOn4Sw3xSMveIBx9pKV1sOVBYEMwvCZW3jJ9hgzPmCTMo5nim%2FQQ%2FcHqtqtbRxAJLFUpI1zBkkyCCRdgJJFMbwXSKE4KLLhgKJ%2FQrhopwb4zB4CLxQnYJOc71msDt6YdWxzfNMKuQogOTeJITG4srAHLi3wFYV96l17Y7yNNUfmvK4EpuaKqP1Tvx2dwzep1%2F7e3u2UvkscZQ45zzih9pVTxonGzn29y5FgQJjVWn%2FUh2IlHG8f2F8cKMsAkhgmKl48W65To8p1HyEOtjYvO%2FGw9rDKGEnMW%2B9Itq%2BuVrYSLr%2Byf8IRgKRCZa%2BabMZz%2FIw5nGzE7GUaqfLwo%2FTIXJqqkQkugUwgwurZ9Cjkz6uCYBFmH7d%2BZMcCXOyqgTUV6%2FetPByqWzk5rokKr2kk2fecS8v1773difQ0vygk3qJ7vhGkVL%2FJgeLOry4svoDkWVyd9qB%2FlFfdcmxZzYQRBgZjpZ3T0M6Sx375799K1S5jhZadMOgZulIuvyzngIhwC20FKaSBSM%2BgoLB%2BHbEUoPa8cGoE25MIzJ68wGOqUBKD6xhb4xphBHE%2BiQFSBciWaJaC0fuffPGn54i4aSBrPydQHlOPa7UfdK4clx3M7J796a5p%2FVRavk%2FPlS1%2BHgc2UfBLtBvVWkuZ6j8yM5JxKyOQpv8%2Bd%2FQuKpSaBW5A273gVOAy7z21fjHQ2wPqrXnO8899y%2BoXFXkC0mqhDVjSBeGz7Asps%2FGb0AOrhFDQi3syWo3T4%2FFfye5aqvEH5bjGvB254z&X-Amz-Signature=7bbdb0ba4c9fa53267614688e93351df8b78823d89d72787a3b62d57167d209e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.112Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": 10
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8096-97eb-f82b246a3282"
+          },
+          {
+            "id": "2766346f-aeb0-8001-9b52-f4c9fce062aa"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80cc-8c9f-e6bb8610f67f"
+          },
+          {
+            "id": "2766346f-aeb0-8042-b870-eae6053e47b5"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Veriscript",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Veriscript",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Veriscript-2766346faeb080abb100fe1a01876c9e",
+    "public_url": null,
+    "request_id": "c78f1b37-bd70-4f00-8161-32c993c8f5c6"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80ca-9ad6-e9a8134bc60a",
+    "created_time": "2025-09-22T18:19:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Yara Unifiers Social Ventures Private Limited"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "b2270d86-de0b-46fa-bc50-6f16464616e3",
+          "name": "Public",
+          "color": "blue"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "YARA Leadership Academy is a programme launched by YARA, across multiple countries, for its retailers to grow their business development skills. It involved the development of an LMS that was responsible for enrolling retailers / MSMEs to the course, scheduling batches, tracking their course progress and taking their feedback.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "YARA Leadership Academy is a programme launched by YARA, across multiple countries, for its retailers to grow their business development skills. It involved the development of an LMS that was responsible for enrolling retailers / MSMEs to the course, scheduling batches, tracking their course progress and taking their feedback.",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2023-08-23",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "77cbe019-1a7d-4c57-aac7-24e6a80573e6",
+            "name": "Tech Lead",
+            "color": "blue"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2024-08-23",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "yara-main.svg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/166bd88c-669d-4454-abe7-097a0de97f71/yara-main.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XAZSE7CB%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDpGwU51hIVZ%2FM33f1dQ4CHRn4rEHnAeVXG6WX%2FCQ9Y3QIgLV%2FpItopaEtH2V%2BiUMdFOaFvdt3uMf7yg5PKdh0K7poqiAQIxf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCW9fZY9qHE%2FTamO0yrcA29iEsczJ9wbAPaOpRE%2FrnQdZ%2FeslLyZjUwAp2xnTqy3ltI80fqh6cCm811xN%2Bq%2Fi9Da%2Fnl32t%2BfwZQ2NWdW9ySUR8s6KS72KCEidhgG4nP3OgN6aP5hz6GO050eg%2Fe60eZzRi%2B8VFgKVO9s7yvvKXB5qnwdsb4aH9%2BcT5wlYLsZsXQkpYh%2BZA%2BPZwgHrxkuvhS24iRUschp78JustG%2F3pTbw2TVfvRuItXSsjUicQcTOETTY8HC2fXg2uESqwS169ERuiQnFI0HtYcLXkol6Fp1ofLp6HNep1PhTWyCt7xayECqbL%2B%2Farl4vUBZ%2F3nw9h8p00wVXQgZvcKrvNw33SWslS4FLzml0yN0ovwv%2FPcIVp1N4HZfu0uHbkjV0DCWUmbPp7ze%2FNKaOtzgYUQJ%2BM5Yn%2F99Xu8Cca%2FjhNwybT%2FOAp%2BO2eiMH%2BeaBP6%2B2fefqoN0zXbNmV7%2BinTjkMeCklRb0FvklXflKx63PQ8bK5XaT9DwD1HziKlUa2h%2B69k0%2FK4HylosYOaFymJC84zCxaLKGytpE7a4Zr%2B679x8SE487eVQKqWe8G65pPzt%2B6Te7mWchQmMx6AWMqzyxZxVtZ7eGPG%2F8UdIfZqNN%2BUwAa3gbrG4klqUg4BTgbW9MPrP68wGOqUBDMQAd%2BGJS96F4TswZI2Tql2pa41JaFVucNfJFNlE3oIiJ%2ByFi4KHm%2B48tbTChk3jiI0bGMxt%2FVh9bWBIGYIP2CsuM%2BRB2rVe5aTmB13Ct6GdB3Asty5iVPrbYtlqunHTQ9%2FwtzDo5jPYF2xnFg09agphggn6WmAV%2FHDYRj14VVBMazY3%2FjuDGpWQN%2BpqT3d2j3ciiRxCzvkU4HUIDxnSMOpTS7Nh&X-Amz-Signature=939724567fef72782cb8bc98224a0548b4256612cd33194cffda0c3b059461c8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.315Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": 2
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-805c-85ce-cb7bdd8e3e34"
+          },
+          {
+            "id": "2766346f-aeb0-808d-994d-ebd47bcdf0b2"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80df-8177-e8a007ef5089"
+          },
+          {
+            "id": "2766346f-aeb0-8001-be4a-cef6bbd4c605"
+          },
+          {
+            "id": "2766346f-aeb0-804c-a21c-e4e5cee0568a"
+          },
+          {
+            "id": "2766346f-aeb0-80f5-90f1-c3bf672c24c0"
+          },
+          {
+            "id": "2766346f-aeb0-802d-98c6-d0f13c36e0b5"
+          },
+          {
+            "id": "2766346f-aeb0-80cc-8416-e0362bcee112"
+          },
+          {
+            "id": "2766346f-aeb0-807c-ada1-c90dbe4523dc"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yara Leadership Academy",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yara Leadership Academy",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Yara-Leadership-Academy-2766346faeb080ca9ad6e9a8134bc60a",
+    "public_url": null,
+    "request_id": "61e8ac22-399b-48fd-908b-9066de34169f"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80f8-a1f8-fbd9c5eac102",
+    "created_time": "2025-09-22T18:39:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "National Cooperative Union of India Unifiers Social Ventures Private Limited CSC"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "b2270d86-de0b-46fa-bc50-6f16464616e3",
+          "name": "Public",
+          "color": "blue"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "National Cooperative Union of India is the apex body of all cooperatives across India. My team was commissioned to develop an LMS for them that allowed users from their index website to avail online learning features on a dedicated LMS deployment (https://ncuicoop.education).",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "National Cooperative Union of India is the apex body of all cooperatives across India. My team was commissioned to develop an LMS for them that allowed users from their index website to avail online learning features on a dedicated LMS deployment (https://ncuicoop.education).",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2023-08-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "77cbe019-1a7d-4c57-aac7-24e6a80573e6",
+            "name": "Tech Lead",
+            "color": "blue"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2025-02-16",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "Screenshot 2025-09-23 at 12.25.53 AM.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/fcf1c085-a33c-487b-8c87-c90a96db0741/Screenshot_2025-09-23_at_12.25.53_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46656PDAQPL%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAAaCXVzLXdlc3QtMiJIMEYCIQDYPTfaKr2hDHIk02JKnFWx%2Fq7n4nEzrnGBL6XftAtH0AIhAInNK4w8Nw4r3yYO0CHVcetyn%2F4m%2Blg97ApmiXed3dkbKogECMn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgzpX9OQJV7j8DWyF5Mq3APjjudTc0%2F%2BetkD47WQFq%2FNjP%2Baqju%2FxT8x%2BHS5wF%2FL2oqTSUnoEbN1b0M2uuz1g0hBG3%2Fzs7ODd1wDVfBViJgvY3DozDrpyT7pGPcbKOTOomPrJuPsucpBPkKHWQXVrxBnqVzT%2BqYWym%2B%2F1EtcS%2F930oZRyoFRWH5ERuYFGlauUpUyP3pznuulWJ%2F0k2jzy4fssguMUc2PZBe5a9gdmSEhrQ%2FRZMrVQC0kQxzKCOLuz0beaH6%2BYU%2FpCftU5YlW3xGX6cTHbyMosTRSOUGFa02fQqraNtwjdeSgv2KkMh8q1x4pIoAATnuHVVYr0wkcfjVmlXDXLLI2hmsA3um3BBXtkQPvD66154bPRXYZWUFzgido8At04xZ4X8TSfNIlzYigLZXVBv2pZnusrBswL6SK%2B83rHLIzXnWGJ6AeUKMJl%2FSLe5iydvKxZpabzzAO9ImX4XDXfh8H%2Bxvbs7wuv32J2%2FxrP1Enu%2Fm1dSm1Jk%2BB5CKeftLbXMYysziUch49ZPJEVyraUCdWuKGghwolo1RLCQP7C13QcUyaRfq6NQytcs1t3JiBBSR0uptMaZjmyH3iQ%2FNbGtz7lMvXp3rUD8OJp9btMk2TQr83x8OeKgv5imWamBI70tZM7dPghjCf0OzMBjqkAbJHW4AegM1C7NpIygfW0rE%2BvEeQKDENJQ%2BCy3z%2B53t%2F%2FjU7RTYY4C64JupMIWLiW5ONZ8JyZozlIq5HnLZ1ukLpkgqLfq5S%2B7OMZJtC8ob1D4mv5RPUy0DEwU5%2FmtZdtb52kw7vJU5WLYHM8IjwUBnzcLzYIuV3czOliOifIUuzZyLkO6acvXZU6xWnvmkpmvsPxkbZvq1PR4maGSgTEP32siAi&X-Amz-Signature=2fb352a204af0c47afe93190a1c40a78d97745aafae55b5adefcd739e591b00a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.487Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": 5
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8075-aee1-dc3072c7caf1"
+          },
+          {
+            "id": "2766346f-aeb0-8054-ae1a-d01f34a77441"
+          },
+          {
+            "id": "2766346f-aeb0-80a5-9e26-ed05e2b84ce6"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80d2-a92b-d62d8a4ed17d"
+          },
+          {
+            "id": "2766346f-aeb0-80f4-a619-eab128dd484e"
+          },
+          {
+            "id": "2766346f-aeb0-805f-ad87-d953b48a568e"
+          },
+          {
+            "id": "2766346f-aeb0-8064-b6d1-dce2fde2fe52"
+          },
+          {
+            "id": "2766346f-aeb0-8048-b88c-fcdf5a00aca9"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "National Cooperative Union of India LMS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "National Cooperative Union of India LMS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/National-Cooperative-Union-of-India-LMS-2766346faeb080f8a1f8fbd9c5eac102",
+    "public_url": null,
+    "request_id": "b9c74822-1dc3-4b6b-a222-0e8c8eec2415"
+  },
+  {
+    "object": "page",
+    "id": "2866346f-aeb0-804c-b72c-c1902d7e822c",
+    "created_time": "2025-10-08T11:54:00.000Z",
+    "last_edited_time": "2026-01-16T10:52:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/3fb7048e-f653-46d9-b8b2-85a63734631f/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZY47PR3S%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDdoftejyYMZ4wWGFmFPBBOc0elq46s1C37PHQdg5EksAIgbj0x7a6gtFpvSrdbyHMkP%2Fyk4zmNg6PenEq50taiEnAqiAQIx%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPcEpDKBIS90ZHRo8CrcA0ZUDRx0RqtvBmoTrJOC7zNDlZcA7CqK4qn3sBOP4Ysd2Gnm9rQRNc0YFDVpqCPkrUKCM5BjBXx9o7vJq%2FlsDsb535%2F0xNbl%2F%2FD7h3bu6NYL6LhrqMVqA2eKIte7RbeKnvasM%2F%2FMhfCKuLWmtMFzjSNqMjXXXxAwZcebPnHHdmlw3g9AegfhkATTlpmhHVgF0tViReL3XG9st6SbRzRpxu4VRazHpvw1hGbUxKtUZFKGhWSixdhG2QWfq%2BkwRzvQOTNooz1m6uPxiIOhUdOeyflsd2MXEXZdabUzUllqiQXBru1g17aXq80fl3%2ForMAmTYGUdV0T3KCcA2TnJHdbRss89RxvXPEpuhtzr8D1ClNvHEtEE84yV1oLUoFxytfAlaOOEUO%2BezhZWlCwYQNEpNqlFb8CKs5IFPojYoDQgJAveALeRFIMF9f2%2B7sbauJ20ihIbCBqs77XoXwKN3X29SzFEjZJdvmDUx%2BHNUScUDAj6IxA8vXhrtgTYGsubiG6qRPVLtjTa5%2B5VnThic%2BgwCK7YF1YauIBzbHb88eYnVCMcVnCUIfc08T1VZUUHTEL8x7u1iP6ecOywwejD1IsRS2uCWOHZK38INM9YKyfBFkOHpVPL%2BGfkhIuy5WZMLia7MwGOqUBBgeBmFe7xPG%2BNclyMkhlDQJAGOSpSmmARyEQ2zk2PiUf6vRPWY47rPGqB2xPHnzed%2Bcn7f8WmCRPsKMFnVLcB8itNiOyJV7sHFEPglujP5z9fUCx72NE9Ix6bGymFl0x1ZrhLNyTWIejL2TvxJraM%2FR%2F7F%2FZPRV%2FsNGwQkt7MnmxqD7czjMasgk%2B1W2f%2BMldeVFr2bxMeBkj3RK0a8dSuIAlMlgf&X-Amz-Signature=61db1a6f414c6ecc16973a3d62841ded1a1012a3951142763b10e8bed4278952&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-02-22T17:59:08.097Z"
+      }
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "28e6346f-aeb0-8067-97e1-cb884934055b"
+          }
+        ],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Handecor"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2876346f-aeb0-80b4-8ecf-d5e2451a1fdb"
+          }
+        ],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Online store for Handecor",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Online store for Handecor",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2025-10-08",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "77cbe019-1a7d-4c57-aac7-24e6a80573e6",
+            "name": "Tech Lead",
+            "color": "blue"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2876346f-aeb0-8031-a1ed-d9a2b3ece2da"
+          },
+          {
+            "id": "28d6346f-aeb0-8029-ab3e-dbeeebd7d8c5"
+          },
+          {
+            "id": "28f6346f-aeb0-80e5-a6ea-eff3b0dbce31"
+          },
+          {
+            "id": "28f6346f-aeb0-809f-b228-fbb72ab1e1e6"
+          },
+          {
+            "id": "28f6346f-aeb0-8098-832f-f7072734bc82"
+          },
+          {
+            "id": "29d6346f-aeb0-802d-830b-cdc5017bf8fe"
+          },
+          {
+            "id": "2a16346f-aeb0-8086-a919-e036359123ee"
+          },
+          {
+            "id": "2b16346f-aeb0-8076-81ff-c7bb3f3a9a04"
+          },
+          {
+            "id": "2bb6346f-aeb0-8025-b729-eefe2772f0da"
+          },
+          {
+            "id": "2d26346f-aeb0-8037-9dcb-e20b6b45fed9"
+          },
+          {
+            "id": "2d86346f-aeb0-802e-ba57-ef94a820ff44"
+          },
+          {
+            "id": "2e66346f-aeb0-8078-bfc2-f5131a841177"
+          },
+          {
+            "id": "2ea6346f-aeb0-801f-bc11-c830a423485e"
+          },
+          {
+            "id": "2eb6346f-aeb0-8062-b2ba-cfc90da7131a"
+          }
+        ],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2936346f-aeb0-801d-898f-d5ffbd09bc48"
+          },
+          {
+            "id": "2936346f-aeb0-80ca-85bc-d04bf385b0e3"
+          }
+        ],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "Screenshot 2025-10-08 at 5.25.13 PM.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/ba39b619-1484-47cc-80ad-6945a2ad69e2/Screenshot_2025-10-08_at_5.25.13_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZY47PR3S%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDdoftejyYMZ4wWGFmFPBBOc0elq46s1C37PHQdg5EksAIgbj0x7a6gtFpvSrdbyHMkP%2Fyk4zmNg6PenEq50taiEnAqiAQIx%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPcEpDKBIS90ZHRo8CrcA0ZUDRx0RqtvBmoTrJOC7zNDlZcA7CqK4qn3sBOP4Ysd2Gnm9rQRNc0YFDVpqCPkrUKCM5BjBXx9o7vJq%2FlsDsb535%2F0xNbl%2F%2FD7h3bu6NYL6LhrqMVqA2eKIte7RbeKnvasM%2F%2FMhfCKuLWmtMFzjSNqMjXXXxAwZcebPnHHdmlw3g9AegfhkATTlpmhHVgF0tViReL3XG9st6SbRzRpxu4VRazHpvw1hGbUxKtUZFKGhWSixdhG2QWfq%2BkwRzvQOTNooz1m6uPxiIOhUdOeyflsd2MXEXZdabUzUllqiQXBru1g17aXq80fl3%2ForMAmTYGUdV0T3KCcA2TnJHdbRss89RxvXPEpuhtzr8D1ClNvHEtEE84yV1oLUoFxytfAlaOOEUO%2BezhZWlCwYQNEpNqlFb8CKs5IFPojYoDQgJAveALeRFIMF9f2%2B7sbauJ20ihIbCBqs77XoXwKN3X29SzFEjZJdvmDUx%2BHNUScUDAj6IxA8vXhrtgTYGsubiG6qRPVLtjTa5%2B5VnThic%2BgwCK7YF1YauIBzbHb88eYnVCMcVnCUIfc08T1VZUUHTEL8x7u1iP6ecOywwejD1IsRS2uCWOHZK38INM9YKyfBFkOHpVPL%2BGfkhIuy5WZMLia7MwGOqUBBgeBmFe7xPG%2BNclyMkhlDQJAGOSpSmmARyEQ2zk2PiUf6vRPWY47rPGqB2xPHnzed%2Bcn7f8WmCRPsKMFnVLcB8itNiOyJV7sHFEPglujP5z9fUCx72NE9Ix6bGymFl0x1ZrhLNyTWIejL2TvxJraM%2FR%2F7F%2FZPRV%2FsNGwQkt7MnmxqD7czjMasgk%2B1W2f%2BMldeVFr2bxMeBkj3RK0a8dSuIAlMlgf&X-Amz-Signature=5fb6ca271d2a6c20515a7d21d996bf9663a2c8eed62b34038ea24f9bbb1873b0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.078Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2866346f-aeb0-8054-b3c7-c309a9d6df64"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Handecor Online Store",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Handecor Online Store",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Handecor-Online-Store-2866346faeb0804cb72cc1902d7e822c",
+    "public_url": null,
+    "request_id": "d91b098d-da4e-41c6-9c7b-954d496c3df0"
+  },
+  {
+    "object": "page",
+    "id": "2866346f-aeb0-8083-92f9-eab1889f2af5",
+    "created_time": "2025-10-08T11:20:00.000Z",
+    "last_edited_time": "2026-02-11T13:02:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🌐"
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Abhishek Challa"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "My portfolio website",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "My portfolio website",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2025-09-29",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d30ba4d7-567c-4957-95f0-3f0eeb244f46",
+            "name": "Owner",
+            "color": "orange"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80de-aaaf-e42b4d5ad676"
+          },
+          {
+            "id": "2a16346f-aeb0-8084-8d37-e5761e39ebf6"
+          },
+          {
+            "id": "2fe6346f-aeb0-80d7-ab13-d50ff76fff0d"
+          },
+          {
+            "id": "3006346f-aeb0-809d-bacf-e4bfe82077e5"
+          },
+          {
+            "id": "3046346f-aeb0-8030-8ae2-c044e39c1b36"
+          },
+          {
+            "id": "3056346f-aeb0-8091-8c29-c9bb3a5dc788"
+          },
+          {
+            "id": "3066346f-aeb0-8044-b968-e423f2cfb494"
+          }
+        ],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "Screenshot 2025-10-08 at 4.52.11 PM.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/a01e216a-5eae-4ec3-bf69-694ce9c626ef/Screenshot_2025-10-08_at_4.52.11_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666BAKRZHO%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIFaLJ4%2B3HOZab3dgfRdtDMrq3Gy2%2BGghdFnruhgq%2BPaCAiBNVPU9hClujYHsHq6aQ1v3p%2B15HW5g6lvORwPPk1KxUSqIBAjF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM0aTC%2F%2Buf0v%2BbArPoKtwDjSlAWYLKsPZYO%2FB4%2B2Oo3Be0c3Xtd173%2F6J6wwz95BFKCBJo7PKQNGxsnt6AH%2BPdUcVHTnmd2yCMwBjIqSCdGrSgtSeXJvDrKiGRMSN3b062UZexzf6llsxjjfEaz3XVC6BECuW6qFUyqbvZXHif3U%2Fk9Kri29Ot9f2aqwLG7%2FNqCUpgE0yQR0PklFmc5MYXL8tuBfmjWULg9ssem%2BGS0h677UolO7%2BQHmoy12PqXJjCGB%2BFKcWzr26UuvZv0oH6HfGHcfqt4rYOlXIWfKcgz3KuoKQz3MbEkC9yVLYcW6xFHjEQms0o33gF%2BjwZeB46l%2BoS%2FbinRhArqFmwBWJm9cRhiS4sM4XWwKDs2h7F%2FQqPpoNGkKe7jLjlrWoTfOqlngbR%2FqyHyNu376%2BPz0D4vIQ6sGm36lh5zVy0yCq52QD%2F9VjzsTr1XulW96kh3V%2BYuKLvHXaCgMqVPEUBsawQo7ZJwBd9nUIOyF%2FtLGhNgGQ0ZnnT%2BbdnYqBz0g5WfKGI5PAsZASOqf0MXl45ko8vVRFwyozaRxERp1Z3aNUvPzuoUUz38cnBBbKQAK0heKk1o0WddfnxamfL%2F9Cp25aiyE9i5j2%2Fvr7Lc2ZHHSIJuwFJRne3GurdR0xB2Iswy9HrzAY6pgEGbH3EWtDDPn8sbSeHfWMbFHJw0HCJyyH7AGjIfR0JPU8C8mPPSk%2FlkawWWeUiod%2FD3RHTHBCI0%2Ft60Kivmt5XQ64USbka8bVsDrcGaAbNF7lCRAPPf8YemSY09%2BeduRJnNTI2A39zs1zEVel93B3OHmzU5bzsMqubCjQ3EVuJKMh1o7DHThvQYaKJlVx3xHENVjafWHHRO%2FR%2BuylRPy1IWzT6J0CC&X-Amz-Signature=7a6ed267f613c864ff11c9c6fdcf552ad81cf93fdd7558e1c6ba9324823ec8d1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.127Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2866346f-aeb0-8034-ae9c-c37d0dff3521"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "My website",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "My website",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/My-website-2866346faeb0808392f9eab1889f2af5",
+    "public_url": null,
+    "request_id": "b19fbcde-c49c-4162-8898-b78f4d42fceb"
+  },
+  {
+    "object": "page",
+    "id": "2876346f-aeb0-8015-81e4-ca6a600407da",
+    "created_time": "2025-10-09T08:09:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": null
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Stateful schema builder project",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Stateful schema builder project",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2025-10-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d30ba4d7-567c-4957-95f0-3f0eeb244f46",
+            "name": "Owner",
+            "color": "orange"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://www.shutterstock.com/image-vector/database-sign-icon-relational-schema-600nw-429853987.jpg",
+            "type": "external",
+            "external": {
+              "url": "https://www.shutterstock.com/image-vector/database-sign-icon-relational-schema-600nw-429853987.jpg"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Stateful schema builder",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Stateful schema builder",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Stateful-schema-builder-2876346faeb0801581e4ca6a600407da",
+    "public_url": null,
+    "request_id": "5bcf24c0-7d2a-4390-97ff-35b174db5249"
+  },
+  {
+    "object": "page",
+    "id": "28d6346f-aeb0-803f-8358-c23635892558",
+    "created_time": "2025-10-15T09:32:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/bd317ee6-a085-42bf-8d2c-a3ffe0db7233/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667Q32I7VT%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDyt8fLtMBu6NTy7beb4duRBWPOGmo8cEN%2Bj2GE%2Bfn6CAIhAMQuOegdRbxB3TKHk4Em7ep9YD7IJ6NMMNqVBqEV0fWIKogECMX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxmqMztO7H%2FDV60v3Iq3APX%2B%2BZzHoqVzLx8bIZ8cP6IvqEYqA0udV4Ougi5itDMyhFitwJBzyHWS%2BMZnASSxdZTzxMzTIkiYOiyJErv2DrzCF4PcU1sCY4tIjsZPQJwobbU%2F1ihZOhJBVToIQUkmq5apDAUFfPXFfPeB3g5%2FYeapAW5o39%2FslhSAD%2F%2F4TXmNTw4eDj0h%2FDVctWlSjioSDHIYdLl8o2ZqWANI1xG8JvFbuX3CTL5RlGlwWHs12mdZBUcQ3CMQtSvzJCdaVvLAb3fa%2BJ6kaxd8iVEYiYlM3sHECcoss5ACCOOb3eKXTCbvPbX4gxqaC0xlIqaDW4DP5qz%2FTGYZP0FCe9OzbAPaa1%2FQGXK6eO4V7MtZ6g4GStJatRqt4k3lFHZ5kXKaRu8bn2GuwF3l1sBuSzI9UlEvAP%2FtSRpbsbA9vjJhtESFcwfEAr0aNim3sv9I3%2FHXw97Sl9W5uPlLsMDJHblfBU6f6pxE9IYiiy3%2BRvn0ZlmlCj0edhvfDeEQ76RHDUrlS8KJggL6YPmoydKT3L3HksBoyA8DK%2FJt%2BXSad%2BrawrkQZUbj%2BYsukXPysOH4h1ORyzXCkTcdXcwJL9f8I3%2B2GC1FYnlzPCvmrmRnr%2FBPgYuDSTDNHaK86HEKG%2F9UmTSazCX0uvMBjqkAaiUfvXNovln8X%2BDWPczDqpQJ7hrfonjj8%2BkF53iRYxGkM1oIwQqAyOJsxoO%2FIlZiUwqJG9aqOZ6YcuHJ9WC5mcxlPywHc3u740xTOIR50BxWZkiZy69lDkg47WdERJHz9PYgH70jToanYQXCP68jZY15P9fL%2BcnFlZhi4SOPXSqoXQtvTysPXaVyAWuisrf9Jk8P8mC0vBlGSZJJYp8Muldh8si&X-Amz-Signature=265d780fee5b78c9003bf6ae9815345379847a87465fd2420f5b157d1d5ba116&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-02-22T17:59:08.490Z"
+      }
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "3046346f-aeb0-8081-b645-fe0bdbce03ce"
+          }
+        ],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2a36346f-aeb0-80bf-a08e-ea7067f50934"
+          }
+        ],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Mediamen Services"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Whatsapp based automation for AI generated video of Rashmika telling the story of the user",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Whatsapp based automation for AI generated video of Rashmika telling the story of the user",
+            "href": null
+          }
+        ]
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2025-10-15",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "fdaca1a8-54eb-4d42-bd74-05d9bc66da19",
+            "name": "Full Stack Developer",
+            "color": "gray"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "28d6346f-aeb0-8062-9856-c3c01437e2b6"
+          },
+          {
+            "id": "28d6346f-aeb0-80dd-9cc0-f45ca1109764"
+          },
+          {
+            "id": "28e6346f-aeb0-80ee-afdb-fd827ec3e2cd"
+          },
+          {
+            "id": "28e6346f-aeb0-80b2-896e-dfd093c0d652"
+          },
+          {
+            "id": "2956346f-aeb0-801d-8528-fdc3986af6c3"
+          },
+          {
+            "id": "2b16346f-aeb0-805f-9685-d2018f597ccb"
+          },
+          {
+            "id": "2bb6346f-aeb0-8073-bacd-e75d83a265b7"
+          },
+          {
+            "id": "2bc6346f-aeb0-80ae-a2cf-e883274c87d3"
+          },
+          {
+            "id": "2bc6346f-aeb0-80d2-9d04-cd3b5f0dd7d8"
+          },
+          {
+            "id": "2c16346f-aeb0-80a6-85e1-f0ac8c09cf58"
+          },
+          {
+            "id": "2c16346f-aeb0-8090-8392-e70501f721c3"
+          },
+          {
+            "id": "2c36346f-aeb0-807c-afa7-c31771074cf6"
+          },
+          {
+            "id": "2c36346f-aeb0-80e8-a9de-c76cb3b9feb8"
+          },
+          {
+            "id": "2c56346f-aeb0-802a-8213-e869e99e32eb"
+          },
+          {
+            "id": "2c56346f-aeb0-802f-9c07-ee90fb838f35"
+          },
+          {
+            "id": "2c76346f-aeb0-8018-821a-fb71467e2aed"
+          },
+          {
+            "id": "2c76346f-aeb0-8089-8381-f9f1900786ce"
+          },
+          {
+            "id": "2c96346f-aeb0-8071-bd8f-f4b73517c7a0"
+          },
+          {
+            "id": "2c96346f-aeb0-8019-b73f-e6bea3b38c63"
+          },
+          {
+            "id": "2cc6346f-aeb0-8067-835a-d5a512e89e28"
+          },
+          {
+            "id": "2cd6346f-aeb0-809c-bf10-f1c5c099b08f"
+          },
+          {
+            "id": "2cd6346f-aeb0-80e6-889d-d7580613a99e"
+          },
+          {
+            "id": "2cd6346f-aeb0-808d-a3fc-ea669eefcd81"
+          },
+          {
+            "id": "2ce6346f-aeb0-80cd-8f73-eb26895e576b"
+          },
+          {
+            "id": "2cf6346f-aeb0-8079-95c2-d9372b0cb675"
+          }
+        ],
+        "has_more": true
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "Screenshot 2025-10-15 at 3.03.35 PM.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/9035bf2d-0bda-4fa8-aaa0-a06c90e14d46/Screenshot_2025-10-15_at_3.03.35_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667Q32I7VT%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDyt8fLtMBu6NTy7beb4duRBWPOGmo8cEN%2Bj2GE%2Bfn6CAIhAMQuOegdRbxB3TKHk4Em7ep9YD7IJ6NMMNqVBqEV0fWIKogECMX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxmqMztO7H%2FDV60v3Iq3APX%2B%2BZzHoqVzLx8bIZ8cP6IvqEYqA0udV4Ougi5itDMyhFitwJBzyHWS%2BMZnASSxdZTzxMzTIkiYOiyJErv2DrzCF4PcU1sCY4tIjsZPQJwobbU%2F1ihZOhJBVToIQUkmq5apDAUFfPXFfPeB3g5%2FYeapAW5o39%2FslhSAD%2F%2F4TXmNTw4eDj0h%2FDVctWlSjioSDHIYdLl8o2ZqWANI1xG8JvFbuX3CTL5RlGlwWHs12mdZBUcQ3CMQtSvzJCdaVvLAb3fa%2BJ6kaxd8iVEYiYlM3sHECcoss5ACCOOb3eKXTCbvPbX4gxqaC0xlIqaDW4DP5qz%2FTGYZP0FCe9OzbAPaa1%2FQGXK6eO4V7MtZ6g4GStJatRqt4k3lFHZ5kXKaRu8bn2GuwF3l1sBuSzI9UlEvAP%2FtSRpbsbA9vjJhtESFcwfEAr0aNim3sv9I3%2FHXw97Sl9W5uPlLsMDJHblfBU6f6pxE9IYiiy3%2BRvn0ZlmlCj0edhvfDeEQ76RHDUrlS8KJggL6YPmoydKT3L3HksBoyA8DK%2FJt%2BXSad%2BrawrkQZUbj%2BYsukXPysOH4h1ORyzXCkTcdXcwJL9f8I3%2B2GC1FYnlzPCvmrmRnr%2FBPgYuDSTDNHaK86HEKG%2F9UmTSazCX0uvMBjqkAaiUfvXNovln8X%2BDWPczDqpQJ7hrfonjj8%2BkF53iRYxGkM1oIwQqAyOJsxoO%2FIlZiUwqJG9aqOZ6YcuHJ9WC5mcxlPywHc3u740xTOIR50BxWZkiZy69lDkg47WdERJHz9PYgH70jToanYQXCP68jZY15P9fL%2BcnFlZhi4SOPXSqoXQtvTysPXaVyAWuisrf9Jk8P8mC0vBlGSZJJYp8Muldh8si&X-Amz-Signature=3749bce9a69426b918551b2531d7aee0ad72bd92b5857dbaa364293e636ee47f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.472Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "28d6346f-aeb0-8041-9938-edec605597ca"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "TATA Tea Chakra Gold Campaign",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TATA Tea Chakra Gold Campaign",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/TATA-Tea-Chakra-Gold-Campaign-28d6346faeb0803f8358c23635892558",
+    "public_url": null,
+    "request_id": "73a0685e-89aa-41aa-a778-9aea208c2250"
+  },
+  {
+    "object": "page",
+    "id": "28f6346f-aeb0-80f7-b62b-d3cb3784f6c7",
+    "created_time": "2025-10-17T06:12:00.000Z",
+    "last_edited_time": "2025-11-23T08:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": null
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2025-10-17",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "d30ba4d7-567c-4957-95f0-3f0eeb244f46",
+            "name": "Owner",
+            "color": "orange"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "notion.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/9f7653b0-50cc-435d-8e30-ea00d4345a69/notion.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YFS3VEN3%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165909Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCt7I3Bc%2F%2BHDDEFeXj2p8OGYE%2F2PMHvhFvRnrdRt05k9QIgfNVNruY3Yg4jh7v4NY73Vt3EVMxq1Z1V25eOZ%2FvYW3AqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJXjjq6OP8QNPUXVfyrcA9vaAbADT8m2%2BE3vEEZ4Q1AQmwhQTR2nGcisW7vR8546pUkOay3eOBfdJH9rapDdPKEw3vm15BQDuqUngZw0Orv9o%2FlSyF0Q0c%2Bg70lkBaAIre2BPT7QdmwJNVATvg9GetiHYJYIOmpgU%2FR1PTqmsiYrc8bx2w3I%2Ft5V2Od%2F4Qc6xs93YJrDukcS4Gcr7RkIRYci6d4lb99Vd3yAN%2FuMNOerz%2FpciJ9V0AeRcgqq5oxc3ANPcENV6NGN5xK4seNdP1Vs6eciqS5Q8vcF6UP3G%2B2tckCpktZC1FAZz%2FtshHo8K0Raf4aAygQ9M%2B3RoDM1HELdb0y9Ei7AdNs%2BM6ucOrLOaYtxvnlPE1jQcSqdrVtpVP0f%2F4XoCVY3q83CJXboyd2VP4MDpSZ34n0faHsucIVDKHFKpsXYbSIHvMV0DqET4U9QJPYEp7iQq%2Fe%2FjavlITpNDHaUwsGOnppd9C2Z4jFwv8Z1h0LpU28izwVRVdd%2B7z1g0I4%2Fe%2BTYh1QgJso2b%2FPz13%2BiaBVcK4nphz5Vjc7LUZyuYH75YfT5oMbpZ4Z3PwsWqzZ%2FcfwWnO%2FCUA2Z5CcNGC9KGSU99vOjpLwUSX4V6naGf2%2FXgHVJmlyrCW%2F1%2BDwneBr1hX%2F%2F0MNrMIXN68wGOqUBYhefJnF%2F5P1KJDr4I%2BDFFf9o3E7vsRk89TabaNOW5eTOz91xroDTk0qgV4jR2viGR7rUIyRN1ZoQ91fLddQoy4Fzaw5EJxbYTiN0ZIuF2FhzmkMbLW97RKRWtZ9sgGwHPHZOlcAxku67qffs7%2Bx7BFbrIOkNq0bFtLtE73IgzEqv%2BsxldFBWWvGvcSSaeKBTyub5waTtx2sj5kpyiOX7siUIf1Mc&X-Amz-Signature=f398d530794d65ddbc45de25845831525c8dfffc66fbd48b755544778a655e17&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:09.518Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Notion helpers",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Notion helpers",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Notion-helpers-28f6346faeb080f7b62bd3cb3784f6c7",
+    "public_url": null,
+    "request_id": "66967f7e-5303-4364-9cd1-caca17107fcf"
+  },
+  {
+    "object": "page",
+    "id": "2b46346f-aeb0-80d2-a23e-c250a5e3a64c",
+    "created_time": "2025-11-23T08:05:00.000Z",
+    "last_edited_time": "2025-12-11T07:57:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🏠"
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": null
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "12f93dd4-d43d-4dbb-bd31-7a42d633b52a",
+            "name": "Personal",
+            "color": "default"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2025-11-23",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2b16346f-aeb0-805f-beaa-d33f6e3ef4cd"
+          },
+          {
+            "id": "2b46346f-aeb0-805f-854f-f3fbf3d46883"
+          },
+          {
+            "id": "2b46346f-aeb0-8022-99ec-dd2621e8234c"
+          },
+          {
+            "id": "2c66346f-aeb0-80da-bccc-e8e0259588ba"
+          }
+        ],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": []
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Pune Workation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Pune Workation",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Pune-Workation-2b46346faeb080d2a23ec250a5e3a64c",
+    "public_url": null,
+    "request_id": "cd220b8f-7c49-472e-9706-840344bc05c1"
+  },
+  {
+    "object": "page",
+    "id": "2bb6346f-aeb0-8096-93df-cf164d1a338a",
+    "created_time": "2025-11-30T06:27:00.000Z",
+    "last_edited_time": "2026-01-13T12:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🌳"
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Unifiers Social Ventures Private Limited"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2025-02-16",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "77cbe019-1a7d-4c57-aac7-24e6a80573e6",
+            "name": "Tech Lead",
+            "color": "blue"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2bb6346f-aeb0-8056-bc16-e09d55c74274"
+          },
+          {
+            "id": "2be6346f-aeb0-80c7-ade5-e9cc976fb055"
+          }
+        ],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": {
+          "start": "2025-04-16",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "unifiers-logo.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/25110d54-62d4-499e-b441-7f13df3b408c/unifiers-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46666MTKRE3%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165921Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIDexOB4cg%2B5SgiS6vY8AV1Fv6U8oubTmp0%2Bq4aDYajiCAiA6ED%2B%2BiGF9GmkPnjToN02DKnwJyn%2F49g7hDp4kWum0JiqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMH7l78P%2BIXVckwbo%2FKtwDF7XQRoAWgUIL4tNBJ18ZOcmoH08k0AagEjbxjXegQ4pIoILH%2FcWvCCG8tbsQgqN6k1xWiBagD1yFnoXJMzpAqzFhyP%2Bqzu10RW3Ni13ZiNdoJI4h5Zc8Fgk%2BpyuMjhRjCa1uPhu6ww9exDREjl6UVGnv4%2BkSzoqL6L9EroKIxcN2QfRwrAxmbU93wQ4TbLUOyZpCoi1dNgs%2FL2OJ%2BVPlizJqcAloFrve5FytgceD56MR7JTM4RK4CLHvkXSTggnAqcZnb7CIMvWZOzyM2iypJRYpy72TfSD8jCNSJ9qYX5QX0gJ0G%2BQVyvvswVD45E%2BUdMOx%2FA6LnEHWdE6WKfYByzwBF6Br70j7DnYsAyxBZT0uAvepfTtFtESce3H7ub15jeIrN81MMq23YlMA6Tj1X5NWL5%2BQ8o9XVpLjg%2BcJww3iUYvFpyCeITwtKZRok%2BFhVt5RZ%2BtWdofdKqxnlJOxICPkYxOz0aJB%2BDBxRBxL61p9H%2BMdAdticnL0Wu%2FkPhEuqZxzVnDCeg2dzNFF0WC2VgPilGugyFAwrnkzvdC5Ch00Bq6atDsWphLQhA5VB%2F7Ii7Bh5iN%2BtCVoadcElUHwHbEA7S%2FySsNQykdWh5tvPsQ6FoVSZBOzQhGR6W8wzszrzAY6pgG5gMCb2FysSyo%2BX15b4fuEvCaE4CdE1BYcl9hjI1Y3LtCw%2BiH0Nf3yHU8KMDRY2Ydm%2BMufqOJEFeVOZfaWV4gJuhPHosfyJEQdniO7A8xyg%2BmimscI9Y2rTh2C78%2FkUNOXYTNZw2eK7esWU80MI1MuQgIXe%2FrHa66e4P%2BMIVbhFDf4lwkkkHKjhW%2FF0wVDTYHnyr790BZ1MmbpY9B%2FmcDXyCUtlQ5k&X-Amz-Signature=90878b7eba861a9ec0d1a5978edeaa0be2c0175e8325f90bfab9e4e0418b38b5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:16.501Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2bb6346f-aeb0-80b2-b8a4-dd6aceb07fc7"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Unifiers Tech Repository Composer",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Unifiers Tech Repository Composer",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Unifiers-Tech-Repository-Composer-2bb6346faeb0809693dfcf164d1a338a",
+    "public_url": null,
+    "request_id": "239f9761-20fb-469a-a3f5-f9cb31e58b00"
+  },
+  {
+    "object": "page",
+    "id": "2dd6346f-aeb0-8012-bd33-d6501bbd1a12",
+    "created_time": "2026-01-03T07:18:00.000Z",
+    "last_edited_time": "2026-01-13T12:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "file",
+      "file": {
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/c2ed4ca2-f403-4e46-8c41-8ea6f11adde1/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667RSGMS4V%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165910Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAEaCXVzLXdlc3QtMiJIMEYCIQD%2BxmHUZDIHURQkWrOzL7z5W2By%2BEG9HbGCaxbl%2F7oDyQIhANKeTeurSgxxGQ7GwZfyGFVi3%2FAi81RsuoVu8SQ3xWqnKogECMr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxObX9agSFf1b%2FRCzYq3AP8%2FySqbpjVRfEBoVUZ3bXkBtqt90hEwBLFGqWaxG31GwzZIVL%2BbfVw8NxX2AvBMc7nwg%2BM3RpwJxwLpoTfIGVo9M8ickrVe8i0w%2FzjxVGWG1rux4zlddHFyRXMVrxnpgck%2FYhAgejWx2yFEPXcGs9K5QRGKSf7wVnlXXA9z2gXVTJYJgwn%2Bh%2FKMMOyOwfYcYvXRTv3CpE%2FnYtBt%2B5i85MA5cK%2Ff0pI9u9nErgOUWGYmDLszaY9Xb7c6lS1oyZGnIRaXKBZieyflRrDj8UjKOADYTO3aTs3BEUzqx%2BalaUbwhet2Jnbd2QbtGWMeA7Rue%2FQe%2FWC1HCLGZOR9DLtDT8R6QB4%2FZCleOkt%2FxVWHSHYiJOn8Aj5rt4oHtJidUZCuug59GFKPYlXWLpp9F5zBNJpTTL5pztqZBdAH28rS8kD6S6cC6Ms4dFP2pfQO%2BZ1c5axzHfy70qk8uBD0ihPtzxVf3dA34PGPf5lcCw05s2NsOyFPkrD89LsgmO6b9y7WLERV23HZeMp%2BnKN6lj%2FBTywIY%2F9SIDCLCi99TMABaIpDthkkTyOiF6LCg8%2B8hNgTgolTnD%2F%2FaEKpDgBW9DDpFx7QuqatRM1wfkpMJyjPXzjwZNfQtslAkT9oikLHzDh3ezMBjqkAWdSyy7Xu7Of0YZTHqKMswtZFs6aL5K%2F5YN0mviCAIGw4GXn6ER1eN11BnublfhxWdPk9XAfsRO2e5%2BoIEeCDB0GM4POz5GvFPAmoFNDlO4sGn3%2B8JUoPONO6sWWkehf7cAr5RDaFR4FU8LNyFX97mfmOh3XSRP79xHSytVpXtzH8EhxZhDN6Vn%2BQLyT4GdFTo%2F%2BxSTzCvY4WRWWOXXZd%2BRQBL1g&X-Amz-Signature=1e911746b9ce0e22bdf907a9bff591bf432e5d8cf2d54bcfc03adab2e44ad9c5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        "expiry_time": "2026-02-22T17:59:10.150Z"
+      }
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "TATA Mediamen Services"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "88f5f7d5-c8df-423c-9858-321c7fc316c8",
+            "name": "Work",
+            "color": "blue"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2026-01-03",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "fdaca1a8-54eb-4d42-bd74-05d9bc66da19",
+            "name": "Full Stack Developer",
+            "color": "gray"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2dd6346f-aeb0-805f-86c4-e106f7b3b830"
+          },
+          {
+            "id": "2e06346f-aeb0-80d6-81e8-c17a717a3772"
+          },
+          {
+            "id": "2e26346f-aeb0-80c0-9d32-e467d66cc0f3"
+          },
+          {
+            "id": "2e86346f-aeb0-80aa-ba4c-cc843be42c65"
+          }
+        ],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://www.tatanutrikorner.com/cdn/shop/files/7160583-1_Tata_Tea_Chakra_Gold_ROS_3D_Packshots_500gm_FOP_0f45abe0-2f3d-4981-a344-bcc014e41a17.jpg?v=1745212726&width=1946",
+            "type": "external",
+            "external": {
+              "url": "https://www.tatanutrikorner.com/cdn/shop/files/7160583-1_Tata_Tea_Chakra_Gold_ROS_3D_Packshots_500gm_FOP_0f45abe0-2f3d-4981-a344-bcc014e41a17.jpg?v=1745212726&width=1946"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2dd6346f-aeb0-802f-a88e-ff519766ab8b"
+          },
+          {
+            "id": "2dd6346f-aeb0-8096-aa2a-f02d26434af1"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2dd6346f-aeb0-80cc-9173-c09ace36abde"
+          },
+          {
+            "id": "2dd6346f-aeb0-804b-ba0e-e962c46bedb9"
+          },
+          {
+            "id": "2dd6346f-aeb0-8058-bdb0-e1f986d96a1d"
+          }
+        ],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "TATA Tea Pongal",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TATA Tea Pongal",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/TATA-Tea-Pongal-2dd6346faeb08012bd33d6501bbd1a12",
+    "public_url": null,
+    "request_id": "c062050c-5327-4e1a-9158-baa71bca062a"
+  },
+  {
+    "object": "page",
+    "id": "2e36346f-aeb0-8029-8ba5-e0de49a9bbad",
+    "created_time": "2026-01-09T18:19:00.000Z",
+    "last_edited_time": "2026-01-16T11:31:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🕸️"
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": null
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "12f93dd4-d43d-4dbb-bd31-7a42d633b52a",
+            "name": "Personal",
+            "color": "default"
+          }
+        ]
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2026-01-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "f404f2af-326b-4d34-ba06-77f839797daa",
+            "name": "Creator",
+            "color": "red"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2e36346f-aeb0-8021-b3b1-c63a459618f7"
+          }
+        ],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": [
+          {
+            "name": "mind-map-svgrepo-com.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/6d87d578-ba74-4a48-8d49-eb8c3ae1efce/mind-map-svgrepo-com.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TJKVSLUY%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165909Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQC2G5ocN6Uz14BM5kRjRavyZc8fmkY2uEXIDccxg%2Bz2EwIhAILsjf2mphCMf4LUNbwnYPznQVEEkUwhXdig9WxywxgpKogECMX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxisSktX93w8cznORAq3AMhlTe9SgYbvw4k24yW1YerTSR7sZz26xURlJaHEOizhlWRuagOwN%2FQDHurPglD0w07ZvvTTJ5tnt5WkHsnSmP8rCYtaBejVjpzW8mMMHJNepHb%2FetpKIxKjEAoVV6hF81wpL%2BlcljuwUZoVx8cccjZmROspWcl3DEcit5skEHOuFhI7XBmubQFVOJtRu2dAxxZG35VR050oYSUS2BUb2fuQd0HSR4W9rmJfEBLcBREEwMW042g26j9N2kmCUmYX4x62aC2rOLQTBS08tj2MPfn%2F%2B%2Fl9vtMbefwhm4VId1PtBKLb%2Bm47SowEYfdFsoB8XtK2DkZDuSnTIGxzRjp12DSLmGkIV32B7RlO4BJVOzC6a%2FqKQymsEMU8iFw1SgSkLTPqRG%2BeZnT28ZY2dq1CCRUXWte93lorIu9vSp%2FjJYZX0RFM1jQ7gLM5vj9puUoJ%2BW7dotOEblWzsmqVa1gO2jKkRm3293WUZCIhvfOTv8523CHGshAuFDjf6SaBSUA6MHAI7tLFMAXJBiNJzGQtfTI7PtM36OO3Yl6sd2hLnjiwTCOIjNf5FIJ2QZfP7vv6vusTUcsneb1MtMtA%2F5uWOiIe%2FUqLrUDhkezqvmd5mg00lwx0acmPsGmu6%2BDNjDz0evMBjqkAVCByA2IA584rX1La4YJowDcMzstzAJpPOG0M9eS7T02MFE5v3HUdq9h2y63vJz4rOQKphJ6dbjdAIxoohB3%2FXkIiY7LW%2FYyPf5%2B0g0TIn0Hw06044I159jFM3r9x91JStHWFp060pBsYeGjpEt2YYPf5%2BFvNjsj0OphDG%2FMaTY4wwvegPQNFNd9urEn3f9V%2FX%2Flrq5glwU3%2F4%2Bo3VfiqQ%2ByXA3U&X-Amz-Signature=b7e114612e9914de2bfd78c64ef4832098539d47a75bac79720563adc926b652&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:09.160Z"
+            }
+          }
+        ]
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Graph Util",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Graph Util",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Graph-Util-2e36346faeb080298ba5e0de49a9bbad",
+    "public_url": null,
+    "request_id": "6857c81c-5bdb-4039-8c29-ee99be78f1cd"
+  },
+  {
+    "object": "page",
+    "id": "2e96346f-aeb0-80c5-bd9a-c124ff7634c1",
+    "created_time": "2026-01-15T08:39:00.000Z",
+    "last_edited_time": "2026-01-16T11:53:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "🎁"
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": null
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": null
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": null
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2236346f-aeb0-80f0-a927-f24e880e16a3"
+          },
+          {
+            "id": "2e96346f-aeb0-8073-9338-dafed9fe17c1"
+          },
+          {
+            "id": "2e96346f-aeb0-800b-99f8-f59cfa75ad1c"
+          }
+        ],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": []
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mansi's Gift",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mansi's Gift",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Mansi-s-Gift-2e96346faeb080c5bd9ac124ff7634c1",
+    "public_url": null,
+    "request_id": "0fc43edd-1d74-4871-93dc-45edc08fa6e0"
+  },
+  {
+    "object": "page",
+    "id": "2f96346f-aeb0-80f8-be98-e12841c03b97",
+    "created_time": "2026-01-31T12:14:00.000Z",
+    "last_edited_time": "2026-01-31T12:19:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": {
+      "type": "emoji",
+      "emoji": "⚒️"
+    },
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80d8-aec0-000b71a9d5d5",
+      "database_id": "2766346f-aeb0-8058-b8c8-e17140526143"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Project Detail Pages": {
+        "id": "%3BlzA",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Contracts": {
+        "id": "CnP%60",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Clients": {
+        "id": "LgiW",
+        "type": "formula",
+        "formula": {
+          "type": "string",
+          "string": "Debt Help Experts"
+        }
+      },
+      "Proposals": {
+        "id": "MYEN",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Visibility": {
+        "id": "WHqA",
+        "type": "select",
+        "select": {
+          "id": "329575e9-dce3-452d-98d9-91ddd7d2a3cd",
+          "name": "Private",
+          "color": "yellow"
+        }
+      },
+      "Type": {
+        "id": "XDGl",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "Description": {
+        "id": "ZUd%7C",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Start date": {
+        "id": "dSs%7B",
+        "type": "date",
+        "date": {
+          "start": "2026-02-01",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Role": {
+        "id": "eQf%60",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "fdaca1a8-54eb-4d42-bd74-05d9bc66da19",
+            "name": "Full Stack Developer",
+            "color": "gray"
+          }
+        ]
+      },
+      "Tasks": {
+        "id": "isGx",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2fc6346f-aeb0-801c-afb1-dcbca37c30a3"
+          },
+          {
+            "id": "2fe6346f-aeb0-80c0-a8a4-ea6f5138ce00"
+          },
+          {
+            "id": "2fe6346f-aeb0-80fc-b19e-e4a40ffe1f79"
+          },
+          {
+            "id": "2fe6346f-aeb0-8077-b617-e1692b627cf2"
+          },
+          {
+            "id": "3036346f-aeb0-804d-a53c-e14e4a2d0f17"
+          },
+          {
+            "id": "3036346f-aeb0-80ce-92be-ebc69b2d373a"
+          },
+          {
+            "id": "3046346f-aeb0-8064-937f-eac5b4d46536"
+          }
+        ],
+        "has_more": false
+      },
+      "Cover": {
+        "id": "jjBG",
+        "type": "files",
+        "files": []
+      },
+      "End Date": {
+        "id": "raMQ",
+        "type": "date",
+        "date": null
+      },
+      "👣 Project stages": {
+        "id": "sxsk",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Thumbnail": {
+        "id": "xF%5C%5D",
+        "type": "files",
+        "files": []
+      },
+      "Order": {
+        "id": "ygeg",
+        "type": "number",
+        "number": null
+      },
+      "Project Client Relation": {
+        "id": "%7C%7BBY",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2f96346f-aeb0-80e0-bb94-ccfb5a282d9a"
+          }
+        ],
+        "has_more": false
+      },
+      "Project People Relation": {
+        "id": "%7D%3C%7CW",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MDP Maintenance",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MDP Maintenance",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/MDP-Maintenance-2f96346faeb080f8be98e12841c03b97",
+    "public_url": null,
+    "request_id": "8dfb2594-f904-4a61-98b7-0ee220f16f68"
+  }
+]

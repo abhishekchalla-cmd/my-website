@@ -1,0 +1,1929 @@
+[
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8031-b8e9-e613c1c670f3",
+    "created_time": "2025-09-22T19:38:00.000Z",
+    "last_edited_time": "2025-09-22T19:41:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "csc-logo.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/8993aac0-4a2b-4304-9773-c321bbcdb465/csc-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666HOMI3MX%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165909Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIF%2BQIJU%2BJPpH52P2AaqoYg7Wo6zg89uvqfCuwIraUytPAiBak6U1AL9sOqucuPEmByxTTg6Viu2kO7eepHpcFi8raSqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMy1aQ1daaVGOm%2Fo9CKtwDtx4%2Fj5LOT4l6FeAY1xAYH%2FIlVe4XUs8dr7g5LqRjcEuGPGWbVXEACIkEijG8gwxUJU%2FauO6kicLE7hjn%2BZoTFckevrfw0UEs1h6rHqflGu6burcyz0137hn9TQ6GOcvBCk3JlpdUQvexBQifavj6uxm7rmYrFn4KMdeawjikhaNpxpRjl8V3Hg5ZIznru3yTX0da2Lz9sW6mSc9mAVUgXXBT3%2BFW0NJev8jTNcodn76hr4iJsUfsGqGKQEZctd%2B0qMjXyxu0ALD2%2BTbwMU8gEro4XUPCu9L8yVyQRx4TCrd1HvFCnfIyhGoqfCV5JZfDMK%2FOHhobJrHoiYRLi6f5oU14THfB1I6Pjd%2B4yYGgdqbDTEmg0uBjpbUDHVng9SZP2lNC2fI%2BBk8yjf00gxqj7z%2FGdMiAkdcdRRPLF4j6MdnijPxjUbgJB62TLVxXKhBSPpCT0%2BIDheIcLiiiNNQ4KDEJVDU2rLmwTg266GuiMvsvRfXT2uSw3zsP7S4un3nHVsPVHqpvIHa6XscTEnHefGtDIaUSl1YkwBkTmEI7LWD1oa4Tikieb9NuRjZEWnexR467%2BeJFfocrEktxRBq8ULOe0OCNW6RVclkpziH3YfImA8zWpcuSb7thISgwgM3rzAY6pgFKsG%2Fa3ryiphKhdzTvUfPhvU85IU%2BzTVY%2BSRWb1zb19ZiMyWKxNKyDVUivMxjyRZo%2BQ3m%2BxuN90wxTaxuWixwZB7nwiZVu9e7foXftFrWFJCNXaPZPDHiur0ZM82J9%2FX6g0U7ec%2FUhMA5g4svm9bGYExX07jA5b0miIxoXbbwfxdjZ%2F2hLvFpgo8cwml%2F9PM%2FcMc9YQVAFOPAJVI%2Fc2HUw65PlwjAn&X-Amz-Signature=accd6b052767a400782c2965a402bfe998bef4795f3042f0e42206f7374c4496&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.874Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80da-b08c-e1574c288404"
+          },
+          {
+            "id": "2766346f-aeb0-80a5-9e26-ed05e2b84ce6"
+          },
+          {
+            "id": "2766346f-aeb0-8090-8204-f1bb230a795f"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Common Service Centres (CSC) are a key component of the Digital India initiative launched by the Government of India. These centres aim to provide essential government and non-government services to citizens, particularly in rural and remote areas, through digital means.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Common Service Centres (CSC) are a key component of the Digital India initiative launched by the Government of India. These centres aim to provide essential government and non-government services to citizens, particularly in rural and remote areas, through digital means.",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CSC",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CSC",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/CSC-2766346faeb08031b8e9e613c1c670f3",
+    "public_url": null,
+    "request_id": "c7207b10-3673-4f8f-83dc-ce637a2494d0"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-803b-a100-c060852f2ef8",
+    "created_time": "2025-09-22T19:44:00.000Z",
+    "last_edited_time": "2025-09-22T19:47:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://www.notion.so/image/attachment%3A3bbb59a0-ea4b-4be3-8f0a-27a3dde48ccd%3Averi-logo.png?table=block&id=2766346f-aeb0-80ab-b100-fe1a01876c9e&spaceId=1046346f-aeb0-81ce-a717-0003eca5601f&width=2000&userId=223d872b-594c-812d-b2f7-00027d725e9f&cache=v2",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/3bbb59a0-ea4b-4be3-8f0a-27a3dde48ccd/veri-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YVIMVMLH%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDu%2FDTxL%2FqBsCQLjVTQ9OflkUnaOnuoFTQnAAHSimdrKAiEAw35AM%2FiP4DCn96lf%2FWnbCZrQy43zLl7%2Bev8ZnyRebAwqiAQIxf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPknvVQIm%2B94MNx6ByrcA6NHy2d9d3i1vtBE4QECRlEivVtiFaalcBwhl3D5IbA7eoTVZbBthnk%2B%2B0H3eOZ%2FEtR5XnUup%2FIUQwjnNHRfcLUsNSLsbs9r2r3DnDi0wm3MLmhPv0cAOaypJfuXwz3Il4aMdlrSW075CQpKZDBJYko%2FpK%2Bh0%2Bs%2B9%2BWNY1ZNx1beGQ20k8%2FDd0gy1iagkq3StDMcaGqjnTLN3ts0P7uhVF8shjXTENFO4d1AVTlYkGebY3ygbMjIRKuBtUyaRY8udfauITVN7Fz%2BVwcU8WzbFZ8ZEbYoELOH2yhe%2FqMQvLZz7yBMK7sKbxvw7GADXnAI49EkS6cDQ0knC%2FHU87nSh8pwY6VN2EexolPVvhgZHYgmkV5GyCk%2FgIREvRuiFQso8%2Fxir59weYmRlKEFccWP9y6h%2FaV7oazR0aHnLv9QnGd%2BP5%2FSplJdqWRI0172uAESZ6Cnmlgvox7KH4H4GbEng%2BSTph0aqtWOeRJ5y9SQwKVJKnef8swFXPQqJvxIiRhbfzGWDZI9ukU7o82ZguMFUHq7qL%2FvRFtCxukqoYWjnjREJsTM4RbxgNSmh2PxiQX9vo3sdUzNSltP8gX9cjKSovYqfHEfTmZz7SaJ207HGeT9rTaV189pmRTXFC0YMJHR68wGOqUBmQPjViELF2LxQjgrqDgdQ4g%2FwjyKqCUmFlFlt1TdA7kvZb%2BDkPgmZV79I%2FRWHCj1Iwc69MPXlAzL0TeG0CyrK947LRr4rjxAJWDPDVA6tc8sncre5BNd34Z2HvI8JzsqB3roAA5EYfm6lAE9EIfPF8tDqLdkL%2BfeKikqaMNDa48qWJ1ZZpo6f01UagGSudaego6GtwRF1Xig5HjBs0TZU8k02YGV&X-Amz-Signature=2cdadd5bae7bd820883e537f4843122691be1d34fef0130ba9b4297ede945e10&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:08.196Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8096-97eb-f82b246a3282"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Veriscript was an online platform that provided a complete document life-cycle management platform aimed at ease of use, flexibility and security.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Veriscript was an online platform that provided a complete document life-cycle management platform aimed at ease of use, flexibility and security.",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Veriscript",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Veriscript",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Veriscript-2766346faeb0803ba100c060852f2ef8",
+    "public_url": null,
+    "request_id": "98e8b7d9-9943-4e1c-9696-b22e90a9a2ae"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-804b-afa8-fb7d3e9d51fe",
+    "created_time": "2025-09-22T19:24:00.000Z",
+    "last_edited_time": "2025-09-22T19:45:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "325955538_911479360014142_3920117205658646281_n.jpg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/e48ee927-d521-4028-8f7e-3c4bbfa02a40/325955538_911479360014142_3920117205658646281_n.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666NSNOML6%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165907Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCHWzrC6Limptzj7IFE734QC89ApnBQ9WAFazhkF4mUowIhAJof7PBrW6i88iwixgFOUm2Hv%2Fdjt4D%2BlrqUohPYUSOXKogECMX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwZHs0iBV%2F0Zecy5HUq3AOBkkmu%2BNnULYYz01iEgxXZwm0mYCH5D7yccLHK5pd1LSixTh1PDMqJg7VE5NdrRcne9%2FwI3Gw45rZH9VRvLaFd9WgjcJwxig2boWP9iuKbyncGOFhqw3NmS5wZISl1EIUb7nhqR36kqn4FdIdQApc%2FOSGHSGI%2F8m%2FCQqZQNxzmFO2LanrZOKRGXQ6OhUSmotEgmAbVxCkW36tjh68jUSamN7Q3iTOS3wO%2BZFi3y2P5Vyb7ixwAdXQACJvngYa7%2F0idRjpVEMjW4JRLsVITTx%2FuYNUNBevUKPjdBh2L%2FGEv3nklVMCJehjRoBQCsUuwzkdx5QB%2FoqNv2t8LxN8E%2BvTsZirjehDnjLaY9OmOMqe7F5Ve5Bf7wY9TwPNRz6%2F%2BTk07bUblefRsm0qYDmGOmYBHOh4cEA%2BbKm8qYgtguqdaptTBx5ucn35GuQ9x1LhkGb5pAL9TlK6cduSl9jbGKyyKKfXLruG4nsdC%2FJGj7zAllkJUEUKnCAHiwjvSNqX8y1heDK2QkZMl%2F4yljl8j7SCdr6D7DIpFYk49dhwkYxOfP2osprMA3jr%2FuX1LQEnMuFZQ9zGzJOp0OCOSy266QIszewPKLeezYTYrXVEEWc3h%2Bv0rBWuN3cJOgYXf%2FDCp0uvMBjqkAS4b1d7H5HkdEe3MnZiepyQE0Oq3iz0YVrqwYx%2BM6Y%2BcOF7tGkuip6nreoxOAy6lxqnKJ51rE6xMVOHMa%2FkD8%2BRyEXNoQQEZboo5kxyv%2FjLCaXLKfZ55BnSpWDkG1XbHPLbJ3Sl48vrTMsbHPdU72ZKel8Ds0Vlr%2FSHOrIoLUgQRYBitQi2JGezeaLYbKwVo9XNwCQTQUMQiN5jzcw3MC2Cy706T&X-Amz-Signature=9397d7a70b012689703547157f739b101df1c6277adab53fa6c572467abb504a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:07.573Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8027-9b2d-dc27bd1df694"
+          },
+          {
+            "id": "2766346f-aeb0-804e-921f-cca32c96c0fe"
+          }
+        ],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80e7-ad5c-f1e02b953b9a"
+          },
+          {
+            "id": "2766346f-aeb0-8001-9b52-f4c9fce062aa"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Calypsu Product Studio was a company active from 2018-2025 that aimed to help startup and brands to test their idea quickly and efficiently.\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Calypsu Product Studio was a company active from 2018-2025 that aimed to help startup and brands to test their idea quickly and efficiently.\n\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "LinkedIn:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "LinkedIn:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.linkedin.com/company/calypsu/about/",
+              "link": {
+                "url": "https://www.linkedin.com/company/calypsu/about/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.linkedin.com/company/calypsu/about/",
+            "href": "https://www.linkedin.com/company/calypsu/about/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Instagram: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Instagram: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.instagram.com/calypsudesign/",
+              "link": {
+                "url": "https://www.instagram.com/calypsudesign/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.instagram.com/calypsudesign/",
+            "href": "https://www.instagram.com/calypsudesign/"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Calypsu Product Studio",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Calypsu Product Studio",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Calypsu-Product-Studio-2766346faeb0804bafa8fb7d3e9d51fe",
+    "public_url": null,
+    "request_id": "20eec9c2-1781-431a-8568-c89a758874e3"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8062-bc1e-f5e9d2cad35e",
+    "created_time": "2025-09-22T19:29:00.000Z",
+    "last_edited_time": "2025-09-22T19:46:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "unifiers_social_ventures_logo.jpeg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/abdd756e-5d96-4af6-8154-53ae8d696834/unifiers_social_ventures_logo.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UWRNILR6%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165909Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIAOm9vLdRf2UhO5fLYBWfHTJ%2BczenNRAA5WihtW82MWIAiBctG7BP3drnMliUdmoXseOzP0PAIfcEk%2BWenwVgC6X6SqIBAjF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMxrTJaA%2FFvVDZ0tEMKtwDTA9qgm4DaPvT%2FpgYjSIcbIHUNw%2BVfJ9X6ASmwdVOIz6J9OIwUXbMbzaXbsBTrTfXhy7Vfe5%2B1PH4Q%2FpttkIFyjjeEVm%2FxlSt2ACz3BhUUaJHHUhGCFN0LHJkqdXhPtsGD8L%2FmKi3pdq2bmA5UlratevaV3Lk%2FvulUCxspPIc66f%2FK%2BN7oJdGkwKTcanGHdh9JDWpXfe5wr7k8susTkqTek%2BCRy4mDLIOoQhN3BHw6D7lfkws0AgzCsb4ZujrcJnscpudBYFLvsWyDiSwhUSj4SverBsow21zKXRIrW26A0DOWu798g4xhUzOYCUKKS8ZFeVc7f1O951CCZD4PE1Dtxr1UBrqv2L0WKOVsZv7JLOfl44uDyPvq%2F4mwDPFdmh2%2B%2F4E3zxdVpmMuBQX0Cp9fPGmu9KZcJc8FFTUHTAlardAAFNkZXHo01eMkpuwfqECdOtD0mTr2jRvPuv2jttGnnYTPs04i47TFUDSjWRgatUUQojau9aeqFT9HjzwZuFwFsw6DemuKHStikxketyuGfJqKNE0gWMh82NquwlrztDFbe9fshr8Owt8frRGcp5k5Eo3FGn2VTsZQIM2pAGGk5hEz%2BYHsp%2BDAzsHdgMXcd%2BUnC6j%2FKd8YdjBapgw%2FtHrzAY6pgH%2FRLyAJF%2FLmIIpib7JRtOX0%2BbobCuDnK54pBWANGt4IsxoLaIsOJymJ%2Fmk2bmEe6MatpkoxhGNRYPWFMxC3a42yQvwGaF8svnzKjDEfAZe%2BcOmhNfghpZLACKqARyUMHcOb3vFp%2B6mIISyHtt5MAo2nhORMPuzOPSknvjFWuSJwr0Awp4lloHw23S%2BPZ8tMgPlfjhuwzYwiLmLD%2FnpicDTL%2FRXPeoq&X-Amz-Signature=e01548078a7f29b7e3e424065c923e62bc5ad07cef7e40b788c5cf9805447b60&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:09.007Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80cd-869e-e68fe3bef149"
+          }
+        ],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8030-bd12-f7b5e0c084b3"
+          },
+          {
+            "id": "2766346f-aeb0-808d-994d-ebd47bcdf0b2"
+          },
+          {
+            "id": "2766346f-aeb0-80b2-bd11-fd4e149b6546"
+          },
+          {
+            "id": "2766346f-aeb0-80b5-96b9-ead0f081aed8"
+          },
+          {
+            "id": "2766346f-aeb0-8054-ae1a-d01f34a77441"
+          },
+          {
+            "id": "2766346f-aeb0-80f9-a6e3-ded65d568a96"
+          },
+          {
+            "id": "2bb6346f-aeb0-80b2-b8a4-dd6aceb07fc7"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Unifiers Social Ventures is a firm founded in 2011 that provides education, skill development, and training in a range of industries including agriculture, automotive, beauty and wellness, management, e-security, electronics, healthcare and more.\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Unifiers Social Ventures is a firm founded in 2011 that provides education, skill development, and training in a range of industries including agriculture, automotive, beauty and wellness, management, e-security, electronics, healthcare and more.\n\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Website:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Website:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://unifiers.in\n",
+              "link": {
+                "url": "https://unifiers.in/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://unifiers.in\n",
+            "href": "https://unifiers.in/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "LinkedIn:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "LinkedIn:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "http://linkedin.com/company/unifiers-social-ventures",
+              "link": {
+                "url": "http://linkedin.com/company/unifiers-social-ventures"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "http://linkedin.com/company/unifiers-social-ventures",
+            "href": "http://linkedin.com/company/unifiers-social-ventures"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Instagram:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Instagram:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.instagram.com/unifiers.in/",
+              "link": {
+                "url": "https://www.instagram.com/unifiers.in/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.instagram.com/unifiers.in/",
+            "href": "https://www.instagram.com/unifiers.in/"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Unifiers Social Ventures Private Limited",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Unifiers Social Ventures Private Limited",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Unifiers-Social-Ventures-Private-Limited-2766346faeb08062bc1ef5e9d2cad35e",
+    "public_url": null,
+    "request_id": "56ebf6ff-97df-40d6-b987-7bbdceed6dc7"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-808b-8550-ca00bfe6695b",
+    "created_time": "2025-09-22T19:35:00.000Z",
+    "last_edited_time": "2025-09-22T19:46:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "250px-Seal_of_Assam.png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/2442e76c-1192-4cc1-bc7e-efd7857bfe9f/250px-Seal_of_Assam.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666PJC7XCD%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165907Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGs9Qm1HITTUMAvqfRUM5%2B2qkF7OAVklFDdTHPVsR4CdAiBxr%2Fj5YoPj%2BugRIywaXtmx2XOzrE18YWi63kqrfrQeiCqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMuqUrDrd2mfyEng%2BBKtwD0L8EhwVQk7hDyVwtVjpC9XIm%2BeubivQbktqPWkDbD%2BiriH59mX%2F7vhk9KjIool%2B9%2FUxO1PMVw2e%2FhZe2ICSmLk%2FwbouQcVSPKNUnyb2k71MLTwYMjdZnrCWDAgpnhsoUrewkbygY2ugU2o8ABySscKeEpnwK7ICkcnI2f6EayTjjcVn%2Ba%2FzR4RP5tr97E06P6uzmmhiEFYnLIfgAs7afZrdsRP9lITc3vPWUUqPpQvOjL8CXrwG3slbuY7zYBU4dvSPXpedOCpaF9YvJuCcrsdW3xlHo6Q6q41x8HpkFFtkaGXjVNNHEfDyVi3O8W1NGk5pH1OcimukrikhXEQnjJHpO2Xo4torfSNyc%2B5T7dccCqHQaT3uh4gyjeOEEenRyhRN8klDlsKVw8WWW%2BQzrZ8P7AwJFcK%2FAmdAqApcQFZIYRSpaAvYdmhh5E805VMT2RPpJXSH8lG%2BF%2FS%2FDBASDJU6gLpNhiJ%2BGzprA4ekQhgxHiZSF1LvgXTiTr4Q0O9eQ26GXXG8ukWO1FTIfhtsr%2FwoxJi7u%2B500jX4p2mP64HkgouZF6j5vA9gbMPouTlQS6ir9pd5FcJNU5ff%2FBJJ4o1wYdv5yylJI0gM%2Fa6GECKd0Rh%2FRi7FlTfkC0XQwkdHrzAY6pgGJl5TL9LiRsmrm1P%2Fkv0qrm6xax2dknADF7brUKQlopH6xToEp3f1Qf%2FZG1jutwjWTktVsH2CS6SK56WHZzPVt1b3u8OXbRXNGB%2FYH9%2B8y8HKzOzzHRN5Vf5NuDi1I013RVwDOzfMoZ85xRs5MAXJPKMA%2BqK5Q71ur4X3nvSmCH6lJYbmBpt7zvXaw7rDZE41FDxuHYOizEwnF2yHkzwEChIBi9LVh&X-Amz-Signature=5e169d7a16bdd629e9980c3f8bd93fdc68695122f2ae2af019c5d1ef46a96b6d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:07.588Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80d2-8913-ee124d77e38e"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Government of Assam or Assam Government abbreviated as GoAS, is the state government of the Indian state of Assam. It consists of the Governor appointed by the President of India as the head of the state, currently Lakshman Prasad Acharya.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Government of Assam or Assam Government abbreviated as GoAS, is the state government of the Indian state of Assam. It consists of the Governor appointed by the President of India as the head of the state, currently Lakshman Prasad Acharya.",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Assam Government",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Assam Government",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Assam-Government-2766346faeb0808b8550ca00bfe6695b",
+    "public_url": null,
+    "request_id": "a8ba540c-9009-448b-830a-6456491290ff"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-808d-8ba3-e9d46928732e",
+    "created_time": "2025-09-22T19:37:00.000Z",
+    "last_edited_time": "2025-09-22T19:38:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://www.notion.so/image/attachment%3Afcf1c085-a33c-487b-8c87-c90a96db0741%3AScreenshot_2025-09-23_at_12.25.53_AM.png?table=block&id=2766346f-aeb0-80f8-a1f8-fbd9c5eac102&spaceId=1046346f-aeb0-81ce-a717-0003eca5601f&width=600&userId=223d872b-594c-812d-b2f7-00027d725e9f&cache=v2",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/fcf1c085-a33c-487b-8c87-c90a96db0741/Screenshot_2025-09-23_at_12.25.53_AM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663OKDTCZK%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165907Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIGaFNxrsAcRbplE7zCGXDezJKVuAhg9XUivJkXhOe5ogAiEAgqAKX29%2FysXDjx2OI25aF8tvEaQ9ZpNNXxXDaWFAapMqiAQIxf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPmTMFvbQzTlY5KZhSrcA%2BUzyt1XgQSBKQVslqsBKGQEdVrmrtoC%2Bajl0XoyZJFM09nbGvhAgWZZiqn7zypA0yL49ug2qJSXqikscGK9wtCzfzx9pli0YA2WeqnnsaPZTGzB5I7Qa73GI2X%2Btcst90Pvl8UsvVQvMYGiNo3bqMZrVrzQkAoRGDZGVkT8D1iy22xUr5zUtQD6EJG7OphMF1cnNMH4jZFRewe4aUql3zi6%2Boyof1Jm1WZ3X6R3%2FJrdODvkzpZ0rqtcnBEoeVCYatJjNNsUkk7b%2Bj%2F6I%2Fa9YvWD%2F0BdIraes4JHF9uQ8dimXtwUGxF6Cs3K7l3u0n4rJeeY%2BzzoVrO1Jpez7PrNWUvDhCbjR5pGaERtVp5fBD3zbuaFwNZsLverpQyrTuY9MZHu68uuu5%2FoaDUG87HyWCirNzJxhAquNQyfpYGTEf3TUEw49nFlwmbFLtHt1MzT595VDwSLVFOBuIwyx0%2FheMhHQpdmg1cQZeiLFK%2BIPcMoFpOPZAIN7lbZ9XSWMXQ3zmXckgEi%2B0WofREflfhax7pK7IHNd8y3jW9%2FHoWBxm4w1bN0ohXIUMnq9apFtvgbBcT%2Bh0VaAWJo8bByIT%2FSUSW41jHuDfPjKw7rXt0wKVI5ygZlIgdoAM%2B90OfjMLPP68wGOqUB6REiPXRlLSJ2G3WxGK4LkSxBvyS7FbyGu%2BEwD%2FgQxswLH7fpnRmhJIUd%2Fd8rHSH9iWidq0e9xp1z%2BiK%2FQqYg2NRRxJornqK3Q3EQWg9zC5h2FEOF%2FmjYcODwk75h1vXIX6epzTdtpHzO6jVdTXyUz60bg6t0pj9%2Fl%2F1kiqIXIdzS7fYVwwG%2Flssj3O8hs6NPGpg0HSixZypGXewKUi5UhKQ8CRgB&X-Amz-Signature=cbd4b46b0eb72f948170ce3d71f7c0e7555f64dfb91ac3143466111a75bc090c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:07.843Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8075-aee1-dc3072c7caf1"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The National Cooperative Union of India, (NCUI) is an apex organisation representing the entire cooperative movement in the country. It was established in 1929 as All India Cooperative Institutes Association and was re-organised as Indian Cooperative Union through the merger of Indian Provincial Cooperative Banks' Association with All India Cooperative Institutes Association and later in 1961 as National Cooperative Union of India.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The National Cooperative Union of India, (NCUI) is an apex organisation representing the entire cooperative movement in the country. It was established in 1929 as All India Cooperative Institutes Association and was re-organised as Indian Cooperative Union through the merger of Indian Provincial Cooperative Banks' Association with All India Cooperative Institutes Association and later in 1961 as National Cooperative Union of India.",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "National Cooperative Union of India",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "National Cooperative Union of India",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/National-Cooperative-Union-of-India-2766346faeb0808d8ba3e9d46928732e",
+    "public_url": null,
+    "request_id": "9524376c-079a-4982-b940-b0a791c0c7d9"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8091-9afc-e27856803694",
+    "created_time": "2025-09-22T19:43:00.000Z",
+    "last_edited_time": "2025-09-22T19:47:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://www.notion.so/image/attachment%3Ab3f85756-1a13-4a00-8cbb-261b72d4f3ee%3Aemm-logo-c12943d5db28e21c6159e70cffb454ef.svg?table=block&id=2766346f-aeb0-808f-9342-ea2e0e1f399b&spaceId=1046346f-aeb0-81ce-a717-0003eca5601f&userId=223d872b-594c-812d-b2f7-00027d725e9f&cache=v2",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/b3f85756-1a13-4a00-8cbb-261b72d4f3ee/emm-logo-c12943d5db28e21c6159e70cffb454ef.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TOXAUYRN%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165907Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCb7xb3srdvU9gHbPM1xuxsvBSZozXRRI9qZPTu97gXAgIgPLuoonnNBPL8%2BS%2BDN5vfbs5UlY%2FyX0IvLcZOXhcf81kqiAQIxf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDHQ50Krbm3%2B5FTFTYCrcAzq%2BBcrtyekgCudaJq6yUiCB6Vo9k2UQuocGvi4clr1s1JFXUSR3UP2Iq3nEH9WaDG7i%2FbCdbirekmwWV%2Fnp%2Fh3iw4ZNmRJ6%2BgrTJna0JjceVCMLAfmI7rVft4Tw7pFCFuIV9xvZDe9F%2FCwxmFKlBzTyz83Xdv1pXZlDKcotzSlY3PzBG8RJLnMibFBtZ4G4nonOOBtLgN9SyRMRVdlFspEF9KqTmcFViDAoLFDxRJnE0AuelowFM8QwBzrXCuJbEcoykz4OZvI2RlhN2SrBSKMazvjRIqBfmTx8w7IQUt5As8ro5uovxF8fL5z%2BgrKwajPT%2BlZs0lbFtk3CxbrSkGxU%2BAI%2BP6Dgg7ZFGoJU6oSiiwaBAT7pMTxP49dXNHWiGUbpuVquUMEStw1iMfy%2FgUmVAfQlTQh2X8BAdHWUqTPjERyv03MPqtcNJyvi8e4A2W6YtKH3sjLfscW%2FvcycQYyWS3KEaXEqyImr%2BCthDbUbUDGc3XJiUrwbWMIReq9uGqATwhcDPVp16C8j%2FCie84W6gXAzURVk9a0XJtyR7dNcIjWGR81vlg40lekJn5Zp21As8VdqEXRrmODv3bkS%2F9H37D%2BHteedG%2BBhVL%2FTgXuk8KT9HbjMgYvjdF57MMrT68wGOqUBJWNMZ0N0qFskdZ%2BpVdyyD7PpHfCvdKTo7KWxgKowQPxr2qm%2FrMAnkcuqV5e5elE7mO%2BEwwVMwtgw8NIH8OOsVpitQvjuM8pi813Lvf0z4nhmdABygUFmL7QVD40OLQCef5xjK0FJRoMNoZaA3GVql4d790HZQG%2FxvSL6lxXbNPh8%2Bg5bB5ceAoZCepyhcRUxRcxGCdGT9g1ShET8YvVU7BDSVwoS&X-Amz-Signature=bbc13c5fd7f83354261d1e281d751f638849480fcb2133f3a6826c57aeaccb7e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:07.614Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-8023-b424-cbc20a2a43a1"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Emirates Mars Mission, also known as the Hope Probe, is the United Arab Emirates' interplanetary mission to Mars, launched in July 2020. Operated by the UAE Space Agency and the Mohammed bin Rashid Space Centre (MBRSC), it uses three scientific instruments to study the Martian atmosphere and climate, aiming to provide a comprehensive understanding of its daily and seasonal changes.\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Emirates Mars Mission, also known as the Hope Probe, is the United Arab Emirates' interplanetary mission to Mars, launched in July 2020. Operated by the UAE Space Agency and the Mohammed bin Rashid Space Centre (MBRSC), it uses three scientific instruments to study the Martian atmosphere and climate, aiming to provide a comprehensive understanding of its daily and seasonal changes.\n\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Website:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Website:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://emiratesmarsmission.ae",
+              "link": {
+                "url": "https://emiratesmarsmission.ae/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://emiratesmarsmission.ae",
+            "href": "https://emiratesmarsmission.ae/"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Emirates Mars Mission",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Emirates Mars Mission",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Emirates-Mars-Mission-2766346faeb080919afce27856803694",
+    "public_url": null,
+    "request_id": "aa887090-c2ac-4691-ac25-110d14942257"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80a8-8cde-d7ccbfd75106",
+    "created_time": "2025-09-22T19:41:00.000Z",
+    "last_edited_time": "2025-09-22T19:42:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://www.notion.so/image/attachment%3A0386e5ed-55cc-475d-b50f-bccb79c86c99%3AIibf.jpg?table=block&id=2766346f-aeb0-8064-a54a-cdff33ca7a9a&spaceId=1046346f-aeb0-81ce-a717-0003eca5601f&width=600&userId=223d872b-594c-812d-b2f7-00027d725e9f&cache=v2",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/0386e5ed-55cc-475d-b50f-bccb79c86c99/Iibf.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QUB3KQBA%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCID4NbJdIHHnKlLxmagXTpwR9KEZllF4VaXb4czWI9FoVAiAuGsNyUll5l1G%2Bt7ASj7WwJA6jsI5wP%2BwLzq%2FR7TsVhCqIBAjE%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMKUJx356tBif6c83FKtwDZ28zU6Uth7DFezfMkmz8%2FrFDvrapVW9w6ysbvYoD1E6MCh5fpd%2F53XQ7r%2BJ99hA%2FWL5%2Figl7JvdM44CUg5cnQB6h5OwxqAA2nl1fvFXCOeNjA%2FGOPItw8WBkpfSsq6SrfXMJzbi2nztU99K6Y%2BPXXDjKh3bzfhj5S4Iz9m0MDwIBoI0yMPgM%2FXAcKOvJBmRHbNBzvK3ZLX%2Bi%2FGVXdm5LyfBH50JNYGE4lEvARIUddfx0zkf3byFlykvYIdLAicIYD8QbX2%2Bdt%2BK5aCZrbU3EQt%2BHWGVwB%2BOtq%2FnVFQZ6vEofwl9kBecxXLRBViy7m9jWL9K3V2DHadco9pFVCK65tq9aSNe5t3C8BWuwXV8oqsjegct%2Fw6bwnrNVnPbEjl2o6gn02sdSKoFjQawXsApscMEohwbfgHt0pX9QTT%2FgbcnTL9lFy3LLvvLOdxlCjXNGWgiD4g7SzL2kstyyYzTFqK8kZ8EIBloTZFxyU9JOgrrWWZGo%2FuVRlGvEErL4ujsmPfBXaO1K%2F1H7qGdIGiQWelm76K9AA0HM%2BQo4t6YlhSUQw4sl0r1XGS6u3X1kykAxzChwDBlkpyctFLYlNp8tsvS%2F7C8a%2BeP8IC1zywD4E1Fq%2BPjiVz%2BeKFR2PRowqczrzAY6pgEx3LiE%2BDLLsLGT9s4w0rsSltpPNeAEVR122BYfHanxv9sYqtdhoxoIl89jRINi27k2fSo2yEXvGT5u4LhBa7MiPccVWCdcMG%2B3sUztZ2CTu9WvFmfN93xxSeXgCaf4irvhML9mDFAgghqSXFSw4NAabwaIYIykcrzqHG1ABkghcAFAKqO3Xau2o9mc1gLOT6vKGXEBB4TXE5HOOcr%2FoNQUFSlm7%2BVT&X-Amz-Signature=01867058bd9c4da588b3b303776edf4648a1411f0c57192aafe101e37da12f1a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:07.903Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Established in 1928 as a company under Section 26 of the Indian Companies Act, 1913, the Indian Institute of Banking & Finance (IIBF), formerly known as the Indian Institute of Bankers (IIB), is a professional body of Banks, Financial Institutions, and their employees in India.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Established in 1928 as a company under Section 26 of the Indian Companies Act, 1913, the Indian Institute of Banking & Finance (IIBF), formerly known as the Indian Institute of Bankers (IIB), is a professional body of Banks, Financial Institutions, and their employees in India.",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "IIBF",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "IIBF",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/IIBF-2766346faeb080a88cded7ccbfd75106",
+    "public_url": null,
+    "request_id": "8c683f0a-c9fc-49ef-826a-68127b652420"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80c7-a107-eb123ad2957d",
+    "created_time": "2025-09-22T19:35:00.000Z",
+    "last_edited_time": "2025-09-22T19:36:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "download (3).png",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/7e011916-d8e8-4260-83e2-ffd9f341beae/download_%283%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662ZY2CQDN%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165909Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIEB5TMvuil9h7WxaXXUirZfuzDmQv76kBTG%2Bi2v%2F4Fy6AiANt7XxwkDYYeTZvYpQJtosvdhiRIaO74ZklUgcXVYFrSqIBAjH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMtXnFFGxVDUvjLO8AKtwDlcF5Vf9BZvR%2BkL7GFUuZL4Skot4sknVyxPHT8tTBojjCtk08XrT6W8svJBLwzVrIs5nqQeOlQiuWv0CRFzaLQtnA91qO8IWvVzn1RNnifCMXxViKnvs7GmA6A3oTRe2%2F7XQMOydYm5magAV4wofUub%2BCpfXvzOZD1giJBJzH3zhGlbGNHbnnyFSMoxOZFB0YyXxIaskRBxo%2BO%2BdBijIUIeqBFHb0tfxd8pcGRTey3XNTP9RJoLRPsgEeDMCrf3j7LpOBlIQmG9u5Pe5zL2S72Tkp%2BOo5MmC99GNQ2u99K34%2FljKulMdSkUKx1afNk3Hg9FCxo8p8ft88NTLvZfKW%2BRA8swQXtX2yFJU3D%2B2HFxAongeSM3anBRgxSWRDMwDvIC60mJAd7%2FaTOcsdhY5j4PJ1yigIbg%2FbX7x7d3fMVQYOR1%2FYHjw8rcQMWdErMqUJSAffeldKvN5xaO6HJc82EGVjZNC36haFavU5v2cG9b1u8AdhpQiXE6IbGA%2Fs8Op6txv%2FGHbxYbjAGXvHb%2BFOOM3W7fMJZzSyHm4nSpWDeIxcexxpwuZ52i%2FiJlOiLXk5W5PimjPhDvGg%2F5FkKquryOBApjUInuR%2FZ%2BYgn%2FWQIYwNvwaztAu8dNq0TA4wtZrszAY6pgFrxZDOgVf8yi3ZIrlE9Psgvu5ulcdJ23vsTkCNYjyjKeQVKMiPvpiuWsn6VnAccOR8Yc5dZs5VJF0tZQOc4NOCHhvFTVTTQ5P8pQ8hkEZhpXLS5lErnrIaguxMBr5gR6475XMcsfHVlwEld5z2tx9lBdY2tnTw%2FJvHqsYeIYiyA5vqK8FM5rk4sRs%2FuWWQryoeZGCpJ61xQkkHhSS8AA32HlBHfqMl&X-Amz-Signature=2e9b80e751268fd730f9eafa0e97d1693170da74462c522209cf4d61b082297c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:09.960Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-80e7-9150-cd2cdb7d5710"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UNICEF, the United Nations Children's Fund, is a United Nations agency that protects children's rights and works to save and support children in need worldwide, particularly those in disadvantaged and hard-to-reach situations",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UNICEF, the United Nations Children's Fund, is a United Nations agency that protects children's rights and works to save and support children in need worldwide, particularly those in disadvantaged and hard-to-reach situations",
+            "href": null
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "UNICEF",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "UNICEF",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/UNICEF-2766346faeb080c7a107eb123ad2957d",
+    "public_url": null,
+    "request_id": "8f635ae5-6a88-4296-8059-1ce75a0171ba"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80f6-b25d-d7f011c00dfe",
+    "created_time": "2025-09-22T19:32:00.000Z",
+    "last_edited_time": "2025-09-22T19:46:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "yara-logo-shield-only-1.svg",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/2db2c92b-8860-4bc0-afa9-3690a01e4165/yara-logo-shield-only-1.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TGOZHPFH%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165907Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCID0K9X1%2BHHOj0y%2BYsj64Wp0LzbrfGaqPSgf4oV%2FhtRIJAiEAiahiFoHQcKJ0Z%2BLVCmJyduMTU2layP2rFrDvFoV77zQqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDGMXKsTQ8LZP03V1qCrcA%2BiUl4Xr4RDR3iN8Aq3v65%2FwFFgkTIXtE1ELIUUss9jHjYuM59GBPQgQcKpmrHMXKhMOG7Os6z3lCaCAUkp0%2FrMdu9yf4lfFIYL3wZBSTUPOdLy7fK66o7iVukpX89lsiVJTRWWxiGK7BIfDpxLtE1SSBWNScHYeDB4VpGUJiWQf5w8JXTmVzdwVJIYwugSwA1%2B%2BswcBt8WnXru6sVxS6fUFpGgswzkmrvpu2q6kCc9N0az8wqOH2uAtQC%2BCNi8W0iwm8V1m5kQAz38RktZCpU%2BM9rfNsmJxA1qWohHVPm%2BD9Vo2Sb70M%2B2Myh89jHkjOd6EkVSY8FMfQpzI%2F8ATLmObHILr7oII3797bFr8ADutaiHaZ4wqOaW6Tywva4xiFJ51BoFegXYhWfEZEI%2FQn8naOEnu0niBbsyvpjaWAqhOdfE%2BRCA%2Fr%2Br4CnmCUsYC82qlkwr0lfP3b4zsaRUkYKGqOnH4WnMdGASI4KS1cOrlOg7VrQBc8Q5IAu2pUE8BD0L%2BwigvTHTndEiRgL1UncbQZEuR7McqZX38%2FddJztBrA9u9p23L%2BAig3pXcA6hDo68JyzPksOaZ5ePsVHAFuyxFvdYxMrdhNKLbA55s8ciSG7RL6CFsiW6SsKCoMLnH68wGOqUBEc792x6PGppE5TqnMwe9hiP0QJa8WcyJEzfmYldNbL3Ie9cXoySZLqd5Iwu85mSDRHpu1OWbODdn0vb4i%2B5vZ7XXjVcGSWw2jQkfSsCP2mweIxIdSMY0URU9rwVIKVgQz3Ibo%2BJ3L6Yl5ORD%2B2P2Gmnw2Vsd10%2B%2F5qDnnRaY%2BKyWxW%2BO1Qs6aOyIq0pxGn9D7RdF9iX21R%2Bisy7L6zNTLy0UQS9A&X-Amz-Signature=43e8223f201ae4ec54e3e2a018c204452139bb56adbedc4ab3fe157d74e84865&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:07.827Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2766346f-aeb0-805c-85ce-cb7bdd8e3e34"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yara is a global leader in crop nutrition, ammonia and essential industrial solutions. Yara's mission is to responsibly feed the world and protect the planet. We are working to de-carbonize food, shipping and other energy-intensive industries.\n\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yara is a global leader in crop nutrition, ammonia and essential industrial solutions. Yara's mission is to responsibly feed the world and protect the planet. We are working to de-carbonize food, shipping and other energy-intensive industries.\n\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Website: ",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Website: ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://yara.com",
+              "link": {
+                "url": "https://yara.com/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://yara.com",
+            "href": "https://yara.com/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "LinkedIn:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "LinkedIn:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.linkedin.com/company/yara/",
+              "link": {
+                "url": "https://www.linkedin.com/company/yara/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.linkedin.com/company/yara/",
+            "href": "https://www.linkedin.com/company/yara/"
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\n",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Instagram:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Instagram:",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "https://www.instagram.com/yarainternational/",
+              "link": {
+                "url": "https://www.instagram.com/yarainternational/"
+              }
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "https://www.instagram.com/yarainternational/",
+            "href": "https://www.instagram.com/yarainternational/"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Yara",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Yara",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Yara-2766346faeb080f6b25dd7f011c00dfe",
+    "public_url": null,
+    "request_id": "de46383d-fd85-4626-a4d8-6f6e808067f4"
+  },
+  {
+    "object": "page",
+    "id": "2866346f-aeb0-800e-a1b9-f548815ff7c0",
+    "created_time": "2025-10-08T11:56:00.000Z",
+    "last_edited_time": "2025-10-08T11:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://www.notion.so/image/attachment%3Aba39b619-1484-47cc-80ad-6945a2ad69e2%3AScreenshot_2025-10-08_at_5.25.13_PM.png?table=block&id=2866346f-aeb0-804c-b72c-c1902d7e822c&spaceId=1046346f-aeb0-81ce-a717-0003eca5601f&width=2000&userId=223d872b-594c-812d-b2f7-00027d725e9f&cache=v2",
+            "type": "file",
+            "file": {
+              "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/1046346f-aeb0-81ce-a717-0003eca5601f/ba39b619-1484-47cc-80ad-6945a2ad69e2/Screenshot_2025-10-08_at_5.25.13_PM.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466S77UVWWZ%2F20260222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260222T165907Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIFK2qNC13sle%2FBkY0KXAWSGh1MPimJiIw%2BV0Q7%2FPdp%2BoAiEAg1Be4rrvuqbeIUCuUmxLOXTALzmLribk0%2BAjwOLF8oEqiAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDGv2%2Bn4%2FEqKPtc5QQyrcA7TufrKBjNNzRsvGEL1RpllWPOwYKCJt8moCSaTAsf8Es1pYkMsK17FwYNWUq%2B%2FWqaJKXmm76aWrLrDxOq5%2FteU%2By%2BPndMZuyzF%2Fk%2FhLAjOE%2B1StMdudavnQkp3AyF%2FmpSMbk%2FpJkXjh%2BFPytn6OzeiU5pHiiaG4%2BOgQvEZczg06LAuWBF%2FkmcRdmCW5LmleKgfLen4RwZwVgGM796oLo3O5eeV8vJ4pYud7afcVyx4Bxq7UvTctQ7NSNYjCsgEDJI5ZP0XuCPfkCNTguXkEBbNPY0Ggvp4szz7DPd3qXXPom4l86aB4fUUJ4IYD7POAkbVKYF%2BNtwejuFEvJPr8sD%2BPIwB9KzlSAPh%2BC4s86HW7Kr27lYrBb4z%2B0wPud0s260P6lb319t4Yzg8H9zUojxx%2FpEp5q1ms4rIwQ0CY7DzCtUd22HGc7LYE8UX9uCZ9ixVrfLb0ZQysn4dunE6ZUpG4fsUl8JxeKBvbuNtj8CyT9Gv3Fr2I7dkVMezlS0Ri%2Fo6P1nsFXPLNzodeKo%2FByFvtW%2FDA9mggufZKYBrUksYtiQ2QTZJzFiXws9gqu4N5hWcJaduNYn3Dw4hwc7MeKvhPCqR0jdcZqnTBqH9lAEx9SorZ4rzELJ8kMKj4MIDM68wGOqUBrh%2Bh8P9YtCTQcVVOyNQR8L6kszp3Hp1CvPQVgEu6xCrQ6vV6LvuMAYr5kerrRc17jylo8HjDtzbnNONGW%2BH19wpw1U7DlmT35sr0UL7d8vJ0iQyUhLTygP%2FaKQRnKf14X%2BQ0i7ZxDGMGz8YKoDGlqfVj05WI0Je2WlXWiYDby5Qjh33YLzeVB1fkx1ZDj2R4CT8XvOn6trXmkxYpZUnE%2FVCP2hBe&X-Amz-Signature=0c4f73359082bd84a01dfccabffb8badafa78f31e19dc096a9c2bb16fdc56754&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "expiry_time": "2026-02-22T17:59:07.608Z"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2866346f-aeb0-8054-b3c7-c309a9d6df64"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Handecor",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Handecor",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Handecor-2866346faeb0800ea1b9f548815ff7c0",
+    "public_url": null,
+    "request_id": "5fbfcfb2-da51-4ba1-897d-f7b4ffa92601"
+  },
+  {
+    "object": "page",
+    "id": "28d6346f-aeb0-8009-9f40-f7e3156b9912",
+    "created_time": "2025-10-15T09:36:00.000Z",
+    "last_edited_time": "2025-10-15T09:36:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": []
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "28d6346f-aeb0-8041-9938-edec605597ca"
+          },
+          {
+            "id": "2dd6346f-aeb0-8096-aa2a-f02d26434af1"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Mediamen Services",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Mediamen Services",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Mediamen-Services-28d6346faeb080099f40f7e3156b9912",
+    "public_url": null,
+    "request_id": "c184c24c-306a-4629-9931-36fa178ed151"
+  },
+  {
+    "object": "page",
+    "id": "2dd6346f-aeb0-8033-8134-f7844888dd0a",
+    "created_time": "2026-01-03T07:22:00.000Z",
+    "last_edited_time": "2026-01-03T07:22:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": [
+          {
+            "name": "https://lezebre.lu/images/detailed/17/30038-tata-logo.png",
+            "type": "external",
+            "external": {
+              "url": "https://lezebre.lu/images/detailed/17/30038-tata-logo.png"
+            }
+          }
+        ]
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2dd6346f-aeb0-802f-a88e-ff519766ab8b"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "TATA",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TATA",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/TATA-2dd6346faeb080338134f7844888dd0a",
+    "public_url": null,
+    "request_id": "3f62df13-ba96-496f-9781-d768e457b4c5"
+  },
+  {
+    "object": "page",
+    "id": "2f96346f-aeb0-8018-8a30-ef47c830ba3b",
+    "created_time": "2026-01-31T12:16:00.000Z",
+    "last_edited_time": "2026-01-31T12:16:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-8021-bcc0-000bc596115b",
+      "database_id": "2766346f-aeb0-8002-b57e-c82e304e49a1"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Thumbnail": {
+        "id": "%3AB%3Dx",
+        "type": "files",
+        "files": []
+      },
+      "Experience": {
+        "id": "Lh%3A%3E",
+        "type": "relation",
+        "relation": [],
+        "has_more": false
+      },
+      "Project Client Relation": {
+        "id": "Nzse",
+        "type": "relation",
+        "relation": [
+          {
+            "id": "2f96346f-aeb0-80e0-bb94-ccfb5a282d9a"
+          }
+        ],
+        "has_more": false
+      },
+      "Description": {
+        "id": "ida_",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Debt Help Experts",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Debt Help Experts",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Debt-Help-Experts-2f96346faeb080188a30ef47c830ba3b",
+    "public_url": null,
+    "request_id": "6298aefa-4142-46d9-835a-358363067cf7"
+  }
+]

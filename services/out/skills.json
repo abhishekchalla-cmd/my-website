@@ -1,0 +1,2922 @@
+[
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8000-b34a-ec7c08a22ca6",
+    "created_time": "2025-09-22T20:09:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "G~fi",
+            "name": "Backend Frameworks",
+            "color": "gray"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Hasura GraphQL Engine",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Hasura GraphQL Engine",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Hasura-GraphQL-Engine-2766346faeb08000b34aec7c08a22ca6",
+    "public_url": null,
+    "request_id": "b61e0fad-fa83-4536-9f6f-80c44b37c624"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-800a-8c79-dd43709c9538",
+    "created_time": "2025-09-22T20:12:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS Route 53",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS Route 53",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-Route-53-2766346faeb0800a8c79dd43709c9538",
+    "public_url": null,
+    "request_id": "d420834b-46e1-477e-86e9-8e4620534e55"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8010-93bd-e4d55e235b50",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Docker",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Docker",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Docker-2766346faeb0801093bde4d55e235b50",
+    "public_url": null,
+    "request_id": "b25bbd5f-f1e2-4008-a3c6-a339ff4f1785"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-801c-8bed-e5f183623e71",
+    "created_time": "2025-09-22T20:08:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "yneD",
+            "name": "Frontend Frameworks",
+            "color": "blue"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "NextJS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "NextJS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/NextJS-2766346faeb0801c8bede5f183623e71",
+    "public_url": null,
+    "request_id": "af20d22a-17a8-4cbf-9e51-8f26ad38ee6d"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8028-86ad-c92f2ac96a58",
+    "created_time": "2025-09-22T20:06:00.000Z",
+    "last_edited_time": "2025-09-22T20:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Qxw}",
+            "name": "Programming Languages",
+            "color": "yellow"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "JavaScript / TypeScript",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "JavaScript / TypeScript",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/JavaScript-TypeScript-2766346faeb0802886adc92f2ac96a58",
+    "public_url": null,
+    "request_id": "e25b1b39-075e-4730-9a8a-4f68d240ca2d"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8032-8bce-e436452bdb38",
+    "created_time": "2025-09-22T20:12:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS Certificate Manager",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS Certificate Manager",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-Certificate-Manager-2766346faeb080328bcee436452bdb38",
+    "public_url": null,
+    "request_id": "00bbbd5f-9b6a-4bfb-81ab-e30a8e16f518"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-803f-899e-e050a57f7446",
+    "created_time": "2025-09-22T20:09:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "G~fi",
+            "name": "Backend Frameworks",
+            "color": "gray"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Serverless / SLS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Serverless / SLS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Serverless-SLS-2766346faeb0803f899ee050a57f7446",
+    "public_url": null,
+    "request_id": "aa127cbb-58f2-46de-a319-fd8c849247d4"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-804b-92e9-f2e78f325cfc",
+    "created_time": "2025-09-22T20:09:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "G~fi",
+            "name": "Backend Frameworks",
+            "color": "gray"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "NestJS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "NestJS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/NestJS-2766346faeb0804b92e9f2e78f325cfc",
+    "public_url": null,
+    "request_id": "729408c5-e49d-493f-af3a-b4df8971a081"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8052-91ed-eec54666ad70",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Firebase",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Firebase",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Firebase-2766346faeb0805291edeec54666ad70",
+    "public_url": null,
+    "request_id": "716758c3-8eb3-4f1b-91b4-af9a4c2d6e71"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8061-80df-d95221a1d1dc",
+    "created_time": "2025-09-22T20:07:00.000Z",
+    "last_edited_time": "2025-09-22T20:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 3
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Qxw}",
+            "name": "Programming Languages",
+            "color": "yellow"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Shell",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Shell",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Shell-2766346faeb0806180dfd95221a1d1dc",
+    "public_url": null,
+    "request_id": "dd5b86d0-dc8a-4fba-a7ae-a5246bbfb71f"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8063-b90b-d8a4ebf9654d",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "B@ms",
+            "name": "Database",
+            "color": "green"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "SQLite",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "SQLite",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/SQLite-2766346faeb08063b90bd8a4ebf9654d",
+    "public_url": null,
+    "request_id": "598980bd-3b71-46b2-9b2d-25d6c8f157dd"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-806b-9ae4-cc7741458352",
+    "created_time": "2025-09-22T20:07:00.000Z",
+    "last_edited_time": "2025-09-22T20:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Qxw}",
+            "name": "Programming Languages",
+            "color": "yellow"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "CSS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "CSS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/CSS-2766346faeb0806b9ae4cc7741458352",
+    "public_url": null,
+    "request_id": "fdf569e5-6eb7-4863-9848-c9e25474250b"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-808a-ba73-dd0db08b9b07",
+    "created_time": "2025-09-22T20:08:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "yneD",
+            "name": "Frontend Frameworks",
+            "color": "blue"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "GatsbyJS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "GatsbyJS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/GatsbyJS-2766346faeb0808aba73dd0db08b9b07",
+    "public_url": null,
+    "request_id": "7f649229-6178-4cff-b405-13541d0f7b29"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8095-bcae-c88e4805a9a9",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS Codepipeline",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS Codepipeline",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-Codepipeline-2766346faeb08095bcaec88e4805a9a9",
+    "public_url": null,
+    "request_id": "6a8ff50d-cb0d-4140-9345-7823a444c4e7"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-8096-8291-e42a0634253b",
+    "created_time": "2025-09-22T20:09:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "B@ms",
+            "name": "Database",
+            "color": "green"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "PostgreSQL",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "PostgreSQL",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/PostgreSQL-2766346faeb080968291e42a0634253b",
+    "public_url": null,
+    "request_id": "ff087786-4407-4df6-84bd-763ca5372038"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-809b-bcff-c94d81b88a97",
+    "created_time": "2025-09-22T20:09:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "G~fi",
+            "name": "Backend Frameworks",
+            "color": "gray"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Flask",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Flask",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Flask-2766346faeb0809bbcffc94d81b88a97",
+    "public_url": null,
+    "request_id": "de5f8ed8-7a77-4d39-a9d4-ded358c99a35"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80a3-8e63-c8b798fd346a",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS Elastic Container Service",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS Elastic Container Service",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-Elastic-Container-Service-2766346faeb080a38e63c8b798fd346a",
+    "public_url": null,
+    "request_id": "040373bb-eeaf-45af-b5ce-f9ac5737db9a"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80a6-a9d0-d683cdd9b809",
+    "created_time": "2025-09-22T20:07:00.000Z",
+    "last_edited_time": "2025-09-22T20:12:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "yneD",
+            "name": "Frontend Frameworks",
+            "color": "blue"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "React",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "React",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/React-2766346faeb080a6a9d0d683cdd9b809",
+    "public_url": null,
+    "request_id": "a6f3fe59-0cf3-43c8-b73f-edd2c45aedd7"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80b4-8f3d-c1beb5cc5c83",
+    "created_time": "2025-09-22T20:09:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 2
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "G~fi",
+            "name": "Backend Frameworks",
+            "color": "gray"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "WSO2",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "WSO2",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/WSO2-2766346faeb080b48f3dc1beb5cc5c83",
+    "public_url": null,
+    "request_id": "75b983c9-c75a-4854-b3ff-6c2be9b8c42e"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80b6-8395-e959c997cef7",
+    "created_time": "2025-09-22T20:07:00.000Z",
+    "last_edited_time": "2025-09-22T20:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 3
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Qxw}",
+            "name": "Programming Languages",
+            "color": "yellow"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Java",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Java",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Java-2766346faeb080b68395e959c997cef7",
+    "public_url": null,
+    "request_id": "77cab2f5-b698-42cf-bc4e-66c1e0cf0052"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80bb-a47f-f5232daa6388",
+    "created_time": "2025-09-22T20:11:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS SQS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS SQS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-SQS-2766346faeb080bba47ff5232daa6388",
+    "public_url": null,
+    "request_id": "877958c7-f35a-42d5-a68c-3c460e93d31a"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80bd-99d2-f2c49e126667",
+    "created_time": "2025-09-22T20:07:00.000Z",
+    "last_edited_time": "2025-09-22T20:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Qxw}",
+            "name": "Programming Languages",
+            "color": "yellow"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "HTML",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "HTML",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/HTML-2766346faeb080bd99d2f2c49e126667",
+    "public_url": null,
+    "request_id": "be5ed82f-6356-4b6c-a7b3-b91eb6ae0cac"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80c3-8d38-eba85ce4b32d",
+    "created_time": "2025-09-22T20:12:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS EventBridge",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS EventBridge",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-EventBridge-2766346faeb080c38d38eba85ce4b32d",
+    "public_url": null,
+    "request_id": "8343fc54-4e5b-405d-8362-ee33f1f084fb"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80c7-a431-e7bb9345676f",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 3
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS Elastic Beanstalk",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS Elastic Beanstalk",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-Elastic-Beanstalk-2766346faeb080c7a431e7bb9345676f",
+    "public_url": null,
+    "request_id": "e61775bb-d0f2-4d60-a0c0-456aaad61743"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80cd-b32c-c43a8dbb2532",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "B@ms",
+            "name": "Database",
+            "color": "green"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "MongoDB",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "MongoDB",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/MongoDB-2766346faeb080cdb32cc43a8dbb2532",
+    "public_url": null,
+    "request_id": "22526b05-4e2a-4e1a-89b3-055872847cf9"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80d3-8fdf-fe911242e29a",
+    "created_time": "2025-09-22T20:11:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 3
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Webpack",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Webpack",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Webpack-2766346faeb080d38fdffe911242e29a",
+    "public_url": null,
+    "request_id": "3d04496a-f749-45ba-bba5-60f34fe57614"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80d4-aed4-dbbc69307ebd",
+    "created_time": "2025-09-22T20:08:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "G~fi",
+            "name": "Backend Frameworks",
+            "color": "gray"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ExpressJS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "ExpressJS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/ExpressJS-2766346faeb080d4aed4dbbc69307ebd",
+    "public_url": null,
+    "request_id": "66433f2b-4f38-474d-8949-c39194faa8c4"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80d7-969c-e12d7851cecb",
+    "created_time": "2025-09-22T20:08:00.000Z",
+    "last_edited_time": "2025-09-22T20:12:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "yneD",
+            "name": "Frontend Frameworks",
+            "color": "blue"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "React Native",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "React Native",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/React-Native-2766346faeb080d7969ce12d7851cecb",
+    "public_url": null,
+    "request_id": "c5cdb507-09e3-421f-af90-92beb1f6b940"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80dd-8157-c96a0e094e7b",
+    "created_time": "2025-09-22T20:11:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS Elastic Container Registry",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS Elastic Container Registry",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-Elastic-Container-Registry-2766346faeb080dd8157c96a0e094e7b",
+    "public_url": null,
+    "request_id": "afb007ea-898c-4a00-942f-01397d1f8e1a"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80dd-b6a5-f4ae9ad1d3ca",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS EC2",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS EC2",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-EC2-2766346faeb080ddb6a5f4ae9ad1d3ca",
+    "public_url": null,
+    "request_id": "ea4ac1bd-5101-4541-8eb6-33917fb14ac1"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80df-906d-d31f2072217f",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 3
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jenkins",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jenkins",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Jenkins-2766346faeb080df906dd31f2072217f",
+    "public_url": null,
+    "request_id": "64d133f3-242b-4703-bf72-948aacad2883"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80e0-9c69-f1946e1310af",
+    "created_time": "2025-09-22T20:11:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS API Gateway",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS API Gateway",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-API-Gateway-2766346faeb080e09c69f1946e1310af",
+    "public_url": null,
+    "request_id": "57281821-f3c1-4771-bfbf-85d7fd6abb5b"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80e3-8c85-c2b63ea0574a",
+    "created_time": "2025-09-22T20:10:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "B@ms",
+            "name": "Database",
+            "color": "green"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Redis",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Redis",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Redis-2766346faeb080e38c85c2b63ea0574a",
+    "public_url": null,
+    "request_id": "a2fff93d-0fa6-4959-a01b-d7b91fc91e2e"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80e6-ab25-cd941e74ae6f",
+    "created_time": "2025-09-22T20:07:00.000Z",
+    "last_edited_time": "2025-09-22T20:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Qxw}",
+            "name": "Programming Languages",
+            "color": "yellow"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Python",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Python",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Python-2766346faeb080e6ab25cd941e74ae6f",
+    "public_url": null,
+    "request_id": "f5e005c5-d707-4a6c-ac1e-6375b8074267"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80ea-9193-d40ab21ad63d",
+    "created_time": "2025-09-22T20:08:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "yneD",
+            "name": "Frontend Frameworks",
+            "color": "blue"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "TailwindCSS",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TailwindCSS",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/TailwindCSS-2766346faeb080ea9193d40ab21ad63d",
+    "public_url": null,
+    "request_id": "475d5b9d-b8d4-4cc4-a66c-2fd6d9f36bd8"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80ee-80f4-ef37b92e6484",
+    "created_time": "2025-09-22T20:07:00.000Z",
+    "last_edited_time": "2025-09-22T20:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 3
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Qxw}",
+            "name": "Programming Languages",
+            "color": "yellow"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Kotlin",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Kotlin",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Kotlin-2766346faeb080ee80f4ef37b92e6484",
+    "public_url": null,
+    "request_id": "e42ebc64-a64e-46bc-9222-9273e7dbe041"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80f4-a40f-cbd2b1d05945",
+    "created_time": "2025-09-22T20:09:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 4
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "G~fi",
+            "name": "Backend Frameworks",
+            "color": "gray"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Temporal",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Temporal",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Temporal-2766346faeb080f4a40fcbd2b1d05945",
+    "public_url": null,
+    "request_id": "d4021a7d-9416-47fd-862a-2e71220c6f84"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80f7-9d8e-e3704e569eae",
+    "created_time": "2025-09-22T20:09:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "G~fi",
+            "name": "Backend Frameworks",
+            "color": "gray"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Prisma",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Prisma",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Prisma-2766346faeb080f79d8ee3704e569eae",
+    "public_url": null,
+    "request_id": "c7a302e6-f391-4a7f-a607-3a9819bb3d0a"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80f9-a208-f8beaacd3e1f",
+    "created_time": "2025-09-22T20:11:00.000Z",
+    "last_edited_time": "2025-09-22T20:14:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 5
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "Ao[[",
+            "name": "DevOps / Infrastructure",
+            "color": "pink"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "AWS Lambda",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "AWS Lambda",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/AWS-Lambda-2766346faeb080f9a208f8beaacd3e1f",
+    "public_url": null,
+    "request_id": "f8e4382d-5810-453e-acec-7603bcff7cb2"
+  },
+  {
+    "object": "page",
+    "id": "2766346f-aeb0-80ff-b2cb-f0081325df87",
+    "created_time": "2025-09-22T20:08:00.000Z",
+    "last_edited_time": "2025-09-22T20:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "223d872b-594c-812d-b2f7-00027d725e9f"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2766346f-aeb0-80c0-8b8b-000b829f2799",
+      "database_id": "2766346f-aeb0-8054-a2b1-fe56dd969d4c"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Score": {
+        "id": "%3E%3ARb",
+        "type": "number",
+        "number": 3
+      },
+      "Order": {
+        "id": "NDhG",
+        "type": "number",
+        "number": null
+      },
+      "Type": {
+        "id": "kEaW",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "yneD",
+            "name": "Frontend Frameworks",
+            "color": "blue"
+          }
+        ]
+      },
+      "Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Android",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Android",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Android-2766346faeb080ffb2cbf0081325df87",
+    "public_url": null,
+    "request_id": "06fa3113-3371-4756-a62d-6851c8020551"
+  }
+]
