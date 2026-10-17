@@ -86,7 +86,7 @@
       }
       .project-thumbnail {
         flex: 0 0 200px;
-        background-color: #e2e8f0;
+        background: #e2e8f0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -96,7 +96,7 @@
       .project-thumbnail img {
         width: 100%;
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
       }
       .project-details {
         flex: 1;
@@ -113,12 +113,21 @@
         font-weight: bold;
       }
       @media (max-width: 768px) {
+        body {
+          -webkit-print-color-adjust: exact; /* For Chrome, Safari, and Edge */
+          print-color-adjust: exact;
+        }
         .project-card {
           flex-direction: column;
         }
         .project-thumbnail {
           flex: none;
           height: 200px;
+        }
+        .project-thumbnail img {
+          height: 100%;
+          width: auto;
+          object-fit: scale-down;
         }
       }
     </style>
@@ -199,7 +208,7 @@
               <td><strong>Tools & Integrations</strong></td>
               <td>
                 n8n, WhatsApp Integrations, Generative AI Models, Shopify
-                Liquid, WordPress
+                Development, WordPress Development
               </td>
             </tr>
           </tbody>
@@ -210,15 +219,11 @@
         <h2>Professional Projects</h2>
 
         <div class="project-card">
-          <div
-            class="project-thumbnail"
-            style="padding: 0 20px; box-sizing: border-box"
-          >
+          <div class="project-thumbnail">
             <!-- Replace src with actual thumbnail URL -->
             <img
-              src="/assets/project-skillstrainer.svg"
+              src="/assets/project-skillstrainer.jpg"
               alt="SkillsTrainer Thumbnail"
-              style="background: white; padding: 20px"
             />
           </div>
           <div class="project-details">
