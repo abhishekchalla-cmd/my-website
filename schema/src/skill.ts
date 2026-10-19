@@ -1,6 +1,4 @@
 import z from "zod";
-import { SchemaDef } from "./utils/schema";
-import { DBTypes } from "./db-types";
 
 export const SKILL_TYPE = {
   dev_ops: "dev_ops",
@@ -10,7 +8,7 @@ export const SKILL_TYPE = {
   frontend: "frontend",
 } as const;
 
-export const SkillSchema: SchemaDef<DBTypes> = {
+export const SkillSchema = {
   base: z.object({
     id: z.string(),
     name: z.string(),

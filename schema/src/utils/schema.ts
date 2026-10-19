@@ -1,8 +1,11 @@
 import z from "zod";
 
-export type SchemaDef<DBTypes> = {
-  base: z.ZodObject;
-  relations: {
+export type DBTypeVFinalBaseSchemaMap<DBTypes> = {
+  [DBType in keyof DBTypes]: z.ZodObject;
+};
+
+export type DBTypeVFinalRelationsSchemaMap<DBTypes> = {
+  [DBType in keyof DBTypes]: {
     [relationName: string]: {
       dbType: keyof DBTypes;
       isMulti: boolean;
@@ -12,18 +15,16 @@ export type SchemaDef<DBTypes> = {
 
 export type Schema<
   DBTypes,
-  DBTypesSchemaDefMap extends { [DBT in keyof DBTypes]: SchemaDef<DBTypes> },
+  TvFBSMap extends DBTypeVFinalBaseSchemaMap<DBTypes>,
+  TvFRSMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
   DBType extends keyof DBTypes,
-> = z.infer<DBTypesSchemaDefMap[DBType]["base"]> & {
-  [Relation in keyof DBTypesSchemaDefMap[DBType]["relations"]]?: DBTypesSchemaDefMap[DBType]["relations"][Relation]["isMulti"] extends true
+> = z.infer<TvFBSMap[DBType]> & {
+  [Relation in keyof TvFRSMap[DBType]]?: TvFRSMap[DBType][Relation]["isMulti"] extends true
     ? Schema<
         DBTypes,
-        DBTypesSchemaDefMap,
-        DBTypesSchemaDefMap[DBType]["relations"][Relation]["dbType"]
+        TvFBSMap,
+        TvFRSMap,
+        TvFRSMap[DBType][Relation]["dbType"]
       >[]
-    : Schema<
-        DBTypes,
-        DBTypesSchemaDefMap,
-        DBTypesSchemaDefMap[DBType]["relations"][Relation]["dbType"]
-      >;
+    : Schema<DBTypes, TvFBSMap, TvFRSMap, TvFRSMap[DBType][Relation]["dbType"]>;
 };

@@ -1,7 +1,6 @@
 import z from "zod";
 import { NotionRichTextPropertySchema } from "./notion/properties";
-import { SchemaDef } from "./utils/schema";
-import { DB_TYPES, DBTypes } from "./db-types";
+import { DB_TYPES } from "./db-types";
 
 export const PROJECT_ROLE = {
   owner: "owner",
@@ -49,7 +48,7 @@ export const NOTION_PROJECT_CLIENT_TYPE_TO_PROJECT_CLIENT_TYPE = {
   Organisation: PROJECT_CLIENT_TYPE.organisation,
 };
 
-export const ProjectClientRelationSchema: SchemaDef<DBTypes> = {
+export const ProjectClientRelationSchema = {
   base: z.object({
     id: z.string(),
     type: z.literal(Object.values(PROJECT_CLIENT_TYPE)),
@@ -67,7 +66,7 @@ export const ProjectClientRelationSchema: SchemaDef<DBTypes> = {
   },
 };
 
-export const ProjectPeopleRelationSchema: SchemaDef<DBTypes> = {
+export const ProjectPeopleRelationSchema = {
   base: z.object({
     id: z.string(),
     role: z.string(),
@@ -80,7 +79,7 @@ export const ProjectPeopleRelationSchema: SchemaDef<DBTypes> = {
   },
 };
 
-export const ProjectSchema: SchemaDef<DBTypes> = {
+export const ProjectSchema = {
   base: z.object({
     id: z.string(),
     name: z.string(),

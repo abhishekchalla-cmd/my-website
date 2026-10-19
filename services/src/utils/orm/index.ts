@@ -5,7 +5,8 @@ import { NotionRelationPropertySchema } from "@abhishekchalla/schema/notion/prop
 export const generateOrm: ORMGenerator = (
   dbTypes,
   dbTypeVRawSchemaMap,
-  dbTypeVFinalSchemaMap,
+  dbTypeVFinalBaseSchemaMap,
+  dbTypeVFinalRelationsSchemaMap,
   dbTypeVFinalSchemaVRawSchemaRelationsMapping,
   dbTypeVTransformerMap,
   dbTypeVGetRawByIdFnMap,
@@ -36,9 +37,8 @@ export const generateOrm: ORMGenerator = (
                   rawSchemaRelationKey
                 ]; /* notion specific logic */
 
-              const finalData = dbTypeVFinalSchemaMap[dbType].relations[
-                finalSchemaRelationKey
-              ].isMulti
+              const finalData = dbTypeVFinalRelationsSchemaMap[dbType]
+                .relations[finalSchemaRelationKey].isMulti
                 ? await Promise.all(
                     relatedDataRaw.relation.map(({ id }) =>
                       orm[dbType].getById(
@@ -64,7 +64,11 @@ export const generateOrm: ORMGenerator = (
       },
     }),
     {},
-  ) as ORM<typeof dbTypes, typeof dbTypeVFinalSchemaMap>;
+  ) as ORM<
+    typeof dbTypes,
+    typeof dbTypeVFinalBaseSchemaMap,
+    typeof dbTypeVFinalRelationsSchemaMap
+  >;
 
   return orm;
 };

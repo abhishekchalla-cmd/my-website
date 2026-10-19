@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "5.0",
     "baseUrl": ".",
     "paths": {
-      "@abhishekchalla/services/*": ["services/src/*"],
-      "@abhishekchalla/schema/*": ["schema/src/*"],
       "@abhishekchalla/config/*": ["config/src/*"],
+      "@abhishekchalla/schema/*": ["schema/src/*"],
+      "@abhishekchalla/services/*": ["services/src/*"],
       "@abhishekchalla/frontend/*": ["frontend/src/*"]
     }
   },

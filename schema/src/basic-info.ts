@@ -1,8 +1,6 @@
 import z from "zod";
-import { SchemaDef } from "./utils/schema";
-import { DBTypes } from "./db-types";
 
-export const BasicInfoSchema: SchemaDef<DBTypes> = {
+export const BasicInfoSchema = {
   base: z.object({
     name: z.string(),
     dateOfBirth: z.date(),

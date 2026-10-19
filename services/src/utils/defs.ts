@@ -49,19 +49,30 @@ import {
   getTestimonies,
   getTestimony,
 } from "@abhishekchalla/services/db/testimonies";
-import { DB_TYPES, DBTypes } from "@abhishekchalla/schema/db-types";
-import { RelationsResolverOpts } from "./orm/types";
+import { DB_TYPES } from "@abhishekchalla/schema/db-types";
 
-const finalSchema = {
-  [DB_TYPES.basicInfo]: BasicInfoSchema,
-  [DB_TYPES.experience]: ExperienceSchema,
-  [DB_TYPES.organisation]: OrganisationSchema,
-  [DB_TYPES.person]: PersonSchema,
-  [DB_TYPES.projectClientRelation]: ProjectClientRelationSchema,
-  [DB_TYPES.projectPeopleRelation]: ProjectPeopleRelationSchema,
-  [DB_TYPES.project]: ProjectSchema,
-  [DB_TYPES.skill]: SkillSchema,
-  [DB_TYPES.testimony]: TestimonySchema,
+const finalBaseSchema = {
+  [DB_TYPES.basicInfo]: BasicInfoSchema.base,
+  [DB_TYPES.experience]: ExperienceSchema.base,
+  [DB_TYPES.organisation]: OrganisationSchema.base,
+  [DB_TYPES.person]: PersonSchema.base,
+  [DB_TYPES.projectClientRelation]: ProjectClientRelationSchema.base,
+  [DB_TYPES.projectPeopleRelation]: ProjectPeopleRelationSchema.base,
+  [DB_TYPES.project]: ProjectSchema.base,
+  [DB_TYPES.skill]: SkillSchema.base,
+  [DB_TYPES.testimony]: TestimonySchema.base,
+};
+
+const finalRelationsSchema = {
+  [DB_TYPES.basicInfo]: BasicInfoSchema.relations,
+  [DB_TYPES.experience]: ExperienceSchema.relations,
+  [DB_TYPES.organisation]: OrganisationSchema.relations,
+  [DB_TYPES.person]: PersonSchema.relations,
+  [DB_TYPES.projectClientRelation]: ProjectClientRelationSchema.relations,
+  [DB_TYPES.projectPeopleRelation]: ProjectPeopleRelationSchema.relations,
+  [DB_TYPES.project]: ProjectSchema.relations,
+  [DB_TYPES.skill]: SkillSchema.relations,
+  [DB_TYPES.testimony]: TestimonySchema.relations,
 };
 
 export const orm = generateOrm(
@@ -81,7 +92,8 @@ export const orm = generateOrm(
   },
 
   // Final schema
-  finalSchema,
+  finalBaseSchema,
+  finalRelationsSchema,
 
   // Final schema relations to Raw schema relations mapping
   {
@@ -105,7 +117,9 @@ export const orm = generateOrm(
       projectPeople: "Project People Relation",
     },
     skill: {},
-    testimony: {},
+    testimony: {
+      person: "By",
+    },
   },
 
   // Raw to Final schema Transformer
@@ -147,5 +161,3 @@ export const orm = generateOrm(
     testimony: getTestimonies,
   },
 );
-
-const o: RelationsResolverOpts<DBTypes, "experience", typeof finalSchema> = {};
