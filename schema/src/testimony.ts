@@ -1,5 +1,6 @@
 import z from "zod";
 import { DB_TYPES } from "./db-types";
+import { IS_MULTI } from "./utils/consts";
 
 export const TestimonySchema = {
   base: z.object({
@@ -12,7 +13,7 @@ export const TestimonySchema = {
   relations: {
     person: {
       dbType: DB_TYPES.person,
-      isMulti: false,
+      isMulti: IS_MULTI.FALSE,
     },
   },
 };

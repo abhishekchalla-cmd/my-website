@@ -1,5 +1,6 @@
 import z from "zod";
-import { DB_TYPES } from "./db-types";
+import { DB_TYPES } from "@abhishekchalla/schema/db-types";
+import { IS_MULTI } from "@abhishekchalla/schema/utils/consts";
 
 export const PersonSchema = {
   base: z.object({
@@ -8,6 +9,6 @@ export const PersonSchema = {
     linkedinUrl: z.url().optional(),
   }),
   relations: {
-    experience: { dbType: DB_TYPES.experience, isMulti: true },
+    experience: { dbType: DB_TYPES.experience, isMulti: IS_MULTI.TRUE },
   },
 };

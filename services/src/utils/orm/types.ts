@@ -2,6 +2,8 @@ import {
   Schema,
   DBTypeVFinalBaseSchemaMap,
   DBTypeVFinalRelationsSchemaMap,
+  RelationsResolverOpts,
+  Prettify,
 } from "@abhishekchalla/schema/utils/schema";
 import z from "zod";
 
@@ -14,7 +16,7 @@ export type DBTypeVFinalSchemaMap<
   TvFBSMap extends DBTypeVFinalBaseSchemaMap<DBTypes>,
   TvFRSMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
 > = {
-  [DBType in keyof DBTypes]: Schema<DBTypes, TvFBSMap, TvFRSMap, DBType>;
+  [DBType in keyof DBTypes]: Schema<DBTypes, TvFBSMap, TvFRSMap, DBType, any>;
 };
 
 type DBTypeVRawSchemaVFinalSchemaRelationsMap<
@@ -40,44 +42,19 @@ type DBTypeVTransformerMap<
 type DBTypeVGetRawByIdFnMap<
   DBTypes,
   TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
-  TypeToFinalRelationsSchemaMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
 > = {
   [DBType in keyof DBTypes]: (
     itemId: string,
-    relResOpts: RelationsResolverOpts<
-      DBTypes,
-      DBType,
-      TypeToFinalRelationsSchemaMap
-    >,
   ) => Promise<z.infer<TypeToRawSchemaMap[DBType]>>;
 };
 
 type DBTypeVGetRawAllFnMap<
   DBTypes,
   TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
-  TypeToFinalRelationsSchemaMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
 > = {
-  [DBType in keyof DBTypes]: (
-    relResOpts: RelationsResolverOpts<
-      DBTypes,
-      DBType,
-      TypeToFinalRelationsSchemaMap
-    >,
-  ) => Promise<z.infer<TypeToRawSchemaMap[DBType]>[]>;
-};
-
-export type RelationsResolverOpts<
-  DBTypes,
-  BaseDBType extends keyof DBTypes,
-  TvFRSMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
-> = {
-  [RelationName in keyof TvFRSMap[BaseDBType]]?:
-    | boolean
-    | RelationsResolverOpts<
-        DBTypes,
-        TvFRSMap[BaseDBType][RelationName]["dbType"],
-        TvFRSMap
-      >;
+  [DBType in keyof DBTypes]: () => Promise<
+    z.infer<TypeToRawSchemaMap[DBType]>[]
+  >;
 };
 
 export type ORM<
@@ -86,13 +63,21 @@ export type ORM<
   TvFRSMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
 > = {
   [DBType in keyof DBTypes]: {
-    getById: (
+    getById: <
+      RelResOpts extends RelationsResolverOpts<DBTypes, DBType, TvFRSMap>,
+    >(
       id: string,
-      relResOpts: RelationsResolverOpts<DBTypes, DBType, TvFRSMap>,
-    ) => Promise<Schema<DBTypes, TvFBSMap, TvFRSMap, DBType>>;
-    getAll: (
-      relResOpts: RelationsResolverOpts<DBTypes, DBType, TvFRSMap>,
-    ) => Promise<Schema<DBTypes, TvFBSMap, TvFRSMap, DBType>[]>;
+      relResOpts: RelResOpts,
+    ) => Promise<
+      Prettify<Schema<DBTypes, TvFBSMap, TvFRSMap, DBType, RelResOpts>>
+    >;
+    getAll: <
+      RelResOpts extends RelationsResolverOpts<DBTypes, DBType, TvFRSMap>,
+    >(
+      relResOpts: RelResOpts,
+    ) => Promise<
+      Prettify<Schema<DBTypes, TvFBSMap, TvFRSMap, DBType, RelResOpts>>[]
+    >;
   };
 };
 
@@ -107,8 +92,8 @@ export type ORMGenerator = <
     TvFRSMap
   >,
   TvTMap extends DBTypeVTransformerMap<DBTypes, TvRSMap, TvFBSMap>,
-  TvGRBIFnMap extends DBTypeVGetRawByIdFnMap<DBTypes, TvRSMap, TvFRSMap>,
-  TvGRAllFnMap extends DBTypeVGetRawAllFnMap<DBTypes, TvRSMap, TvFRSMap>,
+  TvGRBIFnMap extends DBTypeVGetRawByIdFnMap<DBTypes, TvRSMap>,
+  TvGRAllFnMap extends DBTypeVGetRawAllFnMap<DBTypes, TvRSMap>,
 >(
   dbTypes: DBTypes,
   dbTypeVRawSchemaMap: TvRSMap,

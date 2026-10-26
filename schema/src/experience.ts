@@ -1,5 +1,6 @@
 import z from "zod";
-import { DB_TYPES } from "./db-types";
+import { DB_TYPES } from "@abhishekchalla/schema/db-types";
+import { IS_MULTI } from "@abhishekchalla/schema/utils/consts";
 
 export const ExperienceSchema = {
   base: z.object({
@@ -9,6 +10,6 @@ export const ExperienceSchema = {
     endDate: z.iso.datetime().optional(),
   }),
   relations: {
-    company: { dbType: DB_TYPES.organisation, isMulti: false },
+    company: { dbType: DB_TYPES.organisation, isMulti: IS_MULTI.FALSE },
   },
 };

@@ -17,7 +17,7 @@ export const generateOrm: ORMGenerator = (
       ...acc,
       [dbType]: {
         getById: async (id, relResOpts) =>
-          dbTypeVGetRawByIdFnMap[dbType](id).then(async (res) => {
+          dbTypeVGetRawByIdFnMap[dbType](id, relResOpts).then(async (res) => {
             const transformedRes = dbTypeVTransformerMap[dbType](res);
 
             if (!relResOpts) return transformedRes;
@@ -58,7 +58,7 @@ export const generateOrm: ORMGenerator = (
             return transformedRes;
           }),
         getAll: async (relResOpts) => {
-          const allRawData = await dbTypeVGetRawAllFnMap[dbType]();
+          const allRawData = await dbTypeVGetRawAllFnMap[dbType](relResOpts);
           return allRawData;
         },
       },

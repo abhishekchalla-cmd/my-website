@@ -1,6 +1,7 @@
 import z from "zod";
 import { NotionRichTextPropertySchema } from "./notion/properties";
 import { DB_TYPES } from "./db-types";
+import { IS_MULTI } from "./utils/consts";
 
 export const PROJECT_ROLE = {
   owner: "owner",
@@ -57,11 +58,11 @@ export const ProjectClientRelationSchema = {
   relations: {
     organisation: {
       dbType: DB_TYPES.organisation,
-      isMulti: false,
+      isMulti: IS_MULTI.FALSE,
     },
     person: {
       dbType: DB_TYPES.person,
-      isMulti: false,
+      isMulti: IS_MULTI.FALSE,
     },
   },
 };
@@ -74,7 +75,7 @@ export const ProjectPeopleRelationSchema = {
   relations: {
     person: {
       dbType: DB_TYPES.person,
-      isMulti: false,
+      isMulti: IS_MULTI.FALSE,
     },
   },
 };
@@ -95,11 +96,11 @@ export const ProjectSchema = {
   relations: {
     projectClients: {
       dbType: DB_TYPES.projectClientRelation,
-      isMulti: true,
+      isMulti: IS_MULTI.TRUE,
     },
     projectPeople: {
       dbType: DB_TYPES.projectPeopleRelation,
-      isMulti: true,
+      isMulti: IS_MULTI.TRUE,
     },
   },
 };
