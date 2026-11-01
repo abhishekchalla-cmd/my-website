@@ -1,11 +1,11 @@
 import { z } from "zod";
-import { NotionPageBaseSchema } from "@abhishekchalla/schema/notion/page-base";
+import { NotionPageBaseSchema } from "@abhishekchalla/notion/schema/page-base";
 import {
   NotionDatePropertySchema,
   NotionNumberPropertySchema,
   NotionRelationPropertySchema,
   NotionTitlePropertySchema,
-} from "@abhishekchalla/schema/notion/properties";
+} from "@abhishekchalla/notion/schema/properties";
 
 export const NotionExperienceSchema = NotionPageBaseSchema.extend({
   properties: z.object({

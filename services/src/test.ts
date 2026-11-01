@@ -1,4 +1,4 @@
-import { notionClient } from "@abhishekchalla/services/utils/notion-client";
+import { notionClient } from "@abhishekchalla/notion";
 
 if (require.main.filename === __filename) {
   Promise.all([

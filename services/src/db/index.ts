@@ -1,5 +1,5 @@
-import { resolve } from "path";
-import { writeFileSync } from "fs";
+import { resolve } from "node:path";
+import { writeFileSync } from "node:fs";
 import { getProjects } from "@abhishekchalla/services/db/projects";
 import { getBasicInfos } from "@abhishekchalla/services/db/basic-info";
 import { getOrganisations } from "@abhishekchalla/services/db/organisations";

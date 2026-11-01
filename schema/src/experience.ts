@@ -1,6 +1,6 @@
 import z from "zod";
 import { DB_TYPES } from "@abhishekchalla/schema/db-types";
-import { IS_MULTI } from "@abhishekchalla/schema/utils/consts";
+import { IS_MULTI } from "@abhishekchalla/orm/consts";
 
 export const ExperienceSchema = {
   base: z.object({

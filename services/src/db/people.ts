@@ -1,7 +1,6 @@
 import * as config from "@abhishekchalla/config";
-import { NotionPersonSchema } from "@abhishekchalla/schema/notion/pages/person";
-import { getAllDbRecords } from "@abhishekchalla/services/notion";
-import { getPageById } from "@abhishekchalla/services/notion/pages";
+import { NotionPersonSchema } from "@abhishekchalla/schema/notion/person";
+import { getAllDbRecords, getPageById } from "@abhishekchalla/notion";
 
 export const getPeople = () =>
   getAllDbRecords<typeof NotionPersonSchema>(config.notion.db.people);

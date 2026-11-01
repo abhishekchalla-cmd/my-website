@@ -1,10 +1,10 @@
 import { z } from "zod";
-import { NotionPageBaseSchema } from "@abhishekchalla/schema/notion/page-base";
+import { NotionPageBaseSchema } from "@abhishekchalla/notion/schema/page-base";
 import {
   NotionMultiSelectPropertySchema,
   NotionNumberPropertySchema,
   NotionTitlePropertySchema,
-} from "@abhishekchalla/schema/notion/properties";
+} from "@abhishekchalla/notion/schema/properties";
 
 export const NotionSkillSchema = NotionPageBaseSchema.extend({
   properties: z.object({

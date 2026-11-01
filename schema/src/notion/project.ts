@@ -1,4 +1,4 @@
-import { NotionPageBaseSchema } from "@abhishekchalla/schema/notion/page-base";
+import { NotionPageBaseSchema } from "@abhishekchalla/notion/schema/page-base";
 import {
   NotionRelationPropertySchema,
   NotionFormulaPropertySchema,
@@ -9,7 +9,7 @@ import {
   NotionFilesPropertySchema,
   NotionNumberPropertySchema,
   NotionTitlePropertySchema,
-} from "@abhishekchalla/schema/notion/properties";
+} from "@abhishekchalla/notion/schema/properties";
 import z from "zod";
 
 export const NotionProjectSchema = NotionPageBaseSchema.extend({

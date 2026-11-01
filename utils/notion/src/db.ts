@@ -1,4 +1,4 @@
-import { notionClient } from "@abhishekchalla/services/utils/notion-client";
+import { notionClient } from "@abhishekchalla/notion";
 
 export const getDBRecords = async (dbId: string) => {
   const response = await notionClient.dataSources.query({

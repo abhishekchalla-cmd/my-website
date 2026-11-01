@@ -1,7 +1,7 @@
 import z from "zod";
-import { NotionRichTextPropertySchema } from "./notion/properties";
+import { NotionRichTextPropertySchema } from "../../utils/notion/src/schema/properties";
 import { DB_TYPES } from "./db-types";
-import { IS_MULTI } from "./utils/consts";
+import { IS_MULTI } from "@abhishekchalla/orm/consts";
 
 export const PROJECT_ROLE = {
   owner: "owner",

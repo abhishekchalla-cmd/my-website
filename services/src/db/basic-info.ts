@@ -1,7 +1,6 @@
-import { getAllDbRecords } from "@abhishekchalla/services/notion";
+import { getPageById, getAllDbRecords } from "@abhishekchalla/notion";
 import * as config from "@abhishekchalla/config";
-import { NotionBasicInfoSchema } from "@abhishekchalla/schema/notion/pages/basic-info";
-import { getPageById } from "../notion/pages";
+import { NotionBasicInfoSchema } from "@abhishekchalla/schema/notion/basic-info";
 
 export const getBasicInfos = () =>
   getAllDbRecords<typeof NotionBasicInfoSchema>(config.notion.db.basicInfo);

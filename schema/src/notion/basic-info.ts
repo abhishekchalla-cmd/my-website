@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { NotionPageBaseSchema } from "@abhishekchalla/schema/notion/page-base";
+import { NotionPageBaseSchema } from "@abhishekchalla/notion/schema/page-base";
 import {
   NotionDatePropertySchema,
   NotionEmailPropertySchema,
@@ -7,7 +7,7 @@ import {
   NotionRichTextPropertySchema,
   NotionTitlePropertySchema,
   NotionUrlPropertySchema,
-} from "@abhishekchalla/schema/notion/properties";
+} from "@abhishekchalla/notion/schema/properties";
 
 export const NotionBasicInfoSchema = NotionPageBaseSchema.extend({
   properties: z.object({

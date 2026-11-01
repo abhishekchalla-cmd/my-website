@@ -1,5 +1,5 @@
 import z from "zod";
-import { NotionRichTextPropertySchema } from "./notion/properties";
+import { NotionRichTextPropertySchema } from "../../utils/notion/src/schema/properties";
 
 export const OrganisationSchema = {
   base: z.object({

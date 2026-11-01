@@ -4,9 +4,22 @@
     "baseUrl": ".",
     "paths": {
       "@abhishekchalla/config/*": ["config/src/*"],
+      "@abhishekchalla/config": ["config/src/index"],
+
       "@abhishekchalla/schema/*": ["schema/src/*"],
+      "@abhishekchalla/schema": ["schema/src/index"],
+
       "@abhishekchalla/services/*": ["services/src/*"],
-      "@abhishekchalla/frontend/*": ["frontend/src/*"]
+      "@abhishekchalla/services": ["services/src/index"],
+
+      "@abhishekchalla/frontend/*": ["frontend/src/*"],
+      "@abhishekchalla/frontend": ["frontend/src/index"],
+
+      "@abhishekchalla/orm/*": ["utils/orm/src/*"],
+      "@abhishekchalla/orm": ["utils/orm/src/index"],
+
+      "@abhishekchalla/notion/*": ["utils/notion/src/*"],
+      "@abhishekchalla/notion": ["utils/notion/src/index"]
     }
   },
   "files": [],
@@ -15,6 +28,8 @@
     { "path": "./config" },
     { "path": "./schema" },
     { "path": "./services" },
-    { "path": "./frontend" }
+    { "path": "./frontend" },
+    { "path": "./utils/orm" },
+    { "path": "./utils/notion" }
   ]
 }

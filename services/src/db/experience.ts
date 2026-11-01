@@ -1,7 +1,6 @@
 import * as config from "@abhishekchalla/config";
-import { getAllDbRecords } from "@abhishekchalla/services/notion";
-import { getPageById } from "../notion/pages";
-import { NotionExperienceSchema } from "@abhishekchalla/schema/notion/pages/experience";
+import { getPageById, getAllDbRecords } from "@abhishekchalla/notion";
+import { NotionExperienceSchema } from "@abhishekchalla/schema/notion/experience";
 
 export const getExperiences = () =>
   getAllDbRecords<typeof NotionExperienceSchema>(config.notion.db.experience);

@@ -1,7 +1,6 @@
 import * as config from "@abhishekchalla/config";
-import { getAllDbRecords } from "@abhishekchalla/services/notion";
-import { getPageById } from "../notion/pages";
-import { NotionProjectClientRelationSchema } from "@abhishekchalla/schema/notion/pages/project-client-relation";
+import { getPageById, getAllDbRecords } from "@abhishekchalla/notion";
+import { NotionProjectClientRelationSchema } from "@abhishekchalla/schema/notion/project-client-relation";
 
 export const getProjectClientRelations = () =>
   getAllDbRecords<typeof NotionProjectClientRelationSchema>(

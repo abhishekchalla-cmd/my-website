@@ -1,7 +1,8 @@
 {
-  "name": "@abhishekchalla/relations-resolver",
+  "name": "@abhishekchalla/notion",
   "version": "1.0.0",
   "dependencies": {
+    "@notionhq/client": "^5.9.0",
     "zod": "^4.3.6"
   }
 }

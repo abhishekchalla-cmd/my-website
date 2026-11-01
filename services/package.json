@@ -9,7 +9,8 @@
   "dependencies": {
     "@abhishekchalla/config": "*",
     "@abhishekchalla/schema": "*",
-    "@notionhq/client": "^5.9.0",
+    "@abhishekchalla/orm": "*",
+    "@abhishekchalla/notion": "*",
     "axios": "^1.13.5",
     "lodash": "^4.17.23",
     "zod": "^4.3.6"

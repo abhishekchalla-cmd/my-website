@@ -1,7 +1,6 @@
 import * as config from "@abhishekchalla/config";
-import { getAllDbRecords } from "@abhishekchalla/services/notion";
-import { getPageById } from "../notion/pages";
-import { NotionOrganisationSchema } from "@abhishekchalla/schema/notion/pages/organisation";
+import { getPageById, getAllDbRecords } from "@abhishekchalla/notion";
+import { NotionOrganisationSchema } from "@abhishekchalla/schema/notion/organisation";
 
 export const getOrganisations = () =>
   getAllDbRecords<typeof NotionOrganisationSchema>(

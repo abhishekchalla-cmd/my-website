@@ -1,0 +1,8 @@
+{
+  "name": "@abhishekchalla/orm",
+  "version": "1.0.0",
+  "dependencies": {
+    "@abhishekchalla/config": "*",
+    "zod": "^4.3.6"
+  }
+}

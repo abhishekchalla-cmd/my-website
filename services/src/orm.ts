@@ -1,14 +1,14 @@
-import { generateOrm } from "./orm";
+import { generateOrm } from "@abhishekchalla/orm";
 
-import { NotionBasicInfoSchema } from "@abhishekchalla/schema/notion/pages/basic-info";
-import { NotionProjectClientRelationSchema } from "@abhishekchalla/schema/notion/pages/project-client-relation";
-import { NotionProjectPeopleRelationSchema } from "@abhishekchalla/schema/notion/pages/project-people-relation";
-import { NotionSkillSchema } from "@abhishekchalla/schema/notion/pages/skill";
-import { NotionProjectSchema } from "@abhishekchalla/schema/notion/pages/project";
-import { NotionPersonSchema } from "@abhishekchalla/schema/notion/pages/person";
-import { NotionOrganisationSchema } from "@abhishekchalla/schema/notion/pages/organisation";
-import { NotionExperienceSchema } from "@abhishekchalla/schema/notion/pages/experience";
-import { NotionTestimonySchema } from "@abhishekchalla/schema/notion/pages/testimony";
+import { NotionBasicInfoSchema } from "@abhishekchalla/schema/notion/basic-info";
+import { NotionProjectClientRelationSchema } from "@abhishekchalla/schema/notion/project-client-relation";
+import { NotionProjectPeopleRelationSchema } from "@abhishekchalla/schema/notion/project-people-relation";
+import { NotionSkillSchema } from "@abhishekchalla/schema/notion/skill";
+import { NotionProjectSchema } from "@abhishekchalla/schema/notion/project";
+import { NotionPersonSchema } from "@abhishekchalla/schema/notion/person";
+import { NotionOrganisationSchema } from "@abhishekchalla/schema/notion/organisation";
+import { NotionExperienceSchema } from "@abhishekchalla/schema/notion/experience";
+import { NotionTestimonySchema } from "@abhishekchalla/schema/notion/testimony";
 
 import { BasicInfoSchema } from "@abhishekchalla/schema/basic-info";
 import { ExperienceSchema } from "@abhishekchalla/schema/experience";
@@ -50,6 +50,19 @@ import {
   getTestimony,
 } from "@abhishekchalla/services/db/testimonies";
 import { DB_TYPES } from "@abhishekchalla/schema/db-types";
+import { DBTypeVRawSchemaVFinalSchemaRelationsMap } from "@abhishekchalla/orm/types";
+
+const rawSchema = {
+  basicInfo: NotionBasicInfoSchema,
+  experience: NotionExperienceSchema,
+  organisation: NotionOrganisationSchema,
+  person: NotionPersonSchema,
+  projectClientRelation: NotionProjectClientRelationSchema,
+  projectPeopleRelation: NotionProjectPeopleRelationSchema,
+  project: NotionProjectSchema,
+  skill: NotionSkillSchema,
+  testimony: NotionTestimonySchema,
+};
 
 const finalBaseSchema = {
   [DB_TYPES.basicInfo]: BasicInfoSchema.base,
@@ -75,52 +88,45 @@ const finalRelationsSchema = {
   [DB_TYPES.testimony]: TestimonySchema.relations,
 };
 
+const finalSchemaVRawSchemaRelationsMapping: DBTypeVRawSchemaVFinalSchemaRelationsMap<
+  typeof DB_TYPES,
+  typeof rawSchema,
+  typeof finalRelationsSchema
+> = {
+  basicInfo: {},
+  experience: {
+    company: "Organisation",
+  },
+  organisation: {},
+  person: {
+    experience: "Experience",
+  },
+  projectClientRelation: {
+    organisation: "Organisation",
+    person: "People",
+  },
+  projectPeopleRelation: {
+    person: "Person",
+  },
+  project: {
+    projectClients: "Project Client Relation",
+    projectPeople: "Project People Relation",
+  },
+  skill: {},
+  testimony: {
+    person: "By",
+  },
+};
+
 export const orm = generateOrm(
   DB_TYPES,
 
   // Raw Schema
-  {
-    basicInfo: NotionBasicInfoSchema,
-    experience: NotionExperienceSchema,
-    organisation: NotionOrganisationSchema,
-    person: NotionPersonSchema,
-    projectClientRelation: NotionProjectClientRelationSchema,
-    projectPeopleRelation: NotionProjectPeopleRelationSchema,
-    project: NotionProjectSchema,
-    skill: NotionSkillSchema,
-    testimony: NotionTestimonySchema,
-  },
+  rawSchema,
 
   // Final schema
   finalBaseSchema,
   finalRelationsSchema,
-
-  // Final schema relations to Raw schema relations mapping
-  {
-    basicInfo: {},
-    experience: {
-      company: "Organisation",
-    },
-    organisation: {},
-    person: {
-      experience: "Experience",
-    },
-    projectClientRelation: {
-      organisation: "Organisation",
-      person: "People",
-    },
-    projectPeopleRelation: {
-      person: "Person",
-    },
-    project: {
-      projectClients: "Project Client Relation",
-      projectPeople: "Project People Relation",
-    },
-    skill: {},
-    testimony: {
-      person: "By",
-    },
-  },
 
   // Raw to Final schema Transformer
   {
@@ -159,5 +165,10 @@ export const orm = generateOrm(
     project: getProjects,
     skill: getSkills,
     testimony: getTestimonies,
+  },
+
+  // Get related data function
+  (dbType, finalSchemaRelationKey) => {
+    return [];
   },
 );
