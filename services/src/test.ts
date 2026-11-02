@@ -26,5 +26,7 @@ if (require.main.filename === __filename) {
     notionClient.databases.retrieve({
       database_id: "2766346faeb080a5b4e3fb954e49f790",
     }),
-  ]).then((res) => console.log(JSON.stringify(res, null, 2)));
+  ])
+    .then((res) => console.log(JSON.stringify(res, null, 2)))
+    .catch(console.error);
 }

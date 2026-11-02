@@ -1,4 +1,4 @@
-import { orm } from "@abhishekchalla/services/utils/defs";
+import { orm } from "@abhishekchalla/services/orm";
 
 if (require.main.filename === __filename) {
   orm.project

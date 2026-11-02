@@ -1,11 +1,8 @@
-import { Client, QueryDataSourceResponse } from "@notionhq/client";
-import * as config from "@abhishekchalla/config";
+import { notionClient } from "@abhishekchalla/notion/client";
+import { QueryDataSourceResponse } from "@notionhq/client";
+
 import { getDBRecords } from "@abhishekchalla/notion/db";
 import z, { ZodType } from "zod";
-
-export const notionClient = new Client({
-  auth: config.notion.apiSecret,
-});
 
 export const getAllDbRecords = async <T extends z.ZodType>(
   dbId: string,
@@ -43,3 +40,11 @@ export const getPageById = <T extends ZodType>(
     page_id: pageId,
   }) as Promise<z.infer<T>>;
 };
+
+export const getAllObjectRelations = (
+  dbId: string,
+  objectId: string,
+  relation: string,
+) => {};
+
+export { notionClient } from "@abhishekchalla/notion/client";
