@@ -1,4 +1,4 @@
-import z from "zod";
+import z from "zod/v4";
 import {
   ORM,
   ORMGenerator,
@@ -7,15 +7,13 @@ import {
 
 export const generateOrm: ORMGenerator = (
   dbTypes,
-  dbTypeVRawSchemaMap,
   dbTypeVFinalBaseSchemaMap,
   dbTypeVFinalRelationsSchemaMap,
-  dbTypeVTransformerMap,
-  dbTypeVGetRawByIdFnMap,
-  dbTypeVGetRawAllFnMap,
+  dbTypeVGetByIdFnMap,
+  dbTypeVGetAllFnMap,
   getRelatedData,
 ) => {
-  const formatAndGetDownstreamData = async <
+  const getDownstreamData = async <
     DBType extends keyof typeof dbTypes,
     RelResOpts extends RelationsResolverOpts<
       typeof dbTypes,
@@ -23,10 +21,12 @@ export const generateOrm: ORMGenerator = (
       typeof dbTypeVFinalRelationsSchemaMap
     >,
   >(
-    obj: z.infer<(typeof dbTypeVRawSchemaMap)[DBType]>,
+    obj: z.infer<(typeof dbTypeVFinalBaseSchemaMap)[DBType]>,
     dbType: DBType,
     relResOpts: RelResOpts,
   ) => {
+    // console.log("Getting downstream data", dbType);
+
     // Fetch related fields data
     const relationsData = {};
 
@@ -36,33 +36,39 @@ export const generateOrm: ORMGenerator = (
       // Include ones that exist in relResOpts
       (finalSchemaKey) => !!relResOpts[finalSchemaKey],
     )) {
-      const completeRelatedData = getRelatedData(
+      // console.log("Getting DS Data for key: ", finalSchemaRelationKey);
+
+      const completeRelatedData = await getRelatedData(
         dbType,
+        obj.id as any,
         finalSchemaRelationKey,
       );
+      // console.log("Got complete related data: id list");
 
+      const relationDBType =
+        dbTypeVFinalRelationsSchemaMap[dbType][finalSchemaRelationKey].dbType;
       const finalData = dbTypeVFinalRelationsSchemaMap[dbType][
         finalSchemaRelationKey
       ].isMulti
         ? await Promise.all(
             completeRelatedData.map((relObj) =>
-              orm[dbType].getById(
-                (relObj as any).id,
+              orm[relationDBType].getById(
+                relObj.id,
                 relResOpts[finalSchemaRelationKey] as any,
               ),
             ),
           )
-        : await orm[dbType].getById(
-            (completeRelatedData[0] as any).id,
+        : await orm[relationDBType].getById(
+            completeRelatedData[0].id,
             relResOpts[finalSchemaRelationKey] as any,
           );
+
+      // console.log("Materialised data");
 
       relationsData[finalSchemaRelationKey] = finalData;
     }
 
-    const transformedObj = dbTypeVTransformerMap[dbType](obj);
-
-    return { ...transformedObj, ...relationsData };
+    return { ...obj, ...relationsData };
   };
 
   const orm = Object.values(dbTypes).reduce(
@@ -77,8 +83,19 @@ export const generateOrm: ORMGenerator = (
             typeof dbTypeVFinalRelationsSchemaMap
           > = {},
         ) => {
-          let res = await dbTypeVGetRawByIdFnMap[dbType](id, relResOpts);
-          return formatAndGetDownstreamData(res, dbType, relResOpts);
+          // console.log("GetById ", dbType, id);
+
+          const res = await dbTypeVGetByIdFnMap[dbType](id, relResOpts);
+          // console.log("Fetched data");
+
+          const downstreamData = await getDownstreamData(
+            res,
+            dbType,
+            relResOpts,
+          );
+          // console.log("Got downstream data");
+
+          return { ...res, ...downstreamData };
         },
         getAll: async (
           relResOpts: RelationsResolverOpts<
@@ -87,12 +104,25 @@ export const generateOrm: ORMGenerator = (
             typeof dbTypeVFinalRelationsSchemaMap
           >,
         ) => {
-          const allRawData = await dbTypeVGetRawAllFnMap[dbType](relResOpts);
-          return Promise.all(
-            allRawData.map((res) =>
-              formatAndGetDownstreamData(res, dbType, relResOpts),
-            ),
+          // console.log("Get All", dbType);
+
+          const allRawData = await dbTypeVGetAllFnMap[dbType](relResOpts);
+          // console.log("Got data");
+
+          const allData = await Promise.all(
+            allRawData.map(async (res) => {
+              const downstreamData = await getDownstreamData(
+                res,
+                dbType,
+                relResOpts,
+              );
+
+              return { ...res, ...downstreamData };
+            }),
           );
+          // console.log("Got downstream data");
+
+          return allData;
         },
       },
     }),

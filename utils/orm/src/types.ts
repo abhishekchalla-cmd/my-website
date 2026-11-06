@@ -1,4 +1,4 @@
-import z from "zod";
+import z from "zod/v4";
 import { IsMulti } from "@abhishekchalla/orm/consts";
 
 export type Prettify<T> = {
@@ -61,53 +61,21 @@ export type Schema<
       >;
 };
 
-export type DBTypeVRawSchemaMap<DBTypes> = {
-  [DBType in keyof DBTypes]: z.ZodObject;
-};
-
-export type DBTypeVFinalSchemaMap<
+export type DBTypeVGetByIdFnMap<
   DBTypes,
-  TvFBSMap extends DBTypeVFinalBaseSchemaMap<DBTypes>,
-  TvFRSMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
-> = {
-  [DBType in keyof DBTypes]: Schema<DBTypes, TvFBSMap, TvFRSMap, DBType, any>;
-};
-
-export type DBTypeVRawSchemaVFinalSchemaRelationsMap<
-  DBTypes,
-  TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
-  TypeToFinalRelationsSchemaMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
-> = {
-  [DBType in keyof DBTypes]: {
-    [FinalSchemaRelationName in keyof TypeToFinalRelationsSchemaMap[DBType]]: keyof TypeToRawSchemaMap[DBType]["shape"]["properties"]["shape"] /* notion specific logic */;
-  };
-};
-
-export type DBTypeVTransformerMap<
-  DBTypes,
-  TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
-  TypeToFinalBaseSchemaMap extends DBTypeVFinalBaseSchemaMap<DBTypes>,
-> = {
-  [DBType in keyof DBTypes]: (
-    rawData: z.infer<TypeToRawSchemaMap[DBType]>,
-  ) => z.infer<TypeToFinalBaseSchemaMap[DBType]>;
-};
-
-export type DBTypeVGetRawByIdFnMap<
-  DBTypes,
-  TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
+  TypeToFinalSchemaMap extends DBTypeVFinalBaseSchemaMap<DBTypes>,
 > = {
   [DBType in keyof DBTypes]: (
     itemId: string,
-  ) => Promise<z.infer<TypeToRawSchemaMap[DBType]>>;
+  ) => Promise<z.infer<TypeToFinalSchemaMap[DBType]>>;
 };
 
-export type DBTypeVGetRawAllFnMap<
+export type DBTypeVGetAllFnMap<
   DBTypes,
-  TypeToRawSchemaMap extends DBTypeVRawSchemaMap<DBTypes>,
+  TypeToFinalSchemaMap extends DBTypeVFinalBaseSchemaMap<DBTypes>,
 > = {
   [DBType in keyof DBTypes]: () => Promise<
-    z.infer<TypeToRawSchemaMap[DBType]>[]
+    z.infer<TypeToFinalSchemaMap[DBType]>[]
   >;
 };
 
@@ -137,25 +105,24 @@ export type ORM<
 
 export type ORMGenerator = <
   DBTypes,
-  TvRSMap extends DBTypeVRawSchemaMap<DBTypes>,
   TvFBSMap extends DBTypeVFinalBaseSchemaMap<DBTypes>,
   TvFRSMap extends DBTypeVFinalRelationsSchemaMap<DBTypes>,
-  TvTMap extends DBTypeVTransformerMap<DBTypes, TvRSMap, TvFBSMap>,
-  TvGRBIFnMap extends DBTypeVGetRawByIdFnMap<DBTypes, TvRSMap>,
-  TvGRAllFnMap extends DBTypeVGetRawAllFnMap<DBTypes, TvRSMap>,
+  TvGBIFnMap extends DBTypeVGetByIdFnMap<DBTypes, TvFBSMap>,
+  TvGAllFnMap extends DBTypeVGetAllFnMap<DBTypes, TvFBSMap>,
 >(
   dbTypes: DBTypes,
-  dbTypeVRawSchemaMap: TvRSMap,
   dbTypeVFinalBaseSchemaMap: TvFBSMap,
   dbTypeVFinalRelationsSchemaMap: TvFRSMap,
-  dbTypeVTransformerMap: TvTMap,
-  dbTypeVGetRawByIdFnMap: TvGRBIFnMap,
-  dbTypeVGetRawAllFnMap: TvGRAllFnMap,
+  dbTypeVGetByIdFnMap: TvGBIFnMap,
+  dbTypeVGetAllFnMap: TvGAllFnMap,
   getRelatedData: <
-    DBType extends keyof DBTypes,
-    FinalSchemaRelationKey extends keyof TvFRSMap[DBType],
+    BaseDBType extends keyof DBTypes,
+    FinalSchemaRelationKey extends keyof TvFRSMap[BaseDBType],
+    RelatedDBType extends
+      TvFRSMap[BaseDBType][FinalSchemaRelationKey]["dbType"],
   >(
-    dbType: DBType,
+    baseDbType: BaseDBType,
+    objectId: string,
     finalSchemaRelationKey: FinalSchemaRelationKey,
-  ) => z.infer<TvFBSMap[TvFRSMap[DBType][FinalSchemaRelationKey]["dbType"]]>[],
+  ) => { id: string }[] | Promise<{ id: string }[]>,
 ) => ORM<DBTypes, TvFBSMap, TvFRSMap>;

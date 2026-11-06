@@ -1,4 +1,4 @@
-import z from "zod";
+import z from "zod/v4";
 
 export const SKILL_TYPE = {
   dev_ops: "dev_ops",

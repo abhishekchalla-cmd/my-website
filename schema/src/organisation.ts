@@ -1,4 +1,4 @@
-import z from "zod";
+import z from "zod/v4";
 import { NotionRichTextPropertySchema } from "../../utils/notion/src/schema/properties";
 
 export const OrganisationSchema = {

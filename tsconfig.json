@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@abhishekchalla/config/*": ["config/src/*"],
-      "@abhishekchalla/config": ["config/src/index"],
+      "@abhishekchalla/config": ["config/index"],
 
       "@abhishekchalla/schema/*": ["schema/src/*"],
       "@abhishekchalla/schema": ["schema/src/index"],
@@ -20,7 +20,8 @@
 
       "@abhishekchalla/notion/*": ["utils/notion/src/*"],
       "@abhishekchalla/notion": ["utils/notion/src/index"]
-    }
+    },
+    "resolveJsonModule": true
   },
   "files": [],
   "include": [],

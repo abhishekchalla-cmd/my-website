@@ -1,8 +1,19 @@
 {
   "name": "@abhishekchalla/notion",
   "version": "1.0.0",
+  "scripts": {
+    "test": "dotenv -e ../../.env -- jest --watchman=false"
+  },
   "dependencies": {
     "@notionhq/client": "^5.9.0",
+    "@types/jest": "^30.0.0",
     "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^11.0.0",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.15",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
   }
 }

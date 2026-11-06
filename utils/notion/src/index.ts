@@ -1,19 +1,23 @@
 import { notionClient } from "@abhishekchalla/notion/client";
-import { QueryDataSourceResponse } from "@notionhq/client";
-
 import { getDBRecords } from "@abhishekchalla/notion/db";
-import z, { ZodType } from "zod";
+import {
+  PropertyItemListResponse,
+  RelationPropertyItemObjectResponse,
+} from "@notionhq/client";
+import z from "zod/v4";
 
-export const getAllDbRecords = async <T extends z.ZodType>(
+export const getAllDbRecords = async <T extends z.ZodObject>(
   dbId: string,
+  pageSize: number = 100,
 ): Promise<z.infer<T>[]> => {
   let hasMore = true;
   let cursor: string | undefined = undefined;
   const pages: any[] = [];
 
   while (hasMore) {
-    const dbResult = await getDBRecords(dbId);
-    pages.push(...(await getDBResultPages(dbResult.results)));
+    const dbResult = await getDBRecords(dbId, pageSize, cursor);
+    pages.push(...dbResult.results);
+
     hasMore = dbResult.has_more;
     cursor = dbResult.next_cursor;
   }
@@ -21,19 +25,7 @@ export const getAllDbRecords = async <T extends z.ZodType>(
   return pages as z.infer<T>[];
 };
 
-export const getDBResultPages = (
-  dbResult: QueryDataSourceResponse["results"],
-) => {
-  return Promise.all(
-    dbResult.map((page) =>
-      notionClient.pages.retrieve({
-        page_id: page.id,
-      }),
-    ),
-  );
-};
-
-export const getPageById = <T extends ZodType>(
+export const getPageById = <T extends z.ZodObject>(
   pageId: string,
 ): Promise<z.infer<T>> => {
   return notionClient.pages.retrieve({
@@ -41,10 +33,36 @@ export const getPageById = <T extends ZodType>(
   }) as Promise<z.infer<T>>;
 };
 
-export const getAllObjectRelations = (
-  dbId: string,
-  objectId: string,
-  relation: string,
-) => {};
+export const getAllObjectRelations = async (
+  pageId: string,
+  propertyId: string,
+  pageSize: number = 100,
+) => {
+  let hasMore = true;
+  let cursor: string | undefined = undefined;
+  const objects: { id: string }[] = [];
+
+  while (hasMore) {
+    const resultSet = await notionClient.pages.properties
+      .retrieve({
+        page_id: pageId,
+        property_id: propertyId,
+        page_size: pageSize,
+        start_cursor: cursor,
+      })
+      .then((res: PropertyItemListResponse) => res);
+
+    hasMore = resultSet.has_more;
+    cursor = resultSet.next_cursor;
+
+    objects.push(
+      ...resultSet.results.map(
+        (e) => (e as RelationPropertyItemObjectResponse).relation,
+      ),
+    );
+  }
+
+  return objects;
+};
 
 export { notionClient } from "@abhishekchalla/notion/client";

@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod/v4";
 import { NotionPageBaseSchema } from "@abhishekchalla/notion/schema/page-base";
 import {
   NotionNumberPropertySchema,

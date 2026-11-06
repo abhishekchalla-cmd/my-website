@@ -1,0 +1,24 @@
+{
+  "relationPropertiesInfo": {
+    "experience": {
+      "company": "%3CUPP"
+    },
+    "person": {
+      "experience": "XXsK"
+    },
+    "projectClientRelation": {
+      "person": "JRM%60",
+      "organisation": "kH%60%7C"
+    },
+    "projectPeopleRelation": {
+      "person": "ZJph"
+    },
+    "project": {
+      "projectClients": "%7C%7BBY",
+      "projectPeople": "%7D%3C%7CW"
+    },
+    "testimony": {
+      "person": "veS_"
+    }
+  }
+}

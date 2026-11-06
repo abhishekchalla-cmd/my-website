@@ -1,4 +1,4 @@
-import z from "zod";
+import z from "zod/v4";
 import { DB_TYPES } from "@abhishekchalla/schema/db-types";
 import { IS_MULTI } from "@abhishekchalla/orm/consts";
 

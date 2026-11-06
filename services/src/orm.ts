@@ -1,27 +1,5 @@
 import { generateOrm } from "@abhishekchalla/orm";
 
-import { NotionBasicInfoSchema } from "@abhishekchalla/schema/notion/basic-info";
-import { NotionProjectClientRelationSchema } from "@abhishekchalla/schema/notion/project-client-relation";
-import { NotionProjectPeopleRelationSchema } from "@abhishekchalla/schema/notion/project-people-relation";
-import { NotionSkillSchema } from "@abhishekchalla/schema/notion/skill";
-import { NotionProjectSchema } from "@abhishekchalla/schema/notion/project";
-import { NotionPersonSchema } from "@abhishekchalla/schema/notion/person";
-import { NotionOrganisationSchema } from "@abhishekchalla/schema/notion/organisation";
-import { NotionExperienceSchema } from "@abhishekchalla/schema/notion/experience";
-import { NotionTestimonySchema } from "@abhishekchalla/schema/notion/testimony";
-
-import { BasicInfoSchema } from "@abhishekchalla/schema/basic-info";
-import { ExperienceSchema } from "@abhishekchalla/schema/experience";
-import { OrganisationSchema } from "@abhishekchalla/schema/organisation";
-import { PersonSchema } from "@abhishekchalla/schema/person";
-import {
-  ProjectSchema,
-  ProjectClientRelationSchema,
-  ProjectPeopleRelationSchema,
-} from "@abhishekchalla/schema/project";
-import { SkillSchema } from "@abhishekchalla/schema/skill";
-import { TestimonySchema } from "@abhishekchalla/schema/testimony";
-import { identity } from "lodash";
 import {
   getBasicInfo,
   getBasicInfos,
@@ -50,98 +28,22 @@ import {
   getTestimony,
 } from "@abhishekchalla/services/db/testimonies";
 import { DB_TYPES } from "@abhishekchalla/schema/db-types";
-import { DBTypeVRawSchemaVFinalSchemaRelationsMap } from "@abhishekchalla/orm/types";
-
-const rawSchema = {
-  basicInfo: NotionBasicInfoSchema,
-  experience: NotionExperienceSchema,
-  organisation: NotionOrganisationSchema,
-  person: NotionPersonSchema,
-  projectClientRelation: NotionProjectClientRelationSchema,
-  projectPeopleRelation: NotionProjectPeopleRelationSchema,
-  project: NotionProjectSchema,
-  skill: NotionSkillSchema,
-  testimony: NotionTestimonySchema,
-};
-
-const finalBaseSchema = {
-  [DB_TYPES.basicInfo]: BasicInfoSchema.base,
-  [DB_TYPES.experience]: ExperienceSchema.base,
-  [DB_TYPES.organisation]: OrganisationSchema.base,
-  [DB_TYPES.person]: PersonSchema.base,
-  [DB_TYPES.projectClientRelation]: ProjectClientRelationSchema.base,
-  [DB_TYPES.projectPeopleRelation]: ProjectPeopleRelationSchema.base,
-  [DB_TYPES.project]: ProjectSchema.base,
-  [DB_TYPES.skill]: SkillSchema.base,
-  [DB_TYPES.testimony]: TestimonySchema.base,
-};
-
-const finalRelationsSchema = {
-  [DB_TYPES.basicInfo]: BasicInfoSchema.relations,
-  [DB_TYPES.experience]: ExperienceSchema.relations,
-  [DB_TYPES.organisation]: OrganisationSchema.relations,
-  [DB_TYPES.person]: PersonSchema.relations,
-  [DB_TYPES.projectClientRelation]: ProjectClientRelationSchema.relations,
-  [DB_TYPES.projectPeopleRelation]: ProjectPeopleRelationSchema.relations,
-  [DB_TYPES.project]: ProjectSchema.relations,
-  [DB_TYPES.skill]: SkillSchema.relations,
-  [DB_TYPES.testimony]: TestimonySchema.relations,
-};
-
-const finalSchemaVRawSchemaRelationsMapping: DBTypeVRawSchemaVFinalSchemaRelationsMap<
-  typeof DB_TYPES,
-  typeof rawSchema,
-  typeof finalRelationsSchema
-> = {
-  basicInfo: {},
-  experience: {
-    company: "Organisation",
-  },
-  organisation: {},
-  person: {
-    experience: "Experience",
-  },
-  projectClientRelation: {
-    organisation: "Organisation",
-    person: "People",
-  },
-  projectPeopleRelation: {
-    person: "Person",
-  },
-  project: {
-    projectClients: "Project Client Relation",
-    projectPeople: "Project People Relation",
-  },
-  skill: {},
-  testimony: {
-    person: "By",
-  },
-};
+import { getAllObjectRelations } from "@abhishekchalla/notion/index";
+import {
+  finalBaseSchema,
+  finalRelationsSchema,
+  finalSchemaVRawSchemaRelationsMapping,
+} from "@abhishekchalla/schema";
+import { relationPropertiesInfo } from "@abhishekchalla/services/notion-db-info.json";
 
 export const orm = generateOrm(
   DB_TYPES,
-
-  // Raw Schema
-  rawSchema,
 
   // Final schema
   finalBaseSchema,
   finalRelationsSchema,
 
-  // Raw to Final schema Transformer
-  {
-    basicInfo: identity,
-    experience: identity,
-    organisation: identity,
-    person: identity,
-    projectClientRelation: identity,
-    projectPeopleRelation: identity,
-    project: identity,
-    skill: identity,
-    testimony: identity,
-  },
-
-  // Get Raw By Id
+  // Get By Id
   {
     basicInfo: getBasicInfo,
     experience: getExperience,
@@ -154,7 +56,7 @@ export const orm = generateOrm(
     testimony: getTestimony,
   },
 
-  // Get Raw All
+  // Get All
   {
     basicInfo: getBasicInfos,
     experience: getExperiences,
@@ -168,7 +70,11 @@ export const orm = generateOrm(
   },
 
   // Get related data function
-  (dbType, finalSchemaRelationKey) => {
-    return [];
+  async (rootDBType, objectId, finalSchemaRelationKey) => {
+    const relationKeyId = (
+      relationPropertiesInfo as typeof finalSchemaVRawSchemaRelationsMapping
+    )[rootDBType][finalSchemaRelationKey];
+
+    return getAllObjectRelations(objectId, relationKeyId as string);
   },
 );

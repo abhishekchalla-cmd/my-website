@@ -10,7 +10,7 @@ import {
   NotionNumberPropertySchema,
   NotionTitlePropertySchema,
 } from "@abhishekchalla/notion/schema/properties";
-import z from "zod";
+import z from "zod/v4";
 
 export const NotionProjectSchema = NotionPageBaseSchema.extend({
   properties: z.object({
