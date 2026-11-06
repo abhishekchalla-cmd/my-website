@@ -5,7 +5,7 @@ export const OrganisationSchema = {
   base: z.object({
     id: z.string(),
     name: z.string(),
-    logoUrl: z.url().optional(),
+    logoUrl: z.url().optional().nullable(), // file
     description: NotionRichTextPropertySchema,
   }),
   relations: {},

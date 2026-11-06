@@ -8,7 +8,7 @@ export const TestimonySchema = {
     title: z.string(),
     testimony: z.string(),
     rating: z.number(),
-    order: z.number(),
+    order: z.number().optional().nullable(),
   }),
   relations: {
     person: {

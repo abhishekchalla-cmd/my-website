@@ -34,7 +34,7 @@ import {
   finalRelationsSchema,
   finalSchemaVRawSchemaRelationsMapping,
 } from "@abhishekchalla/schema";
-import { relationPropertiesInfo } from "@abhishekchalla/services/notion-db-info.json";
+import { relationPropertiesInfo } from "@abhishekchalla/services/notion-data.json";
 
 export const orm = generateOrm(
   DB_TYPES,

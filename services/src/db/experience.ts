@@ -3,6 +3,7 @@ import { getPageById, getAllDbRecords } from "@abhishekchalla/notion";
 import { ExperienceSchema } from "@abhishekchalla/schema/experience";
 import { NotionExperienceSchema } from "@abhishekchalla/schema/notion/experience";
 import z from "zod/v4";
+import { getDateOrNil } from "../utils/date";
 
 export const getExperiences: () => Promise<
   z.infer<typeof ExperienceSchema.base>[]
@@ -19,6 +20,6 @@ export const getExperience: (
 const translate = (res: z.infer<typeof NotionExperienceSchema>) => ({
   id: res.id,
   title: res.properties.Title.title[0].text.content,
-  startDate: res.properties["Start date"].date.start,
-  endDate: res.properties["End Date"].date.end,
+  startDate: getDateOrNil(res.properties["Start date"].date?.start),
+  endDate: getDateOrNil(res.properties["End Date"].date?.end),
 });

@@ -16,7 +16,7 @@ export const NotionOrganisationSchema = NotionPageBaseSchema.extend({
     Experience: NotionRelationPropertySchema,
     "Project Client Relation": NotionRelationPropertySchema,
     "Project People Relation": NotionRelationPropertySchema,
-    Website: NotionUrlPropertySchema.optional(),
+    Website: NotionUrlPropertySchema.optional().nullable(),
   }),
 });
 

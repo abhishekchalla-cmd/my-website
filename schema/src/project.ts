@@ -1,4 +1,4 @@
-import z from "zod/v4";
+import z from "zod";
 import { NotionRichTextPropertySchema } from "../../utils/notion/src/schema/properties";
 import { DB_TYPES } from "./db-types";
 import { IS_MULTI } from "@abhishekchalla/orm/consts";
@@ -85,13 +85,13 @@ export const ProjectSchema = {
     id: z.string(),
     name: z.string(),
     description: NotionRichTextPropertySchema,
-    startDate: z.iso.datetime().optional(),
-    endDate: z.iso.datetime().optional(),
+    startDate: z.date().optional().nullable(), // date
+    endDate: z.date().optional().nullable(), // date
     role: z.enum(Object.values(PROJECT_ROLE)).array(),
-    type: z.enum(Object.values(PROJECT_TYPE)),
-    visibility: z.enum(Object.values(PROJECT_VISIBILITY)),
-    thumbnailUrl: z.url().optional(),
-    cover: z.url().optional(),
+    type: z.enum(Object.values(PROJECT_TYPE)).optional().nullable(),
+    visibility: z.enum(Object.values(PROJECT_VISIBILITY)).optional().nullable(),
+    thumbnailUrl: z.url().optional().nullable(),
+    cover: z.url().optional().nullable(),
   }),
   relations: {
     projectClients: {

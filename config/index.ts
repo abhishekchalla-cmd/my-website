@@ -12,3 +12,8 @@ export const notion = {
     projectPeopleRelation: process.env.NOTION_PROJECT_PEOPLE_RELATIONS_DS_ID,
   },
 };
+
+export const s3 = {
+  region: process.env.AWS_REGION,
+  bucketName: process.env.AWS_S3_BUCKET_NAME,
+};

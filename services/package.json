@@ -5,14 +5,15 @@
   "private": true,
   "scripts": {
     "runs": "dotenv -e ../.env -- ts-node -r tsconfig-paths/register",
-    "get-notion-db-info": "yarn runs ./src/get-notion-db-info.ts",
+    "get-notion-data": "yarn runs ./src/get-notion-data.ts",
     "test": "dotenv -e ../.env -- jest --watchman=false"
   },
   "dependencies": {
     "@abhishekchalla/config": "*",
-    "@abhishekchalla/schema": "*",
-    "@abhishekchalla/orm": "*",
     "@abhishekchalla/notion": "*",
+    "@abhishekchalla/orm": "*",
+    "@abhishekchalla/schema": "*",
+    "@aws-sdk/client-s3": "^3.1163.0",
     "axios": "^1.13.5",
     "lodash": "^4.17.23",
     "zod": "^4.3.6"
@@ -20,10 +21,10 @@
   "devDependencies": {
     "@types/node": "^20",
     "dotenv-cli": "^11.0.0",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.15",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5",
-    "jest": "^30.5.2",
-    "ts-jest": "^29.4.15"
+    "typescript": "^5"
   }
 }

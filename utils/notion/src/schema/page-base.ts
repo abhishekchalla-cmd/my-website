@@ -27,9 +27,9 @@ export const NotionPageBaseSchema = z.object({
   icon: z.any().nullable(), // Can be emoji or file
   parent: z.object({
     type: z.string(),
-    database_id: z.uuid().optional(),
-    page_id: z.uuid().optional(),
-    workspace: z.boolean().optional(),
+    database_id: z.uuid().optional().nullable(),
+    page_id: z.uuid().optional().nullable(),
+    workspace: z.boolean().optional().nullable(),
   }),
   archived: z.boolean(),
   properties: z.record(z.string(), z.any()), // Dynamic properties

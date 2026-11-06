@@ -101,3 +101,13 @@ export const finalSchemaVRawSchemaRelationsMapping: DBTypeVRawSchemaVFinalSchema
     person: "By",
   },
 };
+
+export const mediaFields: {
+  [DBType in keyof typeof DB_TYPES]?: (keyof z.infer<
+    (typeof rawSchema)[DBType]
+  >["properties"])[];
+} = {
+  basicInfo: ["Avatar", "Cover"],
+  organisation: ["Thumbnail"],
+  project: ["Thumbnail", "Cover"],
+};

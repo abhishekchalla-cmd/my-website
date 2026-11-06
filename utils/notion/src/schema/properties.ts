@@ -9,22 +9,25 @@ const NotionPropertyBaseSchema = z.object({
 export const NotionUserSchema = z.object({
   object: z.literal("user"),
   id: z.uuid(),
-  name: z.string().optional(),
-  avatar_url: z.string().nullable().optional(),
-  type: z.string().optional(),
-  person: z.object({ email: z.string().optional() }).optional(),
+  name: z.string().optional().nullable(),
+  avatar_url: z.string().nullable().optional().nullable(),
+  type: z.string().optional().nullable(),
+  person: z
+    .object({ email: z.string().optional().nullable() })
+    .optional()
+    .nullable(),
 });
 
 // File object (used in Files and Cover property)
 export const NotionFileObjectSchema = z.union([
   z.object({
     type: z.literal("external"),
-    name: z.string().optional(),
+    name: z.string().optional().nullable(),
     external: z.object({ url: z.string() }),
   }),
   z.object({
     type: z.literal("file"),
-    name: z.string().optional(),
+    name: z.string().optional().nullable(),
     file: z.object({ url: z.string(), expiry_time: z.string() }),
   }),
 ]);
@@ -53,7 +56,7 @@ export const NotionRichTextItemSchema = z.object({
 export const NotionRelationPropertySchema = NotionPropertyBaseSchema.extend({
   type: z.literal("relation"),
   relation: z.array(z.object({ id: z.string() })),
-  has_more: z.boolean().optional(),
+  has_more: z.boolean().optional().nullable(),
 });
 
 export const NotionFormulaPropertySchema = NotionPropertyBaseSchema.extend({

@@ -6,7 +6,7 @@ export const PersonSchema = {
   base: z.object({
     id: z.string(),
     name: z.string(),
-    linkedinUrl: z.url().optional(),
+    linkedinUrl: z.url().optional().nullable(),
   }),
   relations: {
     experience: { dbType: DB_TYPES.experience, isMulti: IS_MULTI.TRUE },

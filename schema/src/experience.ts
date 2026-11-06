@@ -6,8 +6,8 @@ export const ExperienceSchema = {
   base: z.object({
     id: z.string(),
     title: z.string(),
-    startDate: z.iso.datetime(),
-    endDate: z.iso.datetime().optional(),
+    startDate: z.date(), // date
+    endDate: z.date().optional().nullable(), // date
   }),
   relations: {
     company: { dbType: DB_TYPES.organisation, isMulti: IS_MULTI.FALSE },
