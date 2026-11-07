@@ -51,6 +51,13 @@ h1 {
   color: var(--black);
 }
 
+h2 {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 2rem;
+  color: var(--black);
+}
+
 li {
   @apply mt-0;
 }

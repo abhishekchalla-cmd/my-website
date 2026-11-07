@@ -1,4 +1,3 @@
-import { getAllDbRecords } from "@abhishekchalla/notion/index";
 import { DB_TYPES } from "@abhishekchalla/schema/db-types";
 import { finalBaseSchema } from "@abhishekchalla/schema/index";
 import { orm } from "@abhishekchalla/services/orm";
@@ -22,8 +21,3 @@ test("ORM fetches all objects and they conform to the the final schema of their 
     console.log(`☑️ ORM for DB Type "${dbType}" is working properly`);
   }
 }, 100000);
-
-// test("Sample data check", () =>
-//   getAllDbRecords(config.notion.db.basicInfo)
-//     .then((res) => console.log(JSON.stringify(res, null, 2)))
-//     .then(() => expect(true).toBe(true)));

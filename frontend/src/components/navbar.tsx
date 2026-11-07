@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import Hamburger from "@abhishekchalla/frontend/assets/hamburger.svg";
 
 export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -17,11 +18,7 @@ export default function Navbar() {
         }}
       >
         <button onClick={() => setIsNavbarOpen(!isNavbarOpen)}>
-          <Image
-            src={require("../assets/hamburger.svg")}
-            alt="hamburger"
-            height={25}
-          />
+          <Image src={Hamburger} alt="hamburger" height={25} />
         </button>
         <Link href={PAGE_PATHS.contact}>
           <button className="btn-primary">Contact Me</button>
@@ -31,7 +28,7 @@ export default function Navbar() {
       <div
         className="fixed top-0 w-screen h-screen z-10"
         style={{
-          transition: "0.2s",
+          transition: "0.35s",
           backgroundColor: "var(--primary)",
           left: isNavbarOpen ? "0" : "-100vw",
         }}

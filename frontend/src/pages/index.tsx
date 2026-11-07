@@ -9,11 +9,8 @@ export default function Home() {
       <Head>
         <title>Abhishek Challa - Software Developer</title>
       </Head>
-      <div className="flex flex-col h-full">
-        <div
-          className="font-bold"
-          style={{ fontSize: "42px", lineHeight: "3rem" }}
-        >
+      <div className="flex flex-col h-full justify-center">
+        <div className="font-bold text-[42px] leading-12 -mt-20">
           <b>
             Hi! I am
             <br /> Abhishek
