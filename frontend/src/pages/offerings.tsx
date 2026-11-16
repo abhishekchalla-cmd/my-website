@@ -5,6 +5,7 @@ import {
 } from "@abhishekchalla/frontend/components/OfferingListItem";
 import { getBlockRecordMap } from "@abhishekchalla/notion/index";
 import { orm } from "@abhishekchalla/services/orm";
+import { GetStaticProps } from "next";
 
 type OfferingsPageProps = {
   offerings: OfferingListItemProps[];
@@ -35,7 +36,7 @@ export const OfferingsPage = ({ offerings }: OfferingsPageProps) => {
   );
 };
 
-export const getStaticProps = async (): Promise<OfferingsPageProps> => {
+export const getStaticProps: GetStaticProps<OfferingsPageProps> = async () => {
   const offeringsRes = await orm.offerings.getAll({});
   const offerings = await Promise.all(
     offeringsRes
@@ -49,7 +50,8 @@ export const getStaticProps = async (): Promise<OfferingsPageProps> => {
   console.log(JSON.stringify(offerings, null, 2));
 
   return {
-    offerings,
+    props: { offerings },
+    revalidate: 600,
   };
 };
 

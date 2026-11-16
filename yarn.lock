@@ -459,6 +459,11 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.29.7"
 
+"@babel/runtime@^8.1.2":
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-8.1.2.tgz#bd9ea684a4b44d520b50ceb2d5f9180b6b282978"
+  integrity sha512-Ay6HdEKZJAeGs6KKJ/ezCK5ssjFmkvUiR0TEGv/B1abyjLWrQ2RU+M507Ppk0NikhvVFhlEFC1/rHfCiYqSUcw==
+
 "@babel/template@^7.29.7":
   version "7.29.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.29.7.tgz#4d9d4004f645cdd304de958c725162784ecac700"
@@ -4670,7 +4675,7 @@ notion-types@8.0.8, notion-types@^8.0.8:
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-8.0.8.tgz#58cf35127bcc9b2061e2463a71288afd3b19311d"
   integrity sha512-crMgFadWAa1XSOMBAKfgy1eB9RW9e1v7j61lm0/ksalz91tCJwbu1sYbkbjvB1UWjC3jHhuKfwsT4FkUZh8z9w==
 
-notion-utils@8.0.8:
+notion-utils@8.0.8, notion-utils@^8.0.8:
   version "8.0.8"
   resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-8.0.8.tgz#910ba8474073f7d4b3d3ac4847fc7e069cc1984a"
   integrity sha512-TGOmuJqOjOXeBhi1Tab8OyuAUSDrNi8C4skRpIwRGrBGZCKtql2WB9BwcAgNQCt+bwUlyQfmPmEnI7DwibythQ==

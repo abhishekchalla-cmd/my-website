@@ -17,7 +17,9 @@ export const OfferingListItem = (props: OfferingListItemProps) => {
       <h2>{offering.title}</h2>
       <NotionRenderer
         recordMap={offeringPageData}
+        fullPage={false}
         mapImageUrl={resolveNotionDBPageMediaUrl}
+        className="notion-no-margins"
       />
     </div>
   );

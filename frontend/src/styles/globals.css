@@ -65,3 +65,21 @@ li {
 .btn-primary {
   @apply bg-blue-600 text-white px-4 py-1.5 font-semibold;
 }
+
+/*
+
+
+Notion
+
+
+*/
+
+.notion-no-margins {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.notion-page {
+  width: 100% !important;
+  font-family: inherit !important;
+}
