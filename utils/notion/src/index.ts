@@ -72,4 +72,5 @@ export type {
   VideoBlockObjectResponse,
   ImageBlockObjectResponse,
   FileBlockObjectResponse,
+  BlockObjectResponse,
 } from "@notionhq/client";

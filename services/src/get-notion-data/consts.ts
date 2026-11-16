@@ -13,6 +13,8 @@ export const DB_TYPE_TO_DB_CONFIG_KEY_MAP: {
   projectClientRelation: "projectClientRelation",
   projectPeopleRelation: "projectPeopleRelation",
   project: "projects",
+  offerings: "offerings",
+  projectDetailPage: "projectDetailPages",
 };
 
 export const UPLOADABLE_NOTION_BLOCK_TYPES = {

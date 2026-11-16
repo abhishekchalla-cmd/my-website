@@ -29,8 +29,8 @@ export const getRelationPropertiesInfo = async () => {
         dbType as keyof typeof finalSchemaVRawSchemaRelationsMapping
       ];
 
-    for (const rawPropKey in dsInfo.properties) {
-      for (const fsRelationKey in finalSchemaRelationKeyMapping)
+    for (const fsRelationKey in finalSchemaRelationKeyMapping) {
+      for (const rawPropKey in dsInfo.properties) {
         if (
           finalSchemaRelationKeyMapping[
             fsRelationKey as keyof typeof finalSchemaRelationKeyMapping
@@ -41,6 +41,12 @@ export const getRelationPropertiesInfo = async () => {
             `${dbType}.${fsRelationKey}`,
             dsInfo.properties[rawPropKey].id,
           );
+      }
+
+      if (!(relationPropertiesInfo as any)[dbType]?.[fsRelationKey])
+        throw new Error(
+          `Corresponding Notion field not found for DB: ${dbType}, Property: ${fsRelationKey}`,
+        );
     }
   }
 

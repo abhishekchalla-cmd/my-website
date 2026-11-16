@@ -27,6 +27,10 @@ import {
   getTestimonies,
   getTestimony,
 } from "@abhishekchalla/services/db/testimonies";
+import {
+  getOffering,
+  getOfferings,
+} from "@abhishekchalla/services/db/offerings";
 import { DB_TYPES } from "@abhishekchalla/schema/db-types";
 import { getAllObjectRelations } from "@abhishekchalla/notion/index";
 import {
@@ -35,6 +39,10 @@ import {
   finalSchemaVRawSchemaRelationsMapping,
 } from "@abhishekchalla/schema";
 import { relationPropertiesInfo } from "@abhishekchalla/services/notion-data.json";
+import {
+  getProjectDetailPage,
+  getProjectDetailPages,
+} from "@abhishekchalla/services/db/project-detail-page";
 
 export const orm = generateOrm(
   DB_TYPES,
@@ -54,6 +62,8 @@ export const orm = generateOrm(
     project: getProject,
     skill: getSkill,
     testimony: getTestimony,
+    offerings: getOffering,
+    projectDetailPage: getProjectDetailPage,
   },
 
   // Get All
@@ -67,6 +77,8 @@ export const orm = generateOrm(
     project: getProjects,
     skill: getSkills,
     testimony: getTestimonies,
+    offerings: getOfferings,
+    projectDetailPage: getProjectDetailPages,
   },
 
   // Get related data function

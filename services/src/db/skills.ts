@@ -22,12 +22,16 @@ export const getSkill: (
 
 const translate: (
   res: z.infer<typeof NotionSkillSchema>,
-) => z.infer<typeof SkillSchema.base> = (res) => ({
-  id: res.id,
-  name: res.properties.Name.title[0]?.plain_text,
-  type: SKILL_TYPE[
-    NOTION_SKILL_TYPE_TO_SKILL_TYPE[res.properties.Type.multi_select[0]?.name]
-  ],
-  score: res.properties.Score.number,
-  order: res.properties.Order.number,
-});
+) => z.infer<typeof SkillSchema.base> = (res) =>
+  SkillSchema.base.parse({
+    id: res.id,
+    name: res.properties.Name.title[0]?.plain_text,
+    type: SKILL_TYPE[
+      NOTION_SKILL_TYPE_TO_SKILL_TYPE[
+        res.properties.Type.multi_select[0]
+          ?.name as keyof typeof NOTION_SKILL_TYPE_TO_SKILL_TYPE
+      ]
+    ],
+    score: res.properties.Score.number || 0,
+    order: res.properties.Order.number,
+  });

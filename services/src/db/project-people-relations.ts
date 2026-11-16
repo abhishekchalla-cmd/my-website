@@ -22,7 +22,8 @@ export const getProjectPeopleRelation: (
 
 const translate: (
   res: z.infer<typeof NotionProjectPeopleRelationSchema>,
-) => z.infer<typeof ProjectPeopleRelationSchema.base> = (res) => ({
-  id: res.id,
-  role: res.properties.Role.title[0]?.plain_text,
-});
+) => z.infer<typeof ProjectPeopleRelationSchema.base> = (res) =>
+  ProjectPeopleRelationSchema.base.parse({
+    id: res.id,
+    role: res.properties.Role.title[0]?.plain_text,
+  });

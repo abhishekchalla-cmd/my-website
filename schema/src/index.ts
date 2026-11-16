@@ -21,6 +21,10 @@ import {
 import { SkillSchema } from "@abhishekchalla/schema/skill";
 import { TestimonySchema } from "@abhishekchalla/schema/testimony";
 import z from "zod/v4";
+import { OfferingsSchema } from "./offerings";
+import { NotionOfferingsSchema } from "./notion/offerings";
+import { NotionProjectDetailPageSchema } from "./notion/project-detail-page";
+import { ProjectDetailPageSchema } from "./project-detail-page";
 
 export type DBTypeVRawSchemaMap<DBTypes> = {
   [DBType in keyof DBTypes]: z.ZodObject;
@@ -46,6 +50,8 @@ export const rawSchema = {
   [DB_TYPES.project]: NotionProjectSchema,
   [DB_TYPES.skill]: NotionSkillSchema,
   [DB_TYPES.testimony]: NotionTestimonySchema,
+  [DB_TYPES.offerings]: NotionOfferingsSchema,
+  [DB_TYPES.projectDetailPage]: NotionProjectDetailPageSchema,
 };
 
 export const finalBaseSchema = {
@@ -58,6 +64,8 @@ export const finalBaseSchema = {
   [DB_TYPES.project]: ProjectSchema.base,
   [DB_TYPES.skill]: SkillSchema.base,
   [DB_TYPES.testimony]: TestimonySchema.base,
+  [DB_TYPES.offerings]: OfferingsSchema.base,
+  [DB_TYPES.projectDetailPage]: ProjectDetailPageSchema.base,
 };
 
 export const finalRelationsSchema = {
@@ -70,6 +78,8 @@ export const finalRelationsSchema = {
   [DB_TYPES.project]: ProjectSchema.relations,
   [DB_TYPES.skill]: SkillSchema.relations,
   [DB_TYPES.testimony]: TestimonySchema.relations,
+  [DB_TYPES.offerings]: OfferingsSchema.relations,
+  [DB_TYPES.projectDetailPage]: ProjectDetailPageSchema.relations,
 };
 
 export const finalSchemaVRawSchemaRelationsMapping: DBTypeVRawSchemaVFinalSchemaRelationsMap<
@@ -100,6 +110,10 @@ export const finalSchemaVRawSchemaRelationsMapping: DBTypeVRawSchemaVFinalSchema
   testimony: {
     person: "By",
   },
+  offerings: {},
+  projectDetailPage: {
+    project: "Projects",
+  },
 };
 
 export const mediaFields: {
@@ -110,10 +124,12 @@ export const mediaFields: {
   basicInfo: ["Avatar", "Cover"],
   organisation: ["Thumbnail"],
   project: ["Thumbnail", "Cover"],
+  projectDetailPage: ["Cover"],
 };
 
 export const mediaDBs: {
   [DBType in keyof typeof DB_TYPES]?: boolean;
 } = {
-  project: true,
+  offerings: true,
+  projectDetailPage: true,
 };

@@ -20,6 +20,8 @@ export const notion = {
     projectPeopleRelation: EnvValueOrError(
       "NOTION_PROJECT_PEOPLE_RELATIONS_DS_ID",
     ),
+    offerings: EnvValueOrError("NOTION_OFFERINGS_DS_ID"),
+    projectDetailPages: EnvValueOrError("NOTION_PROJECT_DETAIL_PAGE_DS_ID"),
   },
 };
 

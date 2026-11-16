@@ -8,6 +8,8 @@ export const DB_TYPES = {
   project: "project",
   skill: "skill",
   testimony: "testimony",
+  offerings: "offerings",
+  projectDetailPage: "projectDetailPage",
 } as const;
 
 export type DBTypes = typeof DB_TYPES;

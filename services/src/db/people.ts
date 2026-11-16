@@ -18,8 +18,9 @@ export const getPerson: (
 
 const translate: (
   res: z.infer<typeof NotionPersonSchema>,
-) => z.infer<typeof PersonSchema.base> = (res) => ({
-  id: res.id,
-  name: res.properties.Name.title[0]?.text.content,
-  linkedinUrl: res.properties["LinkedIn link"]?.url,
-});
+) => z.infer<typeof PersonSchema.base> = (res) =>
+  PersonSchema.base.parse({
+    id: res.id,
+    name: res.properties.Name.title[0]?.text.content,
+    linkedinUrl: res.properties["LinkedIn link"]?.url,
+  });

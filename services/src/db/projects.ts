@@ -12,7 +12,7 @@ import {
   ProjectSchema,
 } from "@abhishekchalla/schema/project";
 import { getDateOrNil } from "../utils/date";
-import { resolveNotionMediaUrl } from "../utils/notion";
+import { resolveNotionDBPropMediaUrl } from "../utils/notion";
 
 export const getProjects: () => Promise<
   z.infer<typeof ProjectSchema.base>[]
@@ -28,32 +28,38 @@ export const getProject: (
 
 const translate: (
   res: z.infer<typeof NotionProjectSchema>,
-) => z.infer<typeof ProjectSchema.base> = (res) => {
-  // console.log(JSON.stringify(res, null, 2));
-  return {
+) => z.infer<typeof ProjectSchema.base> = (res) =>
+  ProjectSchema.base.parse({
     id: res.id,
     name: res.properties.Name.title[0]?.plain_text,
     description: res.properties.Description,
     startDate: getDateOrNil(res.properties["Start date"].date?.start),
-    endDate: getDateOrNil(res.properties["End Date"].date?.end),
+    endDate: getDateOrNil(res.properties["End Date"].date?.end || undefined),
     role: res.properties.Role.multi_select
-      .map((e) => PROJECT_ROLE[NOTION_PROJECT_TO_PROJECT_ROLE[e.name]])
-      .filter((e) => e),
-    type:
-      res.properties.Type.multi_select[0]?.name &&
-      PROJECT_TYPE[
-        NOTION_PROJECT_TYPE_TO_PROJECT_TYPE[
-          res.properties.Type.multi_select[0].name
-        ]
-      ],
+      .map(
+        (e) =>
+          PROJECT_ROLE[
+            NOTION_PROJECT_TO_PROJECT_ROLE[
+              e.name as keyof typeof NOTION_PROJECT_TO_PROJECT_ROLE
+            ]
+          ],
+      )
+      .filter((e) => !!e),
+    type: PROJECT_TYPE[
+      NOTION_PROJECT_TYPE_TO_PROJECT_TYPE[
+        res.properties.Type.multi_select[0]
+          ?.name as keyof typeof NOTION_PROJECT_TYPE_TO_PROJECT_TYPE
+      ]
+    ],
     visibility:
-      res.properties.Visibility.select?.name &&
       PROJECT_VISIBILITY[
         NOTION_PROJECT_VISIBILITY_TO_PROJECT_VISIBILITY[
-          res.properties.Visibility.select.name
+          res.properties.Visibility.select
+            ?.name as keyof typeof NOTION_PROJECT_VISIBILITY_TO_PROJECT_VISIBILITY
         ]
       ],
-    thumbnailUrl: resolveNotionMediaUrl(res.properties.Thumbnail.files[0]),
-    cover: resolveNotionMediaUrl(res.properties.Cover.files[0]),
-  };
-};
+    thumbnailUrl: resolveNotionDBPropMediaUrl(
+      res.properties.Thumbnail.files[0],
+    ),
+    cover: resolveNotionDBPropMediaUrl(res.properties.Cover.files[0]),
+  });

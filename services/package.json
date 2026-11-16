@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "runs": "dotenv -e ../.env -- ts-node -r tsconfig-paths/register",
-    "get-notion-data": "yarn runs ./src/get-notion-data/index.ts",
+    "runs": "dotenv -e ../.env -- tsx",
+    "get-notion-data": "yarn runs ./src/get-notion-data",
     "test": "dotenv -e ../.env -- jest --watchman=false"
   },
   "dependencies": {
@@ -25,6 +25,7 @@
     "ts-jest": "^29.4.15",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

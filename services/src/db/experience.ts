@@ -17,9 +17,12 @@ export const getExperience: (
 ) => Promise<z.infer<typeof ExperienceSchema.base>> = (id) =>
   getPageById<typeof NotionExperienceSchema>(id).then(translate);
 
-const translate = (res: z.infer<typeof NotionExperienceSchema>) => ({
-  id: res.id,
-  title: res.properties.Title.title[0].text.content,
-  startDate: getDateOrNil(res.properties["Start date"].date?.start),
-  endDate: getDateOrNil(res.properties["End Date"].date?.end),
-});
+const translate = (res: z.infer<typeof NotionExperienceSchema>) =>
+  ExperienceSchema.base.parse({
+    id: res.id,
+    title: res.properties.Title.title[0].text.content,
+    startDate: getDateOrNil(
+      res.properties["Start date"].date?.start || undefined,
+    ),
+    endDate: getDateOrNil(res.properties["End Date"].date?.end || undefined),
+  });

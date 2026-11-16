@@ -18,12 +18,13 @@ export const getTestimony: (
 
 const translate: (
   res: z.infer<typeof NotionTestimonySchema>,
-) => z.infer<typeof TestimonySchema.base> = (res) => ({
-  id: res.id,
-  title: res.properties.Title.title[0]?.plain_text,
-  testimony: res.properties.Testimony.rich_text
-    .map((e) => e.plain_text)
-    .join("\n"),
-  rating: res.properties.Rating.number,
-  order: res.properties.Order.number,
-});
+) => z.infer<typeof TestimonySchema.base> = (res) =>
+  TestimonySchema.base.parse({
+    id: res.id,
+    title: res.properties.Title.title[0]?.plain_text,
+    testimony: res.properties.Testimony.rich_text
+      .map((e) => e.plain_text)
+      .join("\n"),
+    rating: res.properties.Rating.number,
+    order: res.properties.Order.number,
+  });

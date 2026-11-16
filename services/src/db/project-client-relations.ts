@@ -26,12 +26,14 @@ export const getProjectClientRelation: (
 
 export const translate: (
   res: z.infer<typeof NotionProjectClientRelationSchema>,
-) => z.infer<typeof ProjectClientRelationSchema.base> = (res) => ({
-  id: res.id,
-  type: PROJECT_CLIENT_TYPE[
-    NOTION_PROJECT_CLIENT_TYPE_TO_PROJECT_CLIENT_TYPE[
-      res.properties["Client type"].multi_select[0]?.name
-    ]
-  ],
-  title: res.properties.Title.title[0]?.plain_text,
-});
+) => z.infer<typeof ProjectClientRelationSchema.base> = (res) =>
+  ProjectClientRelationSchema.base.parse({
+    id: res.id,
+    type: PROJECT_CLIENT_TYPE[
+      NOTION_PROJECT_CLIENT_TYPE_TO_PROJECT_CLIENT_TYPE[
+        res.properties["Client type"].multi_select[0]
+          ?.name as keyof typeof NOTION_PROJECT_CLIENT_TYPE_TO_PROJECT_CLIENT_TYPE
+      ]
+    ],
+    title: res.properties.Title.title[0]?.plain_text,
+  });

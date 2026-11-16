@@ -26,6 +26,7 @@ import {
 import { NotionPageBaseSchema } from "@abhishekchalla/notion/schema/page-base";
 
 export const getNotionMedia = async () => {
+  console.log("Getting Notion Media Data");
   return {
     dbFilePropertiesMedia: await getMediaFromDBFileProperties(),
     dbMediaPagesMedia: await getMediaFromDBPages(),
@@ -33,6 +34,8 @@ export const getNotionMedia = async () => {
 };
 
 export const getMediaFromDBFileProperties = async () => {
+  console.log("Getting Media from DB File properties");
+
   let mediaUrls: { [mediaId: string]: string } = {};
 
   await Promise.all(
@@ -58,10 +61,9 @@ export const getMediaFromDBFileProperties = async () => {
             const mfRes: z.infer<typeof NotionFilesPropertySchema> =
               obj.properties[mediaField];
             await Promise.all(
-              mfRes.files.map(async (f) => {
-                if (f.type === "external")
-                  mediaUrls[f.name as string] = f.external.url;
-                else if (f.type === "file") {
+              mfRes.files
+                .filter((f) => f.type === "file")
+                .map(async (f) => {
                   const fileKey = getFileKeyFromSignedUrl(f.file.url);
 
                   await moveRemoteFileToS3(f.file.url, {
@@ -77,8 +79,7 @@ export const getMediaFromDBFileProperties = async () => {
                   );
 
                   mediaUrls[fileKey] = fileUrl;
-                }
-              }),
+                }),
             );
           }
         }),
@@ -90,6 +91,8 @@ export const getMediaFromDBFileProperties = async () => {
 };
 
 export const getMediaFromDBPages = async () => {
+  console.log("Getting Media from DB pages");
+
   const mediaUrls: { [blockId: string]: string } = {};
   const traversedBlocks: { [blockId: string]: true } = {};
 
@@ -102,8 +105,7 @@ export const getMediaFromDBPages = async () => {
       ],
     );
 
-    for (const r of records.slice(0, 1)) {
-      // todo: remove slice function
+    for (const r of records) {
       const record = r as z.infer<typeof NotionPageBaseSchema>;
 
       const { block: childBlocks } = await getBlockRecordMap(record.id);
