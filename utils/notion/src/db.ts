@@ -7,8 +7,8 @@ export const getDBRecords = async (
 ) => {
   const response = await notionClient.dataSources.query({
     data_source_id: dbId,
-    page_size,
-    start_cursor,
+    ...(page_size ? { page_size } : {}),
+    ...(start_cursor ? { start_cursor } : {}),
   });
 
   return response;

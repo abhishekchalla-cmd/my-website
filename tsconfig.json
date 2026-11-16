@@ -31,7 +31,8 @@
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "incremental": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "exactOptionalPropertyTypes": true
   },
   "files": [],
   "include": [],

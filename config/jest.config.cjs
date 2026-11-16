@@ -18,6 +18,14 @@ module.exports = {
       moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
         prefix: "<rootDir>/" + prefix,
       }),
+      transform: {
+        "^.+\\.(ts|tsx|js|mjs)$": "ts-jest",
+      },
+
+      transformIgnorePatterns: [
+        path.resolve(__dirname, "../../node_modules") +
+          "/(?!(notion-client|p-map|got|notion-utils|p-queue|p-timeout|is-url-superb|memoize|mimic-function|normalize-url)/)",
+      ],
     };
   },
 };

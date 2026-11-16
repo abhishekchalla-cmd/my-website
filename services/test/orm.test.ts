@@ -6,9 +6,13 @@ import { ZodObject } from "zod";
 
 test("ORM fetches all objects and they conform to the the final schema of their respective db types", async () => {
   for (const dbType in DB_TYPES) {
-    const res = await orm[dbType].getAll({});
-    const dbTypeFinalSchema = finalBaseSchema[dbType] as ZodObject;
-    const nonConformingObject = res.find((d) => {
+    const res = ((await orm[dbType as keyof typeof DB_TYPES]) as any).getAll(
+      {},
+    );
+    const dbTypeFinalSchema = finalBaseSchema[
+      dbType as keyof typeof DB_TYPES
+    ] as ZodObject;
+    const nonConformingObject = res.find((d: any) => {
       const parseRes = dbTypeFinalSchema.safeParse(d);
       if (!parseRes.success)
         console.log("Parse result: ", JSON.stringify(parseRes, null, 2));

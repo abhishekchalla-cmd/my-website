@@ -1,4 +1,4 @@
-import { notionClient } from "@abhishekchalla/notion/client";
+import { notionClient, notionXClient } from "@abhishekchalla/notion/client";
 import { getDBRecords } from "@abhishekchalla/notion/db";
 import {
   PropertyItemListResponse,
@@ -19,7 +19,7 @@ export const getAllDbRecords = async <T extends z.ZodObject>(
     pages.push(...dbResult.results);
 
     hasMore = dbResult.has_more;
-    cursor = dbResult.next_cursor;
+    cursor = dbResult.next_cursor || undefined;
   }
 
   return pages as z.infer<T>[];
@@ -43,17 +43,15 @@ export const getAllObjectRelations = async (
   const objects: { id: string }[] = [];
 
   while (hasMore) {
-    const resultSet = await notionClient.pages.properties
-      .retrieve({
-        page_id: pageId,
-        property_id: propertyId,
-        page_size: pageSize,
-        start_cursor: cursor,
-      })
-      .then((res: PropertyItemListResponse) => res);
+    const resultSet = (await notionClient.pages.properties.retrieve({
+      page_id: pageId,
+      property_id: propertyId,
+      page_size: pageSize,
+      ...(cursor ? { start_cursor: cursor } : {}),
+    })) as PropertyItemListResponse;
 
     hasMore = resultSet.has_more;
-    cursor = resultSet.next_cursor;
+    cursor = resultSet.next_cursor || undefined;
 
     objects.push(
       ...resultSet.results.map(
@@ -65,4 +63,13 @@ export const getAllObjectRelations = async (
   return objects;
 };
 
+export const getBlockRecordMap = (blockId: string) =>
+  notionXClient.getPage(blockId);
+
 export { notionClient } from "@abhishekchalla/notion/client";
+export type {
+  PdfBlockObjectResponse,
+  VideoBlockObjectResponse,
+  ImageBlockObjectResponse,
+  FileBlockObjectResponse,
+} from "@notionhq/client";

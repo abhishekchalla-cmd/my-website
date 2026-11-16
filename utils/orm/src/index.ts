@@ -28,7 +28,7 @@ export const generateOrm: ORMGenerator = (
     // console.log("Getting downstream data", dbType);
 
     // Fetch related fields data
-    const relationsData = {};
+    const relationsData: any = {};
 
     for (const finalSchemaRelationKey of Object.keys(
       dbTypeVFinalRelationsSchemaMap[dbType],
@@ -65,14 +65,16 @@ export const generateOrm: ORMGenerator = (
 
       // console.log("Materialised data");
 
-      relationsData[finalSchemaRelationKey] = finalData;
+      relationsData[
+        finalSchemaRelationKey as keyof (typeof dbTypeVFinalRelationsSchemaMap)[typeof dbType]
+      ] = finalData;
     }
 
     return { ...obj, ...relationsData };
   };
 
-  const orm = Object.values(dbTypes).reduce(
-    (acc, dbType) => ({
+  const orm = Object.values(dbTypes as object).reduce(
+    (acc: any, dbType: keyof typeof dbTypes) => ({
       ...acc,
       [dbType]: {
         getById: async (
@@ -85,7 +87,9 @@ export const generateOrm: ORMGenerator = (
         ) => {
           // console.log("GetById ", dbType, id);
 
-          const res = await dbTypeVGetByIdFnMap[dbType](id, relResOpts);
+          const res = (await dbTypeVGetByIdFnMap[dbType](id)) as z.infer<
+            (typeof dbTypeVFinalBaseSchemaMap)[typeof dbType]
+          >;
           // console.log("Fetched data");
 
           const downstreamData = await getDownstreamData(
@@ -106,13 +110,15 @@ export const generateOrm: ORMGenerator = (
         ) => {
           // console.log("Get All", dbType);
 
-          const allRawData = await dbTypeVGetAllFnMap[dbType](relResOpts);
+          const allRawData = await dbTypeVGetAllFnMap[dbType]();
           // console.log("Got data");
 
           const allData = await Promise.all(
             allRawData.map(async (res) => {
               const downstreamData = await getDownstreamData(
-                res,
+                res as z.infer<
+                  (typeof dbTypeVFinalBaseSchemaMap)[typeof dbType]
+                >,
                 dbType,
                 relResOpts,
               );

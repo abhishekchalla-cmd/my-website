@@ -13,3 +13,6 @@ export const moveRemoteFileToS3 = async (
     ContentType: fileBuffer.headers["content-type"],
   });
 };
+
+export const getFileExtensionFromUrl = (url: string) =>
+  url.split("?")[0].split(".").slice(-1).at(0);

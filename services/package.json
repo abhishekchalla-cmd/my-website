@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "runs": "dotenv -e ../.env -- ts-node -r tsconfig-paths/register",
-    "get-notion-data": "yarn runs ./src/get-notion-data.ts",
+    "get-notion-data": "yarn runs ./src/get-notion-data/index.ts",
     "test": "dotenv -e ../.env -- jest --watchman=false"
   },
   "dependencies": {

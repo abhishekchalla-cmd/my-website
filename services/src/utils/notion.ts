@@ -8,9 +8,10 @@ export const resolveNotionMediaUrl = (
 ) => {
   if (!mediaValue) return;
 
-  if (mediaValue.type === "external") return media[mediaValue.external.url];
+  if (mediaValue.type === "external")
+    return (media as Record<string, string>)[mediaValue.external.url];
   else if (mediaValue.type === "file") {
     const key = getFileKeyFromSignedUrl(mediaValue.file.url);
-    return media[key];
+    return (media as Record<string, string>)[key];
   }
 };

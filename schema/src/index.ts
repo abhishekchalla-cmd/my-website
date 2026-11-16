@@ -111,3 +111,9 @@ export const mediaFields: {
   organisation: ["Thumbnail"],
   project: ["Thumbnail", "Cover"],
 };
+
+export const mediaDBs: {
+  [DBType in keyof typeof DB_TYPES]?: boolean;
+} = {
+  project: true,
+};

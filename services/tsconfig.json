@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": "..",
     "noEmit": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true
   },
   "include": ["./src/**/*", "./test/**/*"]
 }
