@@ -2,7 +2,7 @@ import { NotionFilesPropertySchema } from "@abhishekchalla/notion/schema/propert
 import z from "zod/v4";
 import { media } from "@abhishekchalla/services/notion-data.json";
 import { getFileKeyFromSignedUrl } from "./s3";
-import { BlockObjectResponse } from "@abhishekchalla/notion/index";
+import { BlockType } from "notion-types";
 
 export const resolveNotionDBPropMediaUrl = (
   mediaValue: z.infer<typeof NotionFilesPropertySchema>["files"][number],
@@ -20,18 +20,23 @@ export const resolveNotionDBPropMediaUrl = (
   }
 };
 
-export const resolveNotionDBPageMediaUrl = (
-  url: string,
-  block: BlockObjectResponse,
+export const resolveNotionDBPageMediaUrl = <
+  BlockData extends {
+    id: string;
+    type: BlockType;
+  },
+>(
+  url: string | undefined,
+  blockData: BlockData,
 ) => {
   if (!url) return null;
 
   if (
-    block.type === "image" ||
-    block.type === "video" ||
-    block.type === "pdf" ||
-    block.type === "file"
+    blockData.type === "image" ||
+    blockData.type === "video" ||
+    blockData.type === "pdf" ||
+    blockData.type === "file"
   ) {
-    return (media.dbMediaPagesMedia as any)[block.id];
+    return (media.dbMediaPagesMedia as any)[blockData.id];
   }
 };

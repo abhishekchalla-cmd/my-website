@@ -3,8 +3,14 @@ import {
   OfferingListItem,
   OfferingListItemProps,
 } from "@abhishekchalla/frontend/components/OfferingListItem";
+import { getBlockRecordMap } from "@abhishekchalla/notion/index";
+import { orm } from "@abhishekchalla/services/orm";
 
-export const OfferingsPage = () => {
+type OfferingsPageProps = {
+  offerings: OfferingListItemProps[];
+};
+
+export const OfferingsPage = ({ offerings }: OfferingsPageProps) => {
   return (
     <BaseLayout title="Offerings">
       <p className="mb-20">
@@ -22,62 +28,29 @@ export const OfferingsPage = () => {
 
       <div className="flex flex-col gap-y-10">
         {offerings.map((o) => (
-          <OfferingListItem {...o} key={o.title} />
+          <OfferingListItem {...o} key={o.offering.id} />
         ))}
       </div>
     </BaseLayout>
   );
 };
 
-const offerings: OfferingListItemProps[] = [
-  {
-    title: "MVP (Minimum Viable Product) Development",
-    imageProps: { src: "", alt: "" },
-    body: [
-      {
-        type: "text",
-        text: {
-          content:
-            "Got a big idea? I specialize in rapid prototyping to bring your concepts to market quickly without sacrificing quality. Whether you need to test a new product with early adopters or lay a scalable foundation that can eventually support millions of users, I build robust, high-performance MVPs that help you hit the ground running.",
-          link: null,
-        },
-        plain_text: "",
-        annotations: {
-          bold: false,
-          italic: false,
-          strikethrough: false,
-          underline: false,
-          code: false,
-          color: "",
-        },
-        href: null,
-      },
-    ],
-  },
-  {
-    title: "Workflow Automation & AI Integration",
-    imageProps: { src: "", alt: "" },
-    body: [
-      {
-        type: "text",
-        text: {
-          content:
-            "Stop losing time to manual tasks. I help businesses operate smarter by designing end-to-end workflow automations that connect your favorite apps and services seamlessly. I also specialize in integrating cutting-edge Generative AI directly into your systems—like automated messaging or media generation—making your technology do the heavy lifting while optimizing your operational costs.",
-          link: null,
-        },
-        plain_text: "",
-        annotations: {
-          bold: false,
-          italic: false,
-          strikethrough: false,
-          underline: false,
-          code: false,
-          color: "",
-        },
-        href: null,
-      },
-    ],
-  },
-];
+export const getStaticProps = async (): Promise<OfferingsPageProps> => {
+  const offeringsRes = await orm.offerings.getAll({});
+  const offerings = await Promise.all(
+    offeringsRes
+      .toSorted((a, b) => (b.order || 0) - (a.order || 0))
+      .map(async (offering) => ({
+        offering,
+        offeringPageData: await getBlockRecordMap(offering.id),
+      })),
+  );
+
+  console.log(JSON.stringify(offerings, null, 2));
+
+  return {
+    offerings,
+  };
+};
 
 export default OfferingsPage;

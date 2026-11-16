@@ -1,20 +1,24 @@
-import Image, { ImageProps } from "next/image";
-import { NotionRichTextPropertySchema } from "@abhishekchalla/notion/schema/properties";
-import { NotionRichText } from "@abhishekchalla/notion/ui/rich-text";
 import z from "zod/v4";
+import { OfferingsSchema } from "@abhishekchalla/schema/offerings";
+import { NotionRenderer } from "react-notion-x";
+import { resolveNotionDBPageMediaUrl } from "@abhishekchalla/services/utils/notion";
+import { notionXClient } from "@abhishekchalla/notion/client";
 
 export type OfferingListItemProps = {
-  title: string;
-  imageProps: ImageProps;
-  body: z.infer<typeof NotionRichTextPropertySchema>["rich_text"];
+  offering: z.infer<typeof OfferingsSchema.base>;
+  offeringPageData: Awaited<ReturnType<typeof notionXClient.getPage>>;
 };
 
 export const OfferingListItem = (props: OfferingListItemProps) => {
+  const { offering, offeringPageData } = props;
+
   return (
     <div className="flex flex-col gap-y-5">
-      <h2>{props.title}</h2>
-      <Image {...props.imageProps} alt={props.title} />
-      <NotionRichText value={props.body} />
+      <h2>{offering.title}</h2>
+      <NotionRenderer
+        recordMap={offeringPageData}
+        mapImageUrl={resolveNotionDBPageMediaUrl}
+      />
     </div>
   );
 };
